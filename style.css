@@ -13,7 +13,14 @@ body.nz-body-bg {
 }
 
 .nz-hero-section {
-    background: white;
+     background: linear-gradient(
+        to bottom,
+        #ffffff 0%,
+        #fffdfd 20%,
+        #fbfafa 50%,
+        #ecebeb 75%,
+        #cfcece 100%
+    );
 }
 
 /* Colors & Overrides */
@@ -89,6 +96,7 @@ font-size: 2.5rem;
 .nz-stats-container {
     transition: box-shadow 0.3s;
      box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+     background-color: #f4f7f3;
 }
 .nz-stats-container:hover {
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
@@ -129,6 +137,17 @@ font-size: 2.5rem;
     .nz-highlight::after {
         width: 100px;
     }
+    .nz-hero-section {
+     background: linear-gradient(
+        to bottom,
+        #ffffff 0%,
+        #fffdfd 20%,
+        #fbfafa 50%,
+        #ffffff 75%,
+        #f0eeee 100%
+    );
+}
+
 }
 
 /* _________________________________________________________________________________ */
@@ -136,9 +155,17 @@ font-size: 2.5rem;
 
 .nz-partners-section {
     position: relative;
-    background-color: var(--nz-bg, #f5faf8);
+    /* background-color: var(--nz-bg, #f5faf8); */
     overflow: hidden;
     z-index: 1;
+     background: linear-gradient(
+        to bottom,
+        #f9f8f8 0%,
+        #fffdfd 20%,
+        #fbfafa 50%,
+        #f3f3f3 75%,
+        #e6e5e5 100%
+    );
 }
 
 /* Background Abstract Shapes */
@@ -291,6 +318,16 @@ font-size: 2.5rem;
         padding-top: 1.5rem;
         margin-top: 1.5rem;
     }
+    .nz-partners-section {
+     background: linear-gradient(
+        to bottom,
+        #f9f8f8 0%,
+        #fffdfd 20%,
+        #fbfafa 50%,
+        #faf9f9 75%,
+        #f6f6f6 100%
+    );
+}
 }
 
 /* _________________________________________________________________________________ */
@@ -300,6 +337,14 @@ font-size: 2.5rem;
     /* background: linear-gradient(to bottom, #ffffff 0%, #eef8f1 50%, #e0f2e5 100%); */
     position: relative;
     z-index: 1;
+     background: linear-gradient(
+        to bottom,
+        #ffffff 0%,
+        #fffdfd 20%,
+        #fbfafa 50%,
+        #e4e4e4 75%,
+        #c7c6c6 100%
+    );
 }
 
 /* Background Patterns */
@@ -470,4 +515,18 @@ font-size: 2.5rem;
     .nz-stat-icon-wrapper { width: 30px; height: 30px; font-size: 0.9rem; margin-bottom: 5px !important;}
     .nz-stat-lbl { font-size: 0.55rem; line-height: 1.2; }
     .nz-stat-divider { height: 30px; }
+
+    .nz-why-section {
+    /* background: linear-gradient(to bottom, #ffffff 0%, #eef8f1 50%, #e0f2e5 100%); */
+    position: relative;
+    z-index: 1;
+     background: linear-gradient(
+        to bottom,
+        #ffffff 0%,
+        #fffdfd 20%,
+        #fbfafa 50%,
+        #f1f0f0 75%,
+        #e7e7e7 100%
+    );
+}
 }
