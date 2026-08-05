@@ -1,0 +1,473 @@
+/* --- CUSTOM VARIABLES --- */
+:root {
+    --nz-green: #38b000;
+    --nz-dark: #212529;
+    --nz-bg: #f5faf8; 
+}
+
+/* Base Styles */
+body.nz-body-bg {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--nz-bg);
+    overflow-x: hidden;
+}
+
+.nz-hero-section {
+    background: white;
+}
+
+/* Colors & Overrides */
+.text-success { color: var(--nz-green) !important; }
+.bg-success { background-color: var(--nz-green) !important; }
+
+/* Buttons */
+.nz-btn-green {
+    background-color: var(--nz-green);
+    border-color: var(--nz-green);
+    color: white;
+    transition: all 0.3s;
+}
+.nz-btn-green:hover {
+    background-color: #2c8c00;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.nz-btn-outline {
+    color: var(--nz-green);
+    border-color: var(--nz-green);
+    transition: all 0.3s;
+}
+.nz-btn-outline:hover {
+    background-color: var(--nz-green);
+    color: white;
+    transform: translateY(-2px);
+}
+
+.nz-search-box {
+    background-color: #38b000;
+    color: white;
+}
+.sr-btn {
+    background-color: white;
+}
+
+/* Headings & Text */
+.nz-heading {
+    
+font-size: 2.5rem;
+    line-height: 1.2;
+}
+.nz-highlight {
+    position: relative;
+    display: inline-block;
+}
+.nz-highlight::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 60%;
+    height: 3px;
+    background-color: var(--nz-green);
+    border-radius: 5px;
+}
+.nz-description {
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+/* Image styling */
+.nz-main-image {
+    transition: transform 0.3s ease;
+}
+.nz-main-image:hover {
+    transform: scale(1.02);
+}
+
+/* Hero Stats Styling */
+.nz-stats-container {
+    transition: box-shadow 0.3s;
+     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+.nz-stats-container:hover {
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+.nz-hero-stat-col {
+    position: relative;
+}
+
+/* Hero Stats Desktop Dividers */
+@media (min-width: 992px) {
+    .nz-hero-stat-col:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        top: 15%;
+        right: 0;
+        height: 70%;
+        border-right: 3px dotted #999;
+    }
+}
+/* Hero Stats Tablet/Mobile Dividers (2x2 Grid) */
+@media (max-width: 991px) {
+    .nz-hero-stat-col:nth-child(odd)::after {
+        content: '';
+        position: absolute;
+        top: 15%;
+        right: 0;
+        height: 70%;
+        border-right: 2px dotted #ccc;
+    }
+}
+@media (max-width: 991px) {
+    .nz-heading {
+        font-size: 2.2rem;
+    }
+    .nz-search-box {
+        max-width: 100% !important;
+    }
+    .nz-highlight::after {
+        width: 100px;
+    }
+}
+
+/* _________________________________________________________________________________ */
+/* --- PLACEMENT PARTNERS SECTION STYLES --- */
+
+.nz-partners-section {
+    position: relative;
+    background-color: var(--nz-bg, #f5faf8);
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* Background Abstract Shapes */
+.nz-bg-shape-1, .nz-bg-shape-2 {
+    position: absolute;
+    background-color: rgba(56, 176, 0, 0.05); 
+    border-radius: 50%;
+    filter: blur(80px);
+    z-index: -1;
+}
+.nz-bg-shape-1 { top: -10%; right: -5%; width: 400px; height: 400px; }
+.nz-bg-shape-2 { bottom: -10%; left: -5%; width: 500px; height: 500px; }
+
+/* Subtitle Styling */
+.nz-subtitle-wrapper {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+.nz-subtitle-line {
+    width: 30px;
+    height: 1px;
+    background-color: var(--nz-green, #38b000);
+    position: relative;
+}
+.nz-subtitle-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--nz-green, #38b000);
+}
+
+/* Logo Cards */
+.nz-logo-card {
+    background: #ffffff;
+    border: 1px solid rgba(0,0,0,0.03);
+    border-radius: 1rem;
+    height: 100px;
+    width: 180px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    flex-shrink: 0;
+}
+.nz-logo-card:hover {
+    box-shadow: 0 8px 25px rgba(56, 176, 0, 0.15);
+    transform: translateY(-3px);
+}
+.nz-logo-card img {
+    max-height: 45px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+/* Continuous Scroll Animation (Infinite Marquee) */
+.nz-logo-slider-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    padding: 20px 0;
+}
+.nz-logo-slider-container::before,
+.nz-logo-slider-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 100%;
+    z-index: 2;
+}
+.nz-logo-slider-container::before {
+    left: 0;
+    background: linear-gradient(to right, var(--nz-bg, #f5faf8) 0%, transparent 100%);
+}
+.nz-logo-slider-container::after {
+    right: 0;
+    background: linear-gradient(to left, var(--nz-bg, #f5faf8) 0%, transparent 100%);
+}
+.nz-logo-track {
+    display: flex;
+    width: max-content;
+    animation: nz-scroll-logos 25s linear infinite; 
+}
+.nz-logo-set {
+    display: flex;
+    gap: 1.5rem;
+    padding-right: 1.5rem; 
+}
+.nz-logo-track:hover {
+    animation-play-state: paused;
+}
+@keyframes nz-scroll-logos {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } 
+}
+
+/* Placement Stats Section */
+.nz-stats-wrapper {
+    background-color: #f8fcf9;
+    border-radius: 2rem;
+    border: 1px solid rgba(56, 176, 0, 0.1);
+}
+.nz-stat-icon-box {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(56, 176, 0, 0.1);
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--nz-green, #38b000);
+}
+.nz-stat-col {
+    position: relative;
+}
+
+/* Placement Stats Desktop Dividers (4 Columns) */
+@media (min-width: 992px) {
+    .nz-stat-col:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        top: 15%; right: 0;
+        height: 70%; width: 1px;
+        background-color: rgba(0,0,0,0.08);
+    }
+}
+/* Placement Stats Tablet Dividers (2 Columns) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .nz-stat-col:nth-child(odd)::after {
+        content: '';
+        position: absolute;
+        top: 15%; right: 0;
+        height: 70%; width: 1px;
+        background-color: rgba(0,0,0,0.08);
+    }
+    .nz-stat-col:nth-child(n+3) {
+        border-top: 1px solid rgba(0,0,0,0.08);
+        padding-top: 1.5rem;
+        margin-top: 1.5rem;
+    }
+}
+/* Placement Stats Mobile Dividers (1 Column) */
+@media (max-width: 767px) {
+    .nz-stat-col:not(:first-child) {
+        border-top: 1px solid rgba(0,0,0,0.08);
+        padding-top: 1.5rem;
+        margin-top: 1.5rem;
+    }
+}
+
+/* _________________________________________________________________________________ */
+/* --- SECTION 3: WHY CHOOSE US STYLES --- */
+
+.nz-why-section {
+    /* background: linear-gradient(to bottom, #ffffff 0%, #eef8f1 50%, #e0f2e5 100%); */
+    position: relative;
+    z-index: 1;
+}
+
+/* Background Patterns */
+.nz-bg-dots-left {
+    position: absolute;
+    top: 50px; left: 50px;
+    width: 150px; height: 150px;
+    background-image: radial-gradient(rgba(56, 176, 0, 0.2) 2px, transparent 2px);
+    background-size: 20px 20px;
+    z-index: -1;
+}
+/* .nz-wave-bottom {
+    position: absolute;
+    bottom: 0; left: 0; right: 0;
+    height: 250px;
+    background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg"><path fill="%23d1eedc" fill-opacity="0.6" d="M0,224L48,229.3C96,235,192,245,288,234.7C384,224,480,192,576,192C672,192,768,224,864,229.3C960,235,1056,213,1152,197.3C1248,181,1344,171,1392,165.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom center;
+    background-size: cover;
+    z-index: -1;
+} */
+
+/* --- BLOB IMAGE --- */
+.nz-image-blob-container {
+    position: relative;
+    max-width: 70%;
+    display: inline-block;
+    padding: 20px;
+}
+.nz-main-blob-img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+    border: 6px solid white;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+/* .nz-blob-stroke {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    border: 2px solid var(--nz-green);
+    border-radius: 50% 50% 30% 70% / 50% 40% 60% 50%;
+    transform: rotate(-5deg) scale(1.05);
+    z-index: 1;
+} */
+.nz-float-arrow-1 { position: absolute; top: -10%; right: 10%; z-index: 3; animation: float 3s ease-in-out infinite; }
+.nz-float-arrow-2 { position: absolute; bottom: 40%; left: -5%; z-index: 3; animation: float 4s ease-in-out infinite reverse; }
+@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+
+/* Floating Stats Badge */
+.nz-stats-badge {
+    position: absolute;
+    bottom: -10px; left: -20px;
+    background: #ffffff;
+    width: 150px; height: 150px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    border: 5px solid #f8fcf9;
+}
+.nz-badge-text { font-size: 0.75rem; text-align: center; }
+
+/* --- FEATURE CARDS --- */
+.nz-feat-card {
+    border-radius: 1rem;
+    padding: 1.25rem;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    border: 1px solid rgba(0,0,0,0.04);
+    transition: all 0.3s ease;
+}
+.nz-feat-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(56, 176, 0, 0.1) !important;
+}
+.nz-feat-icon {
+    width: 48px; height: 48px;
+    background: #e8f4ea;
+    color: var(--nz-green);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+.nz-feat-content h6 { font-size: 0.95rem; }
+.nz-feat-content p { font-size: 0.8rem; line-height: 1.5; }
+
+/* --- BOTTOM STATS BAR --- */
+.nz-stat-item {
+    flex: 1;
+}
+.nz-stat-icon-wrapper {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px; height: 40px;
+    background: #e8f4ea;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
+.nz-stat-divider {
+    width: 1px; height: 50px;
+    background-color: rgba(0,0,0,0.1);
+}
+.nz-stat-lbl { font-size: 0.8rem; }
+
+
+/* ======================================================== */
+/* SECTION 3 RESPONSIVE MEDIA QUERIES                       */
+/* ======================================================== */
+
+/* Desktop Specific */
+@media (min-width: 992px) {
+    .nz-stats-badge {
+        left: -30px; 
+    }
+}
+
+/* Tablet Adjustments */
+@media (max-width: 991px) and (min-width: 768px) {
+    .nz-main-blob-img { max-width: 400px; }
+    .nz-stats-badge { left: 0; bottom: 0; }
+}
+
+/* MOBILE SPECIFIC */
+@media (max-width: 767px) {
+    
+    .nz-why-section h2 { font-size: 1.8rem; }
+    
+    /* Image and Badge */
+    .nz-image-blob-container { padding: 10px; max-width: 100%; }
+    .nz-main-blob-img {
+        max-width: 90%;
+        border-radius: 30% 70% 50% 50% / 30% 30% 70% 70%;
+    }
+    .nz-stats-badge {
+        width: 120px; height: 120px;
+        bottom: -10px; right: 0; left: auto; /* Badge on Right for Mobile */
+    }
+    .nz-stats-badge h4 { font-size: 1.2rem !important; }
+    .nz-badge-text { font-size: 0.65rem; }
+
+    /* Feature Cards: Vertical Layout for Mobile */
+    .nz-feat-card {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+        padding: 1.2rem 0.5rem;
+        gap: 10px;
+    }
+    .nz-feat-icon {
+        width: 40px; height: 40px; font-size: 1.1rem;
+    }
+    .nz-feat-content h6 { font-size: 0.85rem; }
+    .nz-feat-content p { font-size: 0.7rem; }
+
+    /* Bottom Stats Bar: 4 items in a Single Row */
+    .nz-bottom-stats {
+        padding: 0.75rem !important;
+        flex-wrap: nowrap;
+    }
+    .nz-stat-item h5 { font-size: 1rem !important; }
+    .nz-stat-icon-wrapper { width: 30px; height: 30px; font-size: 0.9rem; margin-bottom: 5px !important;}
+    .nz-stat-lbl { font-size: 0.55rem; line-height: 1.2; }
+    .nz-stat-divider { height: 30px; }
+}
