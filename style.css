@@ -2,7 +2,7 @@
 :root {
   --nz-green: #38b000;
   --nz-dark: #212529;
-  --nz-bg: #f5faf8;
+  --nz-bg: white;
 }
 
 /* Base Styles */
