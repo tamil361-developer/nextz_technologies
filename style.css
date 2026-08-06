@@ -1,360 +1,394 @@
 /* --- CUSTOM VARIABLES --- */
 :root {
-    --nz-green: #38b000;
-    --nz-dark: #212529;
-    --nz-bg: #f5faf8; 
+  --nz-green: #38b000;
+  --nz-dark: #212529;
+  --nz-bg: #f5faf8;
 }
 
 /* Base Styles */
 body.nz-body-bg {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--nz-bg);
-    overflow-x: hidden;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--nz-bg);
+  overflow-x: hidden;
 }
 
 .nz-hero-section {
-     background: linear-gradient(
-        to bottom,
-        #ffffff 0%,
-        #fffdfd 20%,
-        #fbfafa 50%,
-        #ecebeb 75%,
-        #cfcece 100%
-    );
+  /* background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #fffdfd 20%,
+    #fbfafa 50%,
+    #ecebeb 75%,
+    #cfcece 100%
+  ); */
+  background: white;
 }
 
 /* Colors & Overrides */
-.text-success { color: var(--nz-green) !important; }
-.bg-success { background-color: var(--nz-green) !important; }
+.text-success {
+  color: var(--nz-green) !important;
+}
+.bg-success {
+  background-color: var(--nz-green) !important;
+}
 
 /* Buttons */
 .nz-btn-green {
-    background-color: var(--nz-green);
-    border-color: var(--nz-green);
-    color: white;
-    transition: all 0.3s;
+  background-color: var(--nz-green);
+  border-color: var(--nz-green);
+  color: white;
+  transition: all 0.3s;
 }
 .nz-btn-green:hover {
-    background-color: #2c8c00;
-    color: white;
-    transform: translateY(-2px);
+  background-color: #2c8c00;
+  color: white;
+  transform: translateY(-2px);
 }
 
 .nz-btn-outline {
-    color: var(--nz-green);
-    border-color: var(--nz-green);
-    transition: all 0.3s;
+  color: var(--nz-green);
+  border-color: var(--nz-green);
+  transition: all 0.3s;
 }
 .nz-btn-outline:hover {
-    background-color: var(--nz-green);
-    color: white;
-    transform: translateY(-2px);
+  background-color: var(--nz-green);
+  color: white;
+  transform: translateY(-2px);
 }
 
 .nz-search-box {
-    background-color: #38b000;
-    color: white;
+  background-color: #38b000;
+  color: white;
 }
 .sr-btn {
-    background-color: white;
+  background-color: white;
 }
 
 /* Headings & Text */
 .nz-heading {
-    
-font-size: 2.5rem;
-    line-height: 1.2;
+  font-size: 2.5rem;
+  line-height: 1.2;
 }
 .nz-highlight {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 }
 .nz-highlight::after {
-    content: "";
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 60%;
-    height: 3px;
-    background-color: var(--nz-green);
-    border-radius: 5px;
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 60%;
+  height: 3px;
+  background-color: var(--nz-green);
+  border-radius: 5px;
 }
 .nz-description {
-    font-size: 1.05rem;
-    line-height: 1.6;
+  font-size: 1.05rem;
+  line-height: 1.6;
 }
 
 /* Image styling */
 .nz-main-image {
-    transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
 }
 .nz-main-image:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
 
 /* Hero Stats Styling */
 .nz-stats-container {
-    transition: box-shadow 0.3s;
-     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
-     background-color: #f4f7f3;
+  transition: box-shadow 0.3s;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  background-color: #f4f7f3;
 }
 .nz-stats-container:hover {
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 .nz-hero-stat-col {
-    position: relative;
+  position: relative;
 }
 
 /* Hero Stats Desktop Dividers */
 @media (min-width: 992px) {
-    .nz-hero-stat-col:not(:last-child)::after {
-        content: '';
-        position: absolute;
-        top: 15%;
-        right: 0;
-        height: 70%;
-        border-right: 3px dotted #999;
-    }
+  .nz-hero-stat-col:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 15%;
+    right: 0;
+    height: 70%;
+    border-right: 3px dotted #999;
+  }
 }
 /* Hero Stats Tablet/Mobile Dividers (2x2 Grid) */
 @media (max-width: 991px) {
-    .nz-hero-stat-col:nth-child(odd)::after {
-        content: '';
-        position: absolute;
-        top: 15%;
-        right: 0;
-        height: 70%;
-        border-right: 2px dotted #ccc;
-    }
+  .nz-hero-stat-col:nth-child(odd)::after {
+    content: "";
+    position: absolute;
+    top: 15%;
+    right: 0;
+    height: 70%;
+    border-right: 2px dotted #ccc;
+  }
 }
 @media (max-width: 991px) {
-    .nz-heading {
-        font-size: 2.2rem;
-    }
-    .nz-search-box {
-        max-width: 100% !important;
-    }
-    .nz-highlight::after {
-        width: 100px;
-    }
-    .nz-hero-section {
-     background: linear-gradient(
-        to bottom,
-        #ffffff 0%,
-        #fffdfd 20%,
-        #fbfafa 50%,
-        #ffffff 75%,
-        #f0eeee 100%
+  .nz-heading {
+    font-size: 2.2rem;
+  }
+  .nz-search-box {
+    max-width: 100% !important;
+  }
+  .nz-highlight::after {
+    width: 100px;
+  }
+  .nz-hero-section {
+    background: linear-gradient(
+      to bottom,
+      #ffffff 0%,
+      #fffdfd 20%,
+      #fbfafa 50%,
+      #ffffff 75%,
+      #f0eeee 100%
     );
-}
-
+  }
 }
 
 /* _________________________________________________________________________________ */
 /* --- PLACEMENT PARTNERS SECTION STYLES --- */
 
 .nz-partners-section {
-    position: relative;
-    /* background-color: var(--nz-bg, #f5faf8); */
-    overflow: hidden;
-    z-index: 1;
-     background: linear-gradient(
-        to bottom,
-        #f9f8f8 0%,
-        #fffdfd 20%,
-        #fbfafa 50%,
-        #f3f3f3 75%,
-        #e6e5e5 100%
-    );
+  position: relative;
+  /* background-color: var(--nz-bg, #f5faf8); */
+  overflow: hidden;
+  z-index: 1;
+  background: linear-gradient(
+    to bottom,
+    #f9f8f8 0%,
+    #fffdfd 20%,
+    #fbfafa 50%,
+    #f3f3f3 75%,
+    #e6e5e5 100%
+  );
 }
 
 /* Background Abstract Shapes */
-.nz-bg-shape-1, .nz-bg-shape-2 {
-    position: absolute;
-    background-color: rgba(56, 176, 0, 0.05); 
-    border-radius: 50%;
-    filter: blur(80px);
-    z-index: -1;
+.nz-bg-shape-1,
+.nz-bg-shape-2 {
+  position: absolute;
+  background-color: rgba(56, 176, 0, 0.05);
+  border-radius: 50%;
+  filter: blur(80px);
+  z-index: -1;
 }
-.nz-bg-shape-1 { top: -10%; right: -5%; width: 400px; height: 400px; }
-.nz-bg-shape-2 { bottom: -10%; left: -5%; width: 500px; height: 500px; }
+.nz-bg-shape-1 {
+  top: -10%;
+  right: -5%;
+  width: 400px;
+  height: 400px;
+}
+.nz-bg-shape-2 {
+  bottom: -10%;
+  left: -5%;
+  width: 500px;
+  height: 500px;
+}
 
 /* Subtitle Styling */
 .nz-subtitle-wrapper {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
 }
 .nz-subtitle-line {
-    width: 30px;
-    height: 1px;
-    background-color: var(--nz-green, #38b000);
-    position: relative;
+  width: 30px;
+  height: 1px;
+  background-color: var(--nz-green, #38b000);
+  position: relative;
 }
 .nz-subtitle-dot {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background-color: var(--nz-green, #38b000);
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--nz-green, #38b000);
 }
 
 /* Logo Cards */
 .nz-logo-card {
-    background: #ffffff;
-    border: 1px solid rgba(0,0,0,0.03);
-    border-radius: 1rem;
-    height: 100px;
-    width: 180px; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.02);
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
-    flex-shrink: 0;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  border-radius: 1rem;
+  height: 100px;
+  width: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+  transition:
+    box-shadow 0.3s ease,
+    transform 0.3s ease;
+  flex-shrink: 0;
 }
 .nz-logo-card:hover {
-    box-shadow: 0 8px 25px rgba(56, 176, 0, 0.15);
-    transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(56, 176, 0, 0.15);
+  transform: translateY(-3px);
 }
 .nz-logo-card img {
-    max-height: 45px;
-    max-width: 100%;
-    object-fit: contain;
+  max-height: 45px;
+  max-width: 100%;
+  object-fit: contain;
 }
 
 /* Continuous Scroll Animation (Infinite Marquee) */
 .nz-logo-slider-container {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-    padding: 20px 0;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  padding: 20px 0;
 }
 .nz-logo-slider-container::before,
 .nz-logo-slider-container::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    width: 80px;
-    height: 100%;
-    z-index: 2;
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 80px;
+  height: 100%;
+  z-index: 2;
 }
 .nz-logo-slider-container::before {
-    left: 0;
-    background: linear-gradient(to right, var(--nz-bg, #f5faf8) 0%, transparent 100%);
+  left: 0;
+  background: linear-gradient(
+    to right,
+    var(--nz-bg, #f5faf8) 0%,
+    transparent 100%
+  );
 }
 .nz-logo-slider-container::after {
-    right: 0;
-    background: linear-gradient(to left, var(--nz-bg, #f5faf8) 0%, transparent 100%);
+  right: 0;
+  background: linear-gradient(
+    to left,
+    var(--nz-bg, #f5faf8) 0%,
+    transparent 100%
+  );
 }
 .nz-logo-track {
-    display: flex;
-    width: max-content;
-    animation: nz-scroll-logos 25s linear infinite; 
+  display: flex;
+  width: max-content;
+  animation: nz-scroll-logos 25s linear infinite;
 }
 .nz-logo-set {
-    display: flex;
-    gap: 1.5rem;
-    padding-right: 1.5rem; 
+  display: flex;
+  gap: 1.5rem;
+  padding-right: 1.5rem;
 }
 .nz-logo-track:hover {
-    animation-play-state: paused;
+  animation-play-state: paused;
 }
 @keyframes nz-scroll-logos {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); } 
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 /* Placement Stats Section */
 .nz-stats-wrapper {
-    background-color: #f8fcf9;
-    border-radius: 2rem;
-    border: 1px solid rgba(56, 176, 0, 0.1);
+  background-color: #f8fcf9;
+  border-radius: 2rem;
+  border: 1px solid rgba(56, 176, 0, 0.1);
 }
 .nz-stat-icon-box {
-    width: 60px;
-    height: 60px;
-    background-color: rgba(56, 176, 0, 0.1);
-    border-radius: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    color: var(--nz-green, #38b000);
+  width: 60px;
+  height: 60px;
+  background-color: rgba(56, 176, 0, 0.1);
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--nz-green, #38b000);
 }
 .nz-stat-col {
-    position: relative;
+  position: relative;
 }
 
 /* Placement Stats Desktop Dividers (4 Columns) */
 @media (min-width: 992px) {
-    .nz-stat-col:not(:last-child)::after {
-        content: '';
-        position: absolute;
-        top: 15%; right: 0;
-        height: 70%; width: 1px;
-        background-color: rgba(0,0,0,0.08);
-    }
+  .nz-stat-col:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 15%;
+    right: 0;
+    height: 70%;
+    width: 1px;
+    background-color: rgba(0, 0, 0, 0.08);
+  }
 }
 /* Placement Stats Tablet Dividers (2 Columns) */
 @media (min-width: 768px) and (max-width: 991px) {
-    .nz-stat-col:nth-child(odd)::after {
-        content: '';
-        position: absolute;
-        top: 15%; right: 0;
-        height: 70%; width: 1px;
-        background-color: rgba(0,0,0,0.08);
-    }
-    .nz-stat-col:nth-child(n+3) {
-        border-top: 1px solid rgba(0,0,0,0.08);
-        padding-top: 1.5rem;
-        margin-top: 1.5rem;
-    }
+  .nz-stat-col:nth-child(odd)::after {
+    content: "";
+    position: absolute;
+    top: 15%;
+    right: 0;
+    height: 70%;
+    width: 1px;
+    background-color: rgba(0, 0, 0, 0.08);
+  }
+  .nz-stat-col:nth-child(n + 3) {
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+  }
 }
 /* Placement Stats Mobile Dividers (1 Column) */
 @media (max-width: 767px) {
-    .nz-stat-col:not(:first-child) {
-        border-top: 1px solid rgba(0,0,0,0.08);
-        padding-top: 1.5rem;
-        margin-top: 1.5rem;
-    }
-    .nz-partners-section {
-     background: linear-gradient(
-        to bottom,
-        #f9f8f8 0%,
-        #fffdfd 20%,
-        #fbfafa 50%,
-        #faf9f9 75%,
-        #f6f6f6 100%
+  .nz-stat-col:not(:first-child) {
+    border-top: 1px solid rgba(0, 0, 0, 0.08);
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  .nz-partners-section {
+    background: linear-gradient(
+      to bottom,
+      #f9f8f8 0%,
+      #fffdfd 20%,
+      #fbfafa 50%,
+      #faf9f9 75%,
+      #f6f6f6 100%
     );
-}
+  }
 }
 
 /* _________________________________________________________________________________ */
 /* --- SECTION 3: WHY CHOOSE US STYLES --- */
 
 .nz-why-section {
-    /* background: linear-gradient(to bottom, #ffffff 0%, #eef8f1 50%, #e0f2e5 100%); */
-    position: relative;
-    z-index: 1;
-     background: linear-gradient(
-        to bottom,
-        #ffffff 0%,
-        #fffdfd 20%,
-        #fbfafa 50%,
-        #e4e4e4 75%,
-        #c7c6c6 100%
-    );
+  /* background: linear-gradient(to bottom, #ffffff 0%, #eef8f1 50%, #e0f2e5 100%); */
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #fffdfd 20%,
+    #fbfafa 50%,
+    #e4e4e4 75%,
+    #c7c6c6 100%
+  );
 }
 
 /* Background Patterns */
 .nz-bg-dots-left {
-    position: absolute;
-    top: 50px; left: 50px;
-    width: 150px; height: 150px;
-    background-image: radial-gradient(rgba(56, 176, 0, 0.2) 2px, transparent 2px);
-    background-size: 20px 20px;
-    z-index: -1;
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  width: 150px;
+  height: 150px;
+  background-image: radial-gradient(rgba(56, 176, 0, 0.2) 2px, transparent 2px);
+  background-size: 20px 20px;
+  z-index: -1;
 }
 /* .nz-wave-bottom {
     position: absolute;
@@ -367,20 +401,20 @@ font-size: 2.5rem;
 
 /* --- BLOB IMAGE --- */
 .nz-image-blob-container {
-    position: relative;
-    max-width: 70%;
-    display: inline-block;
-    padding: 20px;
+  position: relative;
+  max-width: 70%;
+  display: inline-block;
+  padding: 20px;
 }
 .nz-main-blob-img {
-    width: 100%;
-    max-width: 450px;
-    border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
-    object-fit: cover;
-    position: relative;
-    z-index: 2;
-    border: 6px solid white;
-    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 450px;
+  border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+  border: 6px solid white;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
 }
 /* .nz-blob-stroke {
     position: absolute;
@@ -390,72 +424,106 @@ font-size: 2.5rem;
     transform: rotate(-5deg) scale(1.05);
     z-index: 1;
 } */
-.nz-float-arrow-1 { position: absolute; top: -10%; right: 10%; z-index: 3; animation: float 3s ease-in-out infinite; }
-.nz-float-arrow-2 { position: absolute; bottom: 40%; left: -5%; z-index: 3; animation: float 4s ease-in-out infinite reverse; }
-@keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-10px); } }
+.nz-float-arrow-1 {
+  position: absolute;
+  top: -10%;
+  right: 10%;
+  z-index: 3;
+  animation: float 3s ease-in-out infinite;
+}
+.nz-float-arrow-2 {
+  position: absolute;
+  bottom: 40%;
+  left: -5%;
+  z-index: 3;
+  animation: float 4s ease-in-out infinite reverse;
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
 
 /* Floating Stats Badge */
 .nz-stats-badge {
-    position: absolute;
-    bottom: -10px; left: -20px;
-    background: #ffffff;
-    width: 150px; height: 150px;
-    border-radius: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 4;
-    border: 5px solid #f8fcf9;
+  position: absolute;
+  bottom: -10px;
+  left: -20px;
+  background: #ffffff;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 4;
+  border: 5px solid #f8fcf9;
 }
-.nz-badge-text { font-size: 0.75rem; text-align: center; }
+.nz-badge-text {
+  font-size: 0.75rem;
+  text-align: center;
+}
 
 /* --- FEATURE CARDS --- */
 .nz-feat-card {
-    border-radius: 1rem;
-    padding: 1.25rem;
-    display: flex;
-    align-items: flex-start;
-    gap: 15px;
-    border: 1px solid rgba(0,0,0,0.04);
-    transition: all 0.3s ease;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
 }
 .nz-feat-card:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 25px rgba(56, 176, 0, 0.1) !important;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(56, 176, 0, 0.1) !important;
 }
 .nz-feat-icon {
-    width: 48px; height: 48px;
-    background: #e8f4ea;
-    color: var(--nz-green);
-    border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.3rem;
+  width: 48px;
+  height: 48px;
+  background: #e8f4ea;
+  color: var(--nz-green);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
 }
-.nz-feat-content h6 { font-size: 0.95rem; }
-.nz-feat-content p { font-size: 0.8rem; line-height: 1.5; }
+.nz-feat-content h6 {
+  font-size: 0.95rem;
+}
+.nz-feat-content p {
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
 
 /* --- BOTTOM STATS BAR --- */
 .nz-stat-item {
-    flex: 1;
+  flex: 1;
 }
 .nz-stat-icon-wrapper {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px; height: 40px;
-    background: #e8f4ea;
-    border-radius: 10px;
-    font-size: 1.2rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #e8f4ea;
+  border-radius: 10px;
+  font-size: 1.2rem;
 }
 .nz-stat-divider {
-    width: 1px; height: 50px;
-    background-color: rgba(0,0,0,0.1);
+  width: 1px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.1);
 }
-.nz-stat-lbl { font-size: 0.8rem; }
-
+.nz-stat-lbl {
+  font-size: 0.8rem;
+}
 
 /* ======================================================== */
 /* SECTION 3 RESPONSIVE MEDIA QUERIES                       */
@@ -463,70 +531,490 @@ font-size: 2.5rem;
 
 /* Desktop Specific */
 @media (min-width: 992px) {
-    .nz-stats-badge {
-        left: -30px; 
-    }
+  .nz-stats-badge {
+    left: -30px;
+  }
 }
 
 /* Tablet Adjustments */
 @media (max-width: 991px) and (min-width: 768px) {
-    .nz-main-blob-img { max-width: 400px; }
-    .nz-stats-badge { left: 0; bottom: 0; }
+  .nz-main-blob-img {
+    max-width: 400px;
+  }
+  .nz-stats-badge {
+    left: 0;
+    bottom: 0;
+  }
 }
 
 /* MOBILE SPECIFIC */
 @media (max-width: 767px) {
-    
-    .nz-why-section h2 { font-size: 1.8rem; }
-    
-    /* Image and Badge */
-    .nz-image-blob-container { padding: 10px; max-width: 100%; }
-    .nz-main-blob-img {
-        max-width: 90%;
-        border-radius: 30% 70% 50% 50% / 30% 30% 70% 70%;
-    }
-    .nz-stats-badge {
-        width: 120px; height: 120px;
-        bottom: -10px; right: 0; left: auto; /* Badge on Right for Mobile */
-    }
-    .nz-stats-badge h4 { font-size: 1.2rem !important; }
-    .nz-badge-text { font-size: 0.65rem; }
+  .nz-why-section h2 {
+    font-size: 1.8rem;
+  }
 
-    /* Feature Cards: Vertical Layout for Mobile */
-    .nz-feat-card {
-        flex-direction: column; 
-        align-items: center;
-        text-align: center;
-        padding: 1.2rem 0.5rem;
-        gap: 10px;
-    }
-    .nz-feat-icon {
-        width: 40px; height: 40px; font-size: 1.1rem;
-    }
-    .nz-feat-content h6 { font-size: 0.85rem; }
-    .nz-feat-content p { font-size: 0.7rem; }
+  /* Image and Badge */
+  .nz-image-blob-container {
+    padding: 10px;
+    max-width: 100%;
+  }
+  .nz-main-blob-img {
+    max-width: 90%;
+    border-radius: 30% 70% 50% 50% / 30% 30% 70% 70%;
+  }
+  .nz-stats-badge {
+    width: 120px;
+    height: 120px;
+    bottom: -10px;
+    right: 0;
+    left: auto; /* Badge on Right for Mobile */
+  }
+  .nz-stats-badge h4 {
+    font-size: 1.2rem !important;
+  }
+  .nz-badge-text {
+    font-size: 0.65rem;
+  }
 
-    /* Bottom Stats Bar: 4 items in a Single Row */
-    .nz-bottom-stats {
-        padding: 0.75rem !important;
-        flex-wrap: nowrap;
-    }
-    .nz-stat-item h5 { font-size: 1rem !important; }
-    .nz-stat-icon-wrapper { width: 30px; height: 30px; font-size: 0.9rem; margin-bottom: 5px !important;}
-    .nz-stat-lbl { font-size: 0.55rem; line-height: 1.2; }
-    .nz-stat-divider { height: 30px; }
+  /* Feature Cards: Vertical Layout for Mobile */
+  .nz-feat-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.2rem 0.5rem;
+    gap: 10px;
+  }
+  .nz-feat-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.1rem;
+  }
+  .nz-feat-content h6 {
+    font-size: 0.85rem;
+  }
+  .nz-feat-content p {
+    font-size: 0.7rem;
+  }
 
-    .nz-why-section {
+  /* Bottom Stats Bar: 4 items in a Single Row */
+  .nz-bottom-stats {
+    padding: 0.75rem !important;
+    flex-wrap: nowrap;
+  }
+  .nz-stat-item h5 {
+    font-size: 1rem !important;
+  }
+  .nz-stat-icon-wrapper {
+    width: 30px;
+    height: 30px;
+    font-size: 0.9rem;
+    margin-bottom: 5px !important;
+  }
+  .nz-stat-lbl {
+    font-size: 0.55rem;
+    line-height: 1.2;
+  }
+  .nz-stat-divider {
+    height: 30px;
+  }
+
+  .nz-why-section {
     /* background: linear-gradient(to bottom, #ffffff 0%, #eef8f1 50%, #e0f2e5 100%); */
     position: relative;
     z-index: 1;
-     background: linear-gradient(
-        to bottom,
-        #ffffff 0%,
-        #fffdfd 20%,
-        #fbfafa 50%,
-        #f1f0f0 75%,
-        #e7e7e7 100%
+    background: linear-gradient(
+      to bottom,
+      #ffffff 0%,
+      #fffdfd 20%,
+      #fbfafa 50%,
+      #f1f0f0 75%,
+      #e7e7e7 100%
     );
+  }
 }
+
+/* ------------------------------------------------------------------------------------------------------------------------- */
+
+/* _________________________________________________________________________________ */
+/* --- SECTION 4: POPULAR COURSES (nz-crs-*) --- */
+:root {
+  --primary-green: #3a9721;
+  --light-green: #ebf6e8;
+  --text-dark: #222222;
+  --text-muted: #6c757d;
+  --bg-color: #fcfdfc;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg-color);
+  background-image: radial-gradient(#e1e1e1 1.5px, transparent 1.5px);
+  background-size: 25px 25px;
+  padding-bottom: 50px;
+}
+
+.pc-container {
+  background: linear-gradient(
+    to bottom,
+    #ffffff 0%,
+    #fffdfd 20%,
+    #fbfafa 50%,
+    #f1f0f0 75%,
+    #e7e7e7 100%
+  );
+}
+
+/* --- Header Styles --- */
+.section-subtitle {
+  color: var(--primary-green);
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.line-dash {
+  height: 1px;
+  width: 40px;
+  background-color: var(--primary-green);
+  position: relative;
+}
+.line-dash::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: var(--primary-green);
+  border-radius: 50%;
+  top: -2px;
+}
+.line-dash.left::after {
+  right: 0;
+}
+.line-dash.right::after {
+  left: 0;
+}
+
+.section-title {
+  color: var(--text-dark);
+  font-weight: 700;
+}
+.section-title span {
+  color: var(--primary-green);
+}
+
+/* =========================================
+           DESKTOP CARD STYLES (Exact Cut & Border)
+           ========================================= */
+@media (min-width: 768px) {
+  .mobile-view-wrapper {
+    display: none !important;
+  }
+
+  .desktop-cards-wrapper {
+    position: relative;
+    height: 100%;
+    width: 90%;
+    margin-top: 30px;
+    border-radius: 30px;
+    filter: drop-shadow(4px 8px 15px rgba(0, 0, 0, 0.19));
+    transition:
+      transform 0.3s ease,
+      filter 0.3s ease;
+  }
+
+  .desktop-cards-wrapper:hover {
+    transform: translateY(-5px);
+    filter: drop-shadow(8px 12px 20px rgba(0, 0, 0, 0.6));
+  }
+
+  .custom-card {
+    position: relative;
+    height: 100%;
+    background: linear-gradient(167deg, transparent 31.5px, white 31.8px);
+    border-radius: 25px;
+    padding: 4.5rem 1.5rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* --- Left Side Border Only --- */
+  .border-left-line {
+    position: absolute;
+    left: 0;
+    top: 30px;
+    bottom: 9px;
+    width: 4.5px;
+    height: 320px;
+    border-bottom-left-radius: 15px;
+    z-index: 2;
+    background: linear-gradient(
+      to bottom,
+      #2d7a18 0%,
+      #38b000 25%,
+      #7ed957 70%,
+      #ffffff 100%
+    );
+  }
+
+  /* --- Top-Left Cut Border Only --- */
+  .border-diagonal-line {
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 119px;
+    height: 3px;
+    transform-origin: left top;
+    transform: rotate(-14deg);
+    z-index: 2;
+    background: linear-gradient(
+      to right,
+      #2b6f19 0%,
+      #38b000 35%,
+      #7ed957 70%,
+      #ffffff 100%
+    );
+  }
+
+  /* Hexagon Icon */
+  .hex-icon-wrapper {
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 70px;
+    /* Gradient */
+    background: linear-gradient(180deg, #4fd32b 0%, #38b000 45%, #2b8a1f 100%);
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Shadow */
+    box-shadow:
+      0 8px 20px rgba(0, 0, 0, 0.2),
+      inset 0 2px 4px rgba(255, 255, 255, 0.35),
+      inset 0 -3px 6px rgba(0, 0, 0, 0.15);
+    z-index: 3;
+  }
+
+  .hex-inner {
+    width: 66px;
+    height: 66px;
+    background: white;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .hex-inner i {
+    font-size: 24px;
+    color: var(--primary-green);
+  }
+}
+
+/* --- Common Elements Inside Card --- */
+.card-divider {
+  width: 35px;
+  height: 2px;
+  background-color: var(--primary-green);
+  margin: 15px auto;
+  position: relative;
+}
+.card-divider::after {
+  content: "";
+  position: absolute;
+  right: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 4px;
+  background-color: var(--primary-green);
+  border-radius: 50%;
+}
+
+.badge-course {
+  background-color: var(--light-green);
+  border-radius: 8px;
+  padding: 8px 15px;
+  display: inline-block;
+}
+.badge-course .count {
+  color: var(--primary-green);
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.badge-course .label {
+  color: var(--text-dark);
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.btn-custom {
+  background: linear-gradient(90deg, #4da923, var(--primary-green));
+  color: white;
+  font-weight: 500;
+  border: none;
+  padding: 10px 25px;
+  font-size: 0.9rem;
+  transition: all 0.3s;
+}
+.btn-custom:hover {
+  opacity: 0.9;
+  color: white;
+  transform: scale(1.02);
+}
+
+/* =========================================
+           MOBILE CARD STYLES
+           ========================================= */
+@media (max-width: 767.98px) {
+  .desktop-cards-wrapper {
+    display: none !important;
+  }
+
+  .mobile-view-wrapper {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    filter: drop-shadow(0px 6px 15px rgba(0, 0, 0, 0.06));
+  }
+
+  .mobile-custom-card {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    /* 25x25 cut for mobile */
+    background: linear-gradient(135deg, transparent 17px, white 17.5px);
+    border-radius: 0 12px 12px 12px;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Green background area also needs the gradient cut to hide properly */
+  .mobile-icon-area {
+    width: 100px;
+    height: 100%;
+    background: linear-gradient(135deg, transparent 17px, #ebf6e8 17.5px);
+    border-radius: 0 0 0 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Mobile Left Border Only */
+  .mobile-border-left {
+    position: absolute;
+    left: 0;
+    top: 25px;
+    bottom: 0;
+    width: 3.5px;
+    background-color: var(--primary-green);
+    border-bottom-left-radius: 12px;
+    z-index: 5;
+  }
+
+  /* Mobile Diagonal Border Only */
+  .mobile-border-diagonal {
+    position: absolute;
+    left: 0;
+    top: 25px;
+    width: 35.35px; /* math: 25 * 1.414 */
+    height: 3.5px;
+    background-color: var(--primary-green);
+    transform-origin: left top;
+    transform: rotate(-45deg);
+    z-index: 5;
+  }
+
+  .hex-inner-mobile {
+    width: 50px;
+    height: 50px;
+    background: white;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  .hex-inner-mobile i {
+    font-size: 20px;
+    color: var(--primary-green);
+  }
+  .badge-course-mobile {
+    background-color: white;
+    border: 1px solid var(--light-green);
+    border-radius: 6px;
+    padding: 5px 10px;
+    text-align: center;
+    min-width: 55px;
+  }
+  .badge-course-mobile .count {
+    color: var(--primary-green);
+    font-weight: 700;
+    font-size: 15px;
+    display: block;
+    line-height: 1.1;
+  }
+  .badge-course-mobile .label {
+    color: var(--text-dark);
+    font-size: 10px;
+    display: block;
+  }
+}
+
+/* =========================================
+           BOTTOM BANNER CSS
+           ========================================= */
+.cta-bottom-banner {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.05);
+  border: 1px solid #f2f2f2;
+  padding: 2rem;
+}
+
+.cta-divider {
+  width: 35px;
+  height: 2px;
+  background-color: var(--primary-green);
+  position: relative;
+}
+
+.cta-divider::after {
+  content: "";
+  position: absolute;
+  right: -8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 4px;
+  background-color: var(--primary-green);
+  border-radius: 50%;
+}
+
+.feature-icon-circle {
+  width: 45px;
+  height: 45px;
+  background-color: var(--light-green);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feature-icon-circle i {
+  font-size: 18px;
+  color: var(--primary-green);
+}
+
+.vertical-divider {
+  width: 1px;
+  background-color: #e9ecef;
+  height: 45px;
 }
