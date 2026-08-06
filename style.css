@@ -351,14 +351,15 @@ body.nz-body-bg {
     margin-top: 1.5rem;
   }
   .nz-partners-section {
-    background: linear-gradient(
+    /* background: linear-gradient(
       to bottom,
       #f9f8f8 0%,
       #fffdfd 20%,
       #fbfafa 50%,
       #faf9f9 75%,
       #f6f6f6 100%
-    );
+    ); */
+    background: white;
   }
 }
 
