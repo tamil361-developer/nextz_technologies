@@ -634,7 +634,6 @@ body.nz-body-bg {
   }
 }
 
-/* ------------------------------------------------------------------------------------------------------------------------- */
 
 /* _________________________________________________________________________________ */
 /* --- SECTION 4: POPULAR COURSES (nz-crs-*) --- */
@@ -708,8 +707,8 @@ body {
 }
 
 /* =========================================
-           DESKTOP CARD STYLES (Exact Cut & Border)
-           ========================================= */
+  DESKTOP CARD STYLES (Exact Cut & Border)
+========================================= */
 @media (min-width: 768px) {
   .mobile-view-wrapper {
     display: none !important;
@@ -873,7 +872,7 @@ body {
 
 /* =========================================
            MOBILE CARD STYLES
-           ========================================= */
+ ========================================= */
 @media (max-width: 767.98px) {
   .desktop-cards-wrapper {
     display: none !important;
@@ -971,7 +970,7 @@ body {
 
 /* =========================================
            BOTTOM BANNER CSS
-           ========================================= */
+  ========================================= */
 .cta-bottom-banner {
   background-color: #ffffff;
   border-radius: 15px;
@@ -1019,13 +1018,8 @@ body {
   background-color: #e9ecef;
   height: 45px;
 }
-/* 4 end */
-/* ---------------------------------------------------------------------------------------------------------- */
 
-/*=========================================
-   SECTION 5: LEARNING PROCESS (LIGHT THEME)
-   Prefix: lp-
-========================================= */
+/* ______________________________________________________________________________________________________________________________________ */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
 
@@ -1091,7 +1085,7 @@ body {
 }
 .lp-pill .lp-line { width: 15px; height: 2px; background-color: #22c55e; }
 .lp-title { font-size: 36px; font-weight: 700; color: #111; margin-bottom: 8px; line-height: 1.2; }
-.lp-highlight { color: #38b000; }
+.lp-highlight { color: #38a306; }
 .lp-desc { font-size: 14px; color: #555; line-height: 1.5; }
 
 /* --- DESKTOP ARC (RADIAL) LAYOUT --- */
