@@ -1,6 +1,6 @@
 /* --- CUSTOM VARIABLES --- */
 :root {
-  --nz-green: #38b000;
+  --nz-green: #338f08;
   --nz-dark: #212529;
   --nz-bg: white;
 }
@@ -13,15 +13,52 @@ body.nz-body-bg {
 }
 
 .nz-hero-section {
-  /* background: linear-gradient(
-    to bottom,
-    #ffffff 0%,
-    #fffdfd 20%,
-    #fbfafa 50%,
-    #ecebeb 75%,
-    #cfcece 100%
-  ); */
-  background: white;
+  background: rgb(243, 246, 241);
+  position: relative; 
+  overflow: hidden; 
+}
+
+.nz-hero-section::before,
+.nz-hero-section::after,
+.wave-layer {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M 0 100 L 0 10 C 40 10, 60 100, 100 100 Z' /%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 100 100' preserveAspectRatio='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M 0 100 L 0 10 C 40 10, 60 100, 100 100 Z' /%3E%3C/svg%3E");
+  
+  -webkit-mask-size: 100% 100%;
+  mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  
+  pointer-events: none;
+}
+
+/* --- Layer 1 (மிகவும் வெளிர் பச்சை / Back Layer) --- */
+.nz-hero-section::before {
+  width: 70%;
+  height: 1.7cm;
+  background-color: #e3fde4; /* உங்களுக்கான CSS கலர் 1 */
+  z-index: 1;
+}
+
+/* --- Layer 2 (நடுத்தரப் பச்சை / Middle Layer) --- */
+.nz-hero-section::after {
+  width: 65%;
+  height: 1.2cm;
+  background-color: #a9f796; /* உங்களுக்கான CSS கலர் 2 */
+  z-index: 2;
+}
+
+/* --- Layer 3 (அடர் பச்சை / Front Layer) --- */
+.wave-layer {
+  width: 60%;
+  height: 1cm;
+  background-color: #2f8806; /* உங்களுக்கான CSS கலர் 3 */
+  z-index: 3;
 }
 
 /* Colors & Overrides */
@@ -57,7 +94,7 @@ body.nz-body-bg {
 }
 
 .nz-search-box {
-  background-color: #38b000;
+  background-color: #338f08;
   color: white;
 }
 .sr-btn {
@@ -108,6 +145,8 @@ body.nz-body-bg {
 .nz-hero-stat-col {
   position: relative;
 }
+
+
 
 /* Hero Stats Desktop Dividers */
 @media (min-width: 992px) {
@@ -161,14 +200,14 @@ body.nz-body-bg {
   /* background-color: var(--nz-bg, #f5faf8); */
   overflow: hidden;
   z-index: 1;
-  background: linear-gradient(
+  /* background: linear-gradient(
     to bottom,
     #f9f8f8 0%,
     #fffdfd 20%,
     #fbfafa 50%,
     #f3f3f3 75%,
     #e6e5e5 100%
-  );
+  ); */
 }
 
 /* Background Abstract Shapes */
@@ -202,14 +241,14 @@ body.nz-body-bg {
 .nz-subtitle-line {
   width: 30px;
   height: 1px;
-  background-color: var(--nz-green, #38b000);
+  background-color: var(--nz-green, #338f08);
   position: relative;
 }
 .nz-subtitle-dot {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background-color: var(--nz-green, #38b000);
+  background-color: var(--nz-green, #338f08);
 }
 
 /* Logo Cards */
@@ -217,13 +256,13 @@ body.nz-body-bg {
   background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.03);
   border-radius: 1rem;
-  height: 100px;
-  width: 180px;
+  height: 120px;
+  width: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   transition:
     box-shadow 0.3s ease,
     transform 0.3s ease;
@@ -234,7 +273,7 @@ body.nz-body-bg {
   transform: translateY(-3px);
 }
 .nz-logo-card img {
-  max-height: 45px;
+  max-height: 95px;
   max-width: 100%;
   object-fit: contain;
 }
@@ -308,7 +347,7 @@ body.nz-body-bg {
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
-  color: var(--nz-green, #38b000);
+  color: var(--nz-green, #338f08);
 }
 .nz-stat-col {
   position: relative;
@@ -370,14 +409,15 @@ body.nz-body-bg {
   /* background: linear-gradient(to bottom, #ffffff 0%, #eef8f1 50%, #e0f2e5 100%); */
   position: relative;
   z-index: 1;
-  background: linear-gradient(
+  /* background: linear-gradient(
     to bottom,
     #ffffff 0%,
     #fffdfd 20%,
     #fbfafa 50%,
     #e4e4e4 75%,
     #c7c6c6 100%
-  );
+  ); */
+  background:rgb(243, 246, 241);
 }
 
 /* Background Patterns */
@@ -507,12 +547,15 @@ body.nz-body-bg {
 .nz-stat-item {
   flex: 1;
 }
+.nz-bottom-stats{
+  width: 65%;
+}
 .nz-stat-icon-wrapper {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
   background: #e8f4ea;
   border-radius: 10px;
   font-size: 1.2rem;
@@ -556,7 +599,6 @@ body.nz-body-bg {
 
   /* Image and Badge */
   .nz-image-blob-container {
-    padding: 10px;
     max-width: 100%;
   }
   .nz-main-blob-img {
@@ -638,7 +680,7 @@ body.nz-body-bg {
 /* _________________________________________________________________________________ */
 /* --- SECTION 4: POPULAR COURSES (nz-crs-*) --- */
 :root {
-  --primary-green: #3a9721;
+  --primary-green: #338f08;
   --light-green: #ebf6e8;
   --text-dark: #222222;
   --text-muted: #6c757d;
@@ -651,17 +693,6 @@ body {
   background-image: radial-gradient(#e1e1e1 1.5px, transparent 1.5px);
   background-size: 25px 25px;
   padding-bottom: 50px;
-}
-
-.pc-container {
-  background: linear-gradient(
-    to bottom,
-    #ffffff 0%,
-    #fffdfd 20%,
-    #fbfafa 50%,
-    #d6d5d5 75%,
-    #bcbcbc 100%
-  );
 }
 
 /* --- Header Styles --- */
@@ -707,7 +738,7 @@ body {
 }
 
 /* =========================================
-  DESKTOP CARD STYLES (Exact Cut & Border)
+  DESKTOP CARD STYLES (Unchanged)
 ========================================= */
 @media (min-width: 768px) {
   .mobile-view-wrapper {
@@ -717,13 +748,11 @@ body {
   .desktop-cards-wrapper {
     position: relative;
     height: 100%;
-    width: 90%;
+    width: 85%;
     margin-top: 30px;
     border-radius: 30px;
-    filter: drop-shadow(4px 8px 15px rgba(0, 0, 0, 0.03));
-    transition:
-      transform 0.3s ease,
-      filter 0.3s ease;
+    filter: drop-shadow(4px 8px 15px rgba(0, 0, 0, 0.2));
+    transition: transform 0.3s ease, filter 0.3s ease;
   }
 
   .desktop-cards-wrapper:hover {
@@ -743,7 +772,6 @@ body {
     text-align: center;
   }
 
-  /* --- Left Side Border Only --- */
   .border-left-line {
     position: absolute;
     left: 0;
@@ -753,16 +781,9 @@ body {
     height: 320px;
     border-bottom-left-radius: 15px;
     z-index: 2;
-    background: linear-gradient(
-      to bottom,
-      #2d7a18 0%,
-      #38b000 25%,
-      #7ed957 70%,
-      #ffffff 100%
-    );
+    background: linear-gradient(to bottom, #2d7a18 0%, #38b000 25%, #7ed957 70%, #ffffff 100%);
   }
 
-  /* --- Top-Left Cut Border Only --- */
   .border-diagonal-line {
     position: absolute;
     left: 0;
@@ -772,16 +793,9 @@ body {
     transform-origin: left top;
     transform: rotate(-14deg);
     z-index: 2;
-    background: linear-gradient(
-      to right,
-      #2b6f19 0%,
-      #38b000 35%,
-      #7ed957 70%,
-      #ffffff 100%
-    );
+    background: linear-gradient(to right, #2b6f19 0%, #38b000 35%, #7ed957 70%, #ffffff 100%);
   }
 
-  /* Hexagon Icon */
   .hex-icon-wrapper {
     position: absolute;
     top: -35px;
@@ -789,17 +803,12 @@ body {
     transform: translateX(-50%);
     width: 80px;
     height: 70px;
-    /* Gradient */
     background: linear-gradient(180deg, #4fd32b 0%, #38b000 45%, #2b8a1f 100%);
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     display: flex;
     align-items: center;
     justify-content: center;
-    /* Shadow */
-    box-shadow:
-      0 8px 20px rgba(0, 0, 0, 0.2),
-      inset 0 2px 4px rgba(255, 255, 255, 0.35),
-      inset 0 -3px 6px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2), inset 0 2px 4px rgba(255, 255, 255, 0.35), inset 0 -3px 6px rgba(0, 0, 0, 0.15);
     z-index: 3;
   }
 
@@ -856,7 +865,7 @@ body {
 }
 
 .btn-custom {
-  background: linear-gradient(90deg, #4da923, var(--primary-green));
+  background: linear-gradient(90deg, #3a8b15, var(--primary-green));
   color: white;
   font-weight: 500;
   border: none;
@@ -871,7 +880,7 @@ body {
 }
 
 /* =========================================
-           MOBILE CARD STYLES
+   MOBILE CARD STYLES (UPDATED FOR EXACT MATCH)
  ========================================= */
 @media (max-width: 767.98px) {
   .desktop-cards-wrapper {
@@ -882,59 +891,48 @@ body {
     position: relative;
     width: 100%;
     margin-bottom: 20px;
-    filter: drop-shadow(0px 6px 15px rgba(0, 0, 0, 0.06));
   }
 
   .mobile-custom-card {
     position: relative;
     width: 100%;
-    height: 120px;
-    /* 25x25 cut for mobile */
-    background: linear-gradient(135deg, transparent 17px, white 17.5px);
-    border-radius: 0 12px 12px 12px;
+    min-height: 110px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
     display: flex;
     align-items: center;
+    overflow: hidden;
+    border: 1px solid #f2f2f2;
   }
 
-  /* Green background area also needs the gradient cut to hide properly */
-  .mobile-icon-area {
-    width: 100px;
+  /* The Green Chevron Shape on the Left */
+  .mobile-left-shape {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 105px;
     height: 100%;
-    background: linear-gradient(135deg, transparent 17px, #ebf6e8 17.5px);
-    border-radius: 0 0 0 12px;
+    background: linear-gradient(135deg, #277b09 0%, #38b000 100%);
+    clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%);
+    z-index: 1;
+  }
+
+  /* Hexagon Icon Wrapper */
+  .mobile-icon-wrapper {
+    position: relative;
+    z-index: 2;
+    width: 105px;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-
-  /* Mobile Left Border Only */
-  .mobile-border-left {
-    position: absolute;
-    left: 0;
-    top: 25px;
-    bottom: 0;
-    width: 3.5px;
-    background-color: var(--primary-green);
-    border-bottom-left-radius: 12px;
-    z-index: 5;
-  }
-
-  /* Mobile Diagonal Border Only */
-  .mobile-border-diagonal {
-    position: absolute;
-    left: 0;
-    top: 25px;
-    width: 35.35px; /* math: 25 * 1.414 */
-    height: 3.5px;
-    background-color: var(--primary-green);
-    transform-origin: left top;
-    transform: rotate(-45deg);
-    z-index: 5;
+    flex-shrink: 0;
+    padding-right: 8px; /* Visual balance inside the chevron */
   }
 
   .hex-inner-mobile {
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     background: white;
     clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
     display: flex;
@@ -942,35 +940,90 @@ body {
     align-items: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
+
   .hex-inner-mobile i {
-    font-size: 20px;
+    font-size: 22px;
     color: var(--primary-green);
   }
+
+  /* Text Details Area */
+  .mobile-text-area {
+    position: relative;
+    z-index: 2;
+    padding-left: 5px;
+  }
+
+  .mobile-text-area h6 {
+    font-size: 15px;
+    color: var(--text-dark);
+  }
+
+  .card-divider-mobile {
+    width: 25px;
+    height: 2px;
+    background-color: var(--primary-green);
+    position: relative;
+  }
+  .card-divider-mobile::after {
+    content: "";
+    position: absolute;
+    right: -6px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3px;
+    height: 3px;
+    background-color: var(--primary-green);
+    border-radius: 50%;
+  }
+
+  .mobile-text-area p {
+    font-size: 11px;
+    line-height: 1.4;
+  }
+
+  /* Badge and Arrow */
+  .mobile-right-area {
+    position: relative;
+    z-index: 2;
+  }
+
   .badge-course-mobile {
-    background-color: white;
-    border: 1px solid var(--light-green);
+    background-color: var(--light-green);
     border-radius: 6px;
-    padding: 5px 10px;
+    padding: 8px 10px;
     text-align: center;
     min-width: 55px;
   }
+
   .badge-course-mobile .count {
     color: var(--primary-green);
     font-weight: 700;
-    font-size: 15px;
+    font-size: 16px;
     display: block;
-    line-height: 1.1;
+    line-height: 1;
+    margin-bottom: 2px;
   }
+
   .badge-course-mobile .label {
     color: var(--text-dark);
-    font-size: 10px;
+    font-size: 9px;
+    font-weight: 500;
     display: block;
+  }
+
+  .arrow-icon {
+    font-size: 16px;
+    color: #4CAF50;
+    font-weight: lighter;
+  }
+  .ec-arrow{
+    color: #277b09;
   }
 }
 
 /* =========================================
-           BOTTOM BANNER CSS
-  ========================================= */
+   BOTTOM BANNER CSS
+ ========================================= */
 .cta-bottom-banner {
   background-color: #ffffff;
   border-radius: 15px;
@@ -979,8 +1032,14 @@ body {
   padding: 2rem;
 }
 
+@media (max-width: 767.98px) {
+  .cta-bottom-banner {
+    padding: 1.5rem 1rem; /* மொபைலுக்கு ஏற்ற Padding */
+  }
+}
+
 .cta-divider {
-  width: 35px;
+  width: 30px;
   height: 2px;
   background-color: var(--primary-green);
   position: relative;
@@ -989,7 +1048,7 @@ body {
 .cta-divider::after {
   content: "";
   position: absolute;
-  right: -8px;
+  right: -6px;
   top: 50%;
   transform: translateY(-50%);
   width: 4px;
@@ -1001,7 +1060,9 @@ body {
 .feature-icon-circle {
   width: 45px;
   height: 45px;
-  background-color: var(--light-green);
+  /* Icon பின்னணிக்கு லேசான பச்சை (Light green border / background) */
+  background-color: transparent;
+  border: 1.5px solid #d4ebd0; 
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -1009,16 +1070,15 @@ body {
 }
 
 .feature-icon-circle i {
-  font-size: 18px;
+  font-size: 20px;
   color: var(--primary-green);
 }
 
 .vertical-divider {
   width: 1px;
-  background-color: #e9ecef;
-  height: 45px;
+  background-color: #e4e4e4;
+  height: 40px; /* கோட்டின் உயரம் */
 }
-
 /* ______________________________________________________________________________________________________________________________________ */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap');
