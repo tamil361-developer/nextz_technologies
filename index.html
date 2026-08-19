@@ -19,52 +19,238 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+   
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
   </head>
 
   <body class="nz-body-bg">
-    <!-- ============================================== -->
-    <!-- SECTION 1: MAIN HERO SECTION -->
-    <!-- ============================================== -->
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navs">
+      <div class="container-fluid mx-lg-5">
+        <!-- Logo -->
+        <a class="navbar-brand navs-logo" href="index.html">
+          <span class="logo-icon">
+            <i class="bi bi-code-slash"></i>
+          </span>
+          <span class="logo-text"> Nextz <span>Technologies</span> </span>
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button
+          class="navbar-toggler navs-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Menu -->
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <!-- Home -->
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="index.html"> Home </a>
+            </li> -->
+
+            <!-- Training Courses -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Training Courses
+              </a>
+
+              <ul class="dropdown-menu navs-dropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="/course_pages/fullstack_development"
+                  >
+                    <i class="bi bi-code-slash"></i>
+                    Full Stack Development
+                  </a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <i class="bi bi-cloud"></i>
+                    AWS
+                  </a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <i class="bi bi-bar-chart"></i>
+                    Data Analytics
+                  </a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <i class="bi bi-robot"></i>
+                    AI & ML
+                  </a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <i class="bi bi-calculator"></i>
+                    Tally & Prime
+                  </a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <i class="bi bi-building"></i>
+                    Civil Engineering Courses
+                  </a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <i class="bi bi-pencil-square"></i>
+                    AutoCAD
+                  </a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <i class="bi bi-megaphone"></i>
+                    Digital Marketing
+                  </a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <i class="bi bi-bug"></i>
+                    Testing
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Certifications -->
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/certificate"> Certifications </a>
+            </li>
+
+            <!-- Careers -->
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/careers"> Careers </a>
+            </li>
+
+            <!-- Placements -->
+            <li class="nav-item">
+              <a class="nav-link" href="pages/placements"> Placements </a>
+            </li>
+
+            <!-- Gallery -->
+            <li class="nav-item">
+              <a class="nav-link" href="pages/gallery.html"> Gallery </a>
+            </li>
+
+            <!-- Reviews -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Reviews
+              </a>
+
+              <ul class="dropdown-menu navs-dropdown review-dropdown">
+                <li>
+                  <a class="dropdown-item" href="#" target="_blank">
+                    <i class="bi bi-whatsapp"></i>
+                    WhatsApp
+                  </a>
+                </li>
+
+                <li>
+                  <a class="dropdown-item" href="#" target="_blank">
+                    <i class="bi bi-google"></i>
+                    Google
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Contact -->
+            <!-- <li class="nav-item ms-lg-2">
+              <a class="nav-link contact-btn" href="contact.html">
+                <i class="bi bi-telephone-fill"></i>
+                Contact
+              </a>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ========================================== -->
+    <!-- SECTION 1:                 -->
+    <!-- ========================================== -->
     <section
-      class="nz-hero-section py-4 py-lg-4 position-relative overflow-hidden"
+      class="section1-hero-section py-lg-4 position-relative overflow-hidden"
     >
-      <div class="wave-layer"></div>
+      <!-- Section 1: Background Wave Layer -->
+      <div class="section1-wave-layer"></div>
+
       <div class="container-fluid px-3 px-md-4 px-lg-5">
-        <!-- TOP ROW: Text Content & Hero Images -->
+        <!-- Section 1: Top Row (Text Content & Hero Images) -->
         <div class="row align-items-center">
-          <!-- LEFT COLUMN (Text Content, Stats, Mobile Image) -->
+          <!-- Section 1: Left Column (Text Content, Stats, Mobile Image) -->
           <div class="col-lg-7 d-flex flex-column">
-            <!-- Search Bar -->
+            <!-- Section 1: Search Bar -->
             <div
-              class="nz-search-box d-inline-flex align-items-center rounded-pill mb-3 shadow-sm border border-success border-opacity-25 mt-3"
+              class="section1-search-box d-inline-flex align-items-center rounded-pill mb-3 shadow-sm border border-success border-opacity-25 mt-3"
               style="max-width: 320px; width: 100%"
               data-aos="fade-down"
               data-aos-duration="800"
             >
               <span class="ms-3 small flex-grow-1">Are you Looking for?</span>
               <button
-                class="sr-btn btn rounded-circle d-flex justify-content-center align-items-center"
+                class="section1-sr-btn btn rounded-circle d-flex justify-content-center align-items-center"
                 style="width: 35px; height: 35px; padding: 0"
               >
                 <i class="fa-solid fa-magnifying-glass small text-success"></i>
               </button>
             </div>
 
-            <!-- Main Heading -->
-            <h1
-              class="fw-bold text-dark mb-3"
+            <!-- Section 1: Main Heading -->
+            <h2
+              class="text-dark mb-3 section1-heading"
               data-aos="fade-up"
               data-aos-delay="100"
               data-aos-duration="800"
             >
-              Best Software Training <br class="d-none d-md-block" />
-              Institute in Salem with <br />
-              <span class="text-success">100% Placement Assistance</span>
-            </h1>
+              Best Career-Focused Training <br class="d-none d-md-block" />
+              Institute in Salem for <br />
+              <span class="text-success">Skills & Career Growth</span>
+            </h2>
 
-            <!-- Description -->
+            <!-- Section 1: Description -->
             <p
-              class="mb-4 pe-lg-4 text-dark"
+              class="mb-4 pe-lg-4 text-dark section1-description"
               data-aos="fade-up"
               data-aos-delay="200"
               data-aos-duration="800"
@@ -74,139 +260,139 @@
               <strong class="text-dark"
                 >IT, Mechanical, Civil, and Accounts courses.</strong
               >
-              With experienced trainers, practical learning, live projects, and
-              placement support, the institute helps students and professionals
-              build industry-ready skills and advance their careers.
+              With experienced trainers, practical learning, real-time projects,
+              and career guidance, we help students and professionals build
+              practical skills and confidently move toward their career goals.
             </p>
 
-            <!-- Buttons -->
+            <!-- Section 1: Action Buttons -->
             <div
-              class="d-flex flex-wrap gap-3 mb-4 mb-lg-5"
+              class="d-flex flex-wrap gap-3 mb-4 mb-lg-5 mt-lg-2"
               data-aos="fade-up"
               data-aos-delay="300"
               data-aos-duration="800"
             >
               <a
                 href="tel:+919876543210"
-                class="btn btn-success nz-btn-green rounded-pill fw-semibold shadow-sm d-flex align-items-center gap-2"
+                class="btn btn-success section1-btn-green rounded-pill fw-semibold shadow-sm d-flex align-items-center gap-2"
               >
-                <i class="fa-solid fa-phone nz-phone-icon"></i>
+                <i class="fa-solid fa-phone section1-phone-icon"></i>
                 Contact Our Admin
               </a>
 
               <a
                 href="pages/all_cources.html"
-                class="btn btn-outline-success nz-btn-outline rounded-pill fw-semibold shadow-sm d-flex align-items-center gap-2 bg-white"
+                class="btn btn-outline-success section1-btn-outline rounded-pill fw-semibold shadow-sm d-flex align-items-center gap-2 bg-white"
               >
                 <i class="fa-solid fa-border-all"></i>
                 All Courses
               </a>
             </div>
 
-            <!-- MOBILE IMAGE PLACEMENT (Visible only on Mobile) -->
+            <!-- Section 1: Mobile Image Placement (Visible only on Mobile) -->
             <div
               class="d-block d-lg-none text-center mb-5 mt-4"
               data-aos="zoom-in"
               data-aos-delay="400"
               data-aos-duration="800"
             >
-              <div class="hero-image-wrapper">
-                <div class="orbit-container">
+              <div class="section1-hero-image-wrapper">
+                <div class="section1-orbit-container">
                   <img
                     src="images/subject canva/10.png"
-                    class="orbit-item"
+                    class="section1-orbit-item"
                     alt="icon1"
                   />
                   <img
                     src="images/subject canva/9.png"
-                    class="orbit-item"
+                    class="section1-orbit-item"
                     alt="icon2"
                   />
                   <img
                     src="images/subject canva/1.png"
-                    class="orbit-item"
+                    class="section1-orbit-item"
                     alt="icon3"
                   />
                   <img
                     src="images/subject canva/2.png"
-                    class="orbit-item"
+                    class="section1-orbit-item"
                     alt="icon4"
                   />
                   <img
                     src="images/subject canva/3.png"
-                    class="orbit-item"
+                    class="section1-orbit-item"
                     alt="icon5"
                   />
                   <img
                     src="images/subject canva/4.png"
-                    class="orbit-item"
+                    class="section1-orbit-item"
                     alt="icon6"
                   />
                   <img
                     src="images/subject canva/5.png"
-                    class="orbit-item"
+                    class="section1-orbit-item"
                     alt="icon7"
                   />
                   <img
                     src="images/subject canva/6.png"
-                    class="orbit-item"
+                    class="section1-orbit-item"
                     alt="icon8"
                   />
                   <img
                     src="images/subject canva/7.png"
-                    class="orbit-item"
+                    class="section1-orbit-item"
                     alt="icon9"
                   />
                   <img
                     src="images/subject canva/8.png"
-                    class="orbit-item"
+                    class="section1-orbit-item"
                     alt="icon10"
                   />
                 </div>
                 <img
                   src="images/girl.png"
                   alt="Student with Courses"
-                  class="center-main-img rounded-4"
+                  class="section1-center-main-img rounded-4"
                 />
               </div>
             </div>
 
-            <!-- Stats Grid -->
+            <!-- Section 1: Stats Grid -->
             <div
-              class="nz-stats-container p-3 rounded-4 mb-3"
+              class="section1-stats-container p-3 rounded-4 mb-3"
               data-aos="fade-up"
               data-aos-delay="500"
               data-aos-duration="800"
             >
               <div class="row g-3 text-center align-items-center">
-                <div class="col-6 col-lg-3 nz-hero-stat-col">
+                <div class="col-6 col-lg-3 section1-hero-stat-col">
                   <i
                     class="fa-solid fa-graduation-cap fs-1 text-success mb-2"
                   ></i>
-                  <h4 class="fw-bold text-success mb-0">200+</h4>
+                  <h5 class="fw-bold text-success mb-0">50+</h5>
                   <p class="small text-dark fw-bold mb-0">Courses</p>
                 </div>
-                <div class="col-6 col-lg-3 nz-hero-stat-col">
+                <div class="col-6 col-lg-3 section1-hero-stat-col">
                   <i class="fa-solid fa-users fs-3 text-success mb-2"></i>
-                  <h4 class="fw-bold text-success mb-0">200+</h4>
+                  <h5 class="fw-bold text-success mb-0">25+</h5>
                   <p class="small text-dark fw-bold mb-0">Expert Trainers</p>
                 </div>
-                <div class="col-6 col-lg-3 nz-hero-stat-col mt-4 mt-lg-0">
+                <div class="col-6 col-lg-3 section1-hero-stat-col mt-4 mt-lg-0">
                   <i class="fa-solid fa-briefcase fs-3 text-success mb-2"></i>
-                  <h4 class="fw-bold text-success mb-0">100%</h4>
-                  <p class="small text-dark fw-bold mb-0">Placement Support</p>
+                  <h5 class="fw-bold text-success mb-0">100%</h5>
+                  <p class="small text-dark fw-bold mb-0">Career Support</p>
                 </div>
-                <div class="col-6 col-lg-3 nz-hero-stat-col mt-4 mt-lg-0">
+                <div class="col-6 col-lg-3 section1-hero-stat-col mt-4 mt-lg-0">
                   <i class="fa-solid fa-award fs-3 text-success mb-2"></i>
-                  <h4 class="fw-bold text-success mb-0">15K+</h4>
-                  <p class="small text-dark fw-bold mb-0">Students Placed</p>
+                  <h5 class="fw-bold text-success mb-0">5K+</h5>
+                  <p class="small text-dark fw-bold mb-0">Learners Trained</p>
                 </div>
               </div>
             </div>
 
-            <!-- Bottom Tagline -->
+            <!-- Section 1: Bottom Tagline -->
             <div
-              class="nz-tagline d-flex align-items-center justify-content-center justify-content-lg-start mb-5 mb-lg-5 mt-2"
+              class="section1-tagline d-flex align-items-center justify-content-center justify-content-lg-start mb-5 mb-lg-5 mt-2"
               data-aos="fade-right"
               data-aos-delay="600"
               data-aos-duration="800"
@@ -214,7 +400,7 @@
               <img
                 src="images/ca.png"
                 alt="Arrow"
-                class="nz-arrow-icon me-3"
+                class="section1-arrow-icon me-3"
                 style="width: 90px"
               />
               <div>
@@ -238,120 +424,120 @@
                     text-underline-offset: 8px;
                   "
                 >
-                  Lead Tomorrow
+                  Grow Tomorrow
                 </p>
               </div>
             </div>
           </div>
 
-          <!-- RIGHT COLUMN (Desktop Only) -->
+          <!-- Section 1: Right Column (Desktop Image Only) -->
           <div
             class="col-lg-5 d-none d-lg-block position-relative pt-4"
             data-aos="fade-left"
             data-aos-delay="200"
             data-aos-duration="1000"
           >
-            <div class="hero-image-wrapper">
-              <!-- Spinning Container for Dummy Icons (Desktop) -->
-              <div class="orbit-container">
+            <div class="section1-hero-image-wrapper">
+              <!-- Section 1: Spinning Container for Icons (Desktop) -->
+              <div class="section1-orbit-container">
                 <img
                   src="images/subject canva/1.png"
-                  class="orbit-item"
+                  class="section1-orbit-item"
                   alt="icon1"
                 />
                 <img
                   src="images/subject canva/2.png"
-                  class="orbit-item"
+                  class="section1-orbit-item"
                   alt="icon2"
                 />
                 <img
                   src="images/subject canva/3.png"
-                  class="orbit-item"
+                  class="section1-orbit-item"
                   alt="icon3"
                 />
                 <img
                   src="images/subject canva/4.png"
-                  class="orbit-item"
+                  class="section1-orbit-item"
                   alt="icon4"
                 />
                 <img
                   src="images/subject canva/5.png"
-                  class="orbit-item"
+                  class="section1-orbit-item"
                   alt="icon5"
                 />
                 <img
                   src="images/subject canva/6.png"
-                  class="orbit-item"
+                  class="section1-orbit-item"
                   alt="icon6"
                 />
                 <img
                   src="images/subject canva/7.png"
-                  class="orbit-item"
+                  class="section1-orbit-item"
                   alt="icon7"
                 />
                 <img
                   src="images/subject canva/8.png"
-                  class="orbit-item"
+                  class="section1-orbit-item"
                   alt="icon8"
                 />
                 <img
                   src="images/subject canva/9.png"
-                  class="orbit-item"
+                  class="section1-orbit-item"
                   alt="icon9"
                 />
                 <img
                   src="images/subject canva/10.png"
-                  class="orbit-item"
+                  class="section1-orbit-item"
                   alt="icon10"
                 />
               </div>
-              <!-- User Provided Main Image -->
+              <!-- Section 1: User Provided Main Image -->
               <img
                 src="images/gl.png"
                 alt="Student with Courses"
-                class="center-main-img rounded-4"
+                class="section1-center-main-img rounded-4"
               />
             </div>
-            <!-- feature card botom -->
+
+            <!-- Section 1: Feature Cards Bottom Pill -->
             <div
-              class="row nz-features-pill-wrapper justify-content-center"
+              class="row section1-features-pill-wrapper justify-content-center"
               data-aos="fade-up"
               data-aos-delay="600"
             >
               <div class="col-auto d-flex justify-content-center">
-                <div class="nz-features-pill">
-                  <!-- Item 1 -->
-                  <div class="nz-feature-item">
-                    <i class="fa-solid fa-users nz-feature-icon"></i>
-                    <div class="nz-feature-text text-start">
+                <div class="section1-features-pill">
+                  <!-- Section 1: Pill Item 1 -->
+                  <div class="section1-feature-item">
+                    <i class="fa-solid fa-users section1-feature-icon"></i>
+                    <div class="section1-feature-text text-start">
                       <h6>Expert Trainers</h6>
                     </div>
                   </div>
 
-                  <!-- Item 2 -->
-                  <div class="nz-feature-item">
-                    <i class="fa-solid fa-briefcase nz-feature-icon"></i>
-                    <div class="nz-feature-text text-start">
+                  <!-- Section 1: Pill Item 2 -->
+                  <div class="section1-feature-item">
+                    <i class="fa-solid fa-briefcase section1-feature-icon"></i>
+                    <div class="section1-feature-text text-start">
                       <h6>Placement Support</h6>
-                      <!-- <span></span> -->
                     </div>
                   </div>
 
-                  <!-- Item 3 -->
-                  <div class="nz-feature-item">
-                    <i class="fa-solid fa-award nz-feature-icon"></i>
-                    <div class="nz-feature-text text-start">
+                  <!-- Section 1: Pill Item 3 -->
+                  <div class="section1-feature-item">
+                    <i class="fa-solid fa-award section1-feature-icon"></i>
+                    <div class="section1-feature-text text-start">
                       <h6>Real-time Projects</h6>
-                      <!-- <span></span> -->
                     </div>
                   </div>
 
-                  <!-- Item 4 -->
-                  <div class="nz-feature-item">
-                    <i class="fa-solid fa-graduation-cap nz-feature-icon"></i>
-                    <div class="nz-feature-text text-start">
+                  <!-- Section 1: Pill Item 4 -->
+                  <div class="section1-feature-item">
+                    <i
+                      class="fa-solid fa-graduation-cap section1-feature-icon"
+                    ></i>
+                    <div class="section1-feature-text text-start">
                       <h6>Certification Program</h6>
-                      <!-- <span></span> -->
                     </div>
                   </div>
                 </div>
@@ -360,198 +546,210 @@
           </div>
         </div>
         <!-- / End of .row align-items-center -->
-
-        <!-- BOTTOM ROW: Features Pill Banner -->
       </div>
       <!-- / End of .container-fluid -->
     </section>
-    <!-- ============================================== -->
-    <!-- SECTION 2: PLACEMENT PARTNERS -->
-    <!-- ============================================== -->
-    <section class="nz-partners-section py-1 mt-4 mt-lg-1">
-      <!-- Background Shapes -->
-      <div class="nz-bg-shape-1"></div>
-      <div class="nz-bg-shape-2"></div>
+
+    <!-- ========================================== -->
+    <!-- SECTION 2:   -->
+    <!-- ========================================== -->
+    <section class="section2-partners-section py-1 mt-5 mt-lg-4">
+      <!-- Section 2: Background Abstract Shapes -->
+      <div class="section2-bg-shape-1"></div>
+      <div class="section2-bg-shape-2"></div>
 
       <div
         class="container-fluid py-lg-5 px-3 px-md-4 px-lg-5 position-relative z-1"
       >
-        <!-- Section Header -->
+        <!-- Section 2: Header / Title Area -->
         <div class="text-center mx-auto mb-4 mb-lg-5" style="max-width: 800px">
+          <!-- Section 2: Subtitle with dots and lines -->
           <div
-            class="nz-subtitle-wrapper mb-3"
+            class="section2-subtitle-wrapper mb-3"
             data-aos="fade-down"
             data-aos-duration="800"
           >
             <div class="d-flex align-items-center">
-              <div class="nz-subtitle-dot"></div>
-              <div class="nz-subtitle-line"></div>
+              <div class="section2-subtitle-dot"></div>
+              <div class="section2-subtitle-line"></div>
             </div>
             <span
               class="text-success fw-bold text-uppercase mx-2"
               style="letter-spacing: 1px; font-size: 0.85rem"
-              >Our Placement Partners</span
+              >Our Industry Connections</span
             >
             <div class="d-flex align-items-center">
-              <div class="nz-subtitle-line"></div>
-              <div class="nz-subtitle-dot"></div>
+              <div class="section2-subtitle-line"></div>
+              <div class="section2-subtitle-dot"></div>
             </div>
           </div>
 
-          <h2
-            class="display-5 fw-bold text-dark mb-3 nz-heading"
+          <!-- Section 2: Main Heading -->
+          <h1
+            class="fw-bold text-dark mb-3 section2-heading"
             data-aos="fade-up"
             data-aos-delay="100"
             data-aos-duration="800"
           >
-            Top Companies <br class="d-block d-md-none" />
-            <span class="text-success">Hiring Our Students</span>
-          </h2>
+            Industry Connections <br class="d-block d-md-none" />
+            <span class="text-success">Supporting Career Growth</span>
+          </h1>
 
+          <!-- Section 2: Description -->
           <p
-            class="text-dark nz-description mx-auto"
+            class="text-dark section2-description mx-auto mt-4"
             style="max-width: 600px"
             data-aos="fade-up"
             data-aos-delay="200"
             data-aos-duration="800"
           >
-            We have strong placement partnerships with leading IT companies and
-            organizations that trust our training quality and hire our skilled
-            graduates.
+            We focus on practical learning, career readiness, and
+            industry-oriented training to help learners build the skills
+            employers value.
           </p>
         </div>
 
-        <!-- Continuous Logo Carousel -->
+        <!-- Section 2: Continuous Logo Carousel -->
         <div
-          class="nz-logo-slider-container mb-1 mb-lg-4 mb-lg-5"
+          class="section2-logo-slider-container mb-1 mb-lg-4 mb-lg-5"
           data-aos="zoom-in"
           data-aos-delay="300"
           data-aos-duration="1000"
         >
-          <div class="nz-logo-track">
-            <!-- SET 1 -->
-            <div class="nz-logo-set">
-              <div class="nz-logo-card">
+          <div class="section2-logo-track">
+            <!-- Section 2: Logo SET 1 -->
+            <div class="section2-logo-set">
+              <div class="section2-logo-card">
                 <img src="images/tcs.webp" alt="TCS" />
               </div>
-              <div class="nz-logo-card">
+              <div class="section2-logo-card">
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/9/95/Infosys_logo.svg"
                   alt="Infosys"
                 />
               </div>
-              <div class="nz-logo-card">
+              <div class="section2-logo-card">
                 <img src="images/wipro.png" alt="Wipro" />
               </div>
-              <div class="nz-logo-card">
+              <div class="section2-logo-card">
                 <img src="images/accenture.png" alt="Accenture" />
               </div>
-              <div class="nz-logo-card">
+              <div class="section2-logo-card">
                 <img src="images/cognizant.png" alt="Cognizant" />
               </div>
-              <div class="nz-logo-card">
+              <div class="section2-logo-card">
                 <img src="images/tech.jpeg" alt="Tech Mahindra" />
               </div>
             </div>
 
-            <!-- SET 2 (Duplicate for Seamless Scroll) -->
-            <div class="nz-logo-set">
-              <div class="nz-logo-card">
+            <!-- Section 2: Logo SET 2 (Duplicate for Seamless Scroll) -->
+            <div class="section2-logo-set">
+              <div class="section2-logo-card">
                 <img src="images/tcs.webp" alt="TCS" />
               </div>
-              <div class="nz-logo-card">
+              <div class="section2-logo-card">
                 <img
                   src="https://upload.wikimedia.org/wikipedia/commons/9/95/Infosys_logo.svg"
                   alt="Infosys"
                 />
               </div>
-              <div class="nz-logo-card">
+              <div class="section2-logo-card">
                 <img src="images/wipro.png" alt="Wipro" />
               </div>
-              <div class="nz-logo-card">
+              <div class="section2-logo-card">
                 <img src="images/accenture.png" alt="Accenture" />
               </div>
-              <div class="nz-logo-card">
+              <div class="section2-logo-card">
                 <img src="images/cognizant.png" alt="Cognizant" />
               </div>
-              <div class="nz-logo-card">
+              <div class="section2-logo-card">
                 <img src="images/tech.jpeg" alt="Tech Mahindra" />
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Stats Section -->
+        <!-- Section 2: Bottom Stats Grid -->
         <div class="container">
           <div
-            class="nz-stats-wrapper px-4 px-lg-3 px-md-4 py-4 py-md-4 shadow-sm"
+            class="section2-stats-wrapper mt-4 px-4 px-lg-3 px-md-4 py-4 py-md-4 shadow-sm"
             data-aos="fade-up"
             data-aos-delay="400"
             data-aos-duration="1000"
           >
             <div class="row align-items-center text-start">
-              <div class="col-12 col-md-6 col-lg-3 nz-stat-col">
+              <!-- Section 2: Stat Item 1 -->
+              <div class="col-12 col-md-6 col-lg-3 section2-stat-col">
                 <div
                   class="d-flex align-items-center justify-content-md-center gap-3"
                 >
-                  <div class="nz-stat-icon-box flex-shrink-0">
+                  <div class="section2-stat-icon-box flex-shrink-0">
                     <i class="fa-solid fa-briefcase"></i>
                   </div>
                   <div>
                     <h3 class="fw-bold text-success mb-0 fs-3">500+</h3>
                     <div class="fw-bold text-dark small mt-1">
-                      Hiring Partners
+                      Industry Connections
                     </div>
-                    <div class="text-secondary small">Across India</div>
+                    <div class="text-secondary small">Career Network</div>
                   </div>
                 </div>
               </div>
 
-              <div class="col-12 col-md-6 col-lg-3 nz-stat-col">
+              <!-- Section 2: Stat Item 2 -->
+              <div class="col-12 col-md-6 col-lg-3 section2-stat-col">
                 <div
                   class="d-flex align-items-center justify-content-md-center gap-3"
                 >
-                  <div class="nz-stat-icon-box flex-shrink-0">
+                  <div class="section2-stat-icon-box flex-shrink-0">
                     <i class="fa-solid fa-user"></i>
                   </div>
                   <div>
                     <h3 class="fw-bold text-success mb-0 fs-3">15K+</h3>
                     <div class="fw-bold text-dark small mt-1">
-                      Students Placed
+                      Learners Trained
                     </div>
-                    <div class="text-secondary small">In Top Companies</div>
+                    <div class="text-secondary small">
+                      With Practical Skills
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div class="col-12 col-md-6 col-lg-3 nz-stat-col">
+              <!-- Section 2: Stat Item 3 -->
+              <div class="col-12 col-md-6 col-lg-3 section2-stat-col">
                 <div
                   class="d-flex align-items-center justify-content-md-center gap-3"
                 >
-                  <div class="nz-stat-icon-box flex-shrink-0">
+                  <div class="section2-stat-icon-box flex-shrink-0">
                     <i class="fa-solid fa-chart-column"></i>
                   </div>
                   <div>
                     <h3 class="fw-bold text-success mb-0 fs-3">100%</h3>
                     <div class="fw-bold text-dark small mt-1">
-                      Placement Assistance
+                      Career Assistance
                     </div>
-                    <div class="text-secondary small">We've Got Your Back</div>
+                    <div class="text-secondary small">
+                      We Support Your Growth
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div class="col-12 col-md-6 col-lg-3 nz-stat-col">
+              <!-- Section 2: Stat Item 4 -->
+              <div class="col-12 col-md-6 col-lg-3 section2-stat-col">
                 <div
                   class="d-flex align-items-center justify-content-md-center gap-3"
                 >
-                  <div class="nz-stat-icon-box flex-shrink-0">
+                  <div class="section2-stat-icon-box flex-shrink-0">
                     <i class="fa-solid fa-award"></i>
                   </div>
                   <div>
-                    <h3 class="fw-bold text-success mb-0 fs-3">20+</h3>
-                    <div class="fw-bold text-dark small mt-1">Industries</div>
-                    <div class="text-secondary small">We Serve</div>
+                    <h3 class="fw-bold text-success mb-0 fs-3">15+</h3>
+                    <div class="fw-bold text-dark small mt-1">
+                      Training Domains
+                    </div>
+                    <div class="text-secondary small">We Cover</div>
                   </div>
                 </div>
               </div>
@@ -561,32 +759,34 @@
       </div>
     </section>
 
-    <!-- ============================================== -->
-    <!-- SECTION 3: WHY CHOOSE US -->
-    <!-- ============================================== -->
+    <!-- ========================================== -->
+    <!-- SECTION 3:      -->
+    <!-- ========================================== -->
     <section
-      class="nz-why-section py-3 py-lg-5 pt-5 position-relative overflow-hidden"
+      class="section3-why-section mt-4 py-3 py-lg-5 pt-5 position-relative overflow-hidden"
     >
       <div class="stats-content">
         <!-- Your Stats Content Here -->
       </div>
-      <!-- Decorative Background Elements -->
-      <div class="nz-bg-dots-left"></div>
-      <div class="nz-wave-bottom"></div>
+
+      <!-- Section 3: Decorative Background Elements -->
+      <div class="section3-bg-dots-left"></div>
+      <div class="section3-wave-bottom"></div>
 
       <div
         class="container-fluid pb-lg-2 px-3 px-md-4 px-lg-5 position-relative z-1"
       >
-        <!-- Header -->
+        <!-- Section 3: Header Area -->
         <div class="text-center mx-auto mb-4 mb-lg-5" style="max-width: 850px">
+          <!-- Section 3: Subtitle Wrapper -->
           <div
-            class="nz-subtitle-wrapper mb-3"
+            class="section3-subtitle-wrapper mb-3"
             data-aos="fade-down"
             data-aos-duration="800"
           >
             <div class="d-flex align-items-center">
-              <div class="nz-subtitle-dot"></div>
-              <div class="nz-subtitle-line"></div>
+              <div class="section3-subtitle-dot"></div>
+              <div class="section3-subtitle-line"></div>
             </div>
             <span
               class="text-success fw-bold text-uppercase mx-2"
@@ -595,53 +795,55 @@
               Why Choose Nextz Technologies?
             </span>
             <div class="d-flex align-items-center">
-              <div class="nz-subtitle-line"></div>
-              <div class="nz-subtitle-dot"></div>
+              <div class="section3-subtitle-line"></div>
+              <div class="section3-subtitle-dot"></div>
             </div>
           </div>
 
+          <!-- Section 3: Main Heading -->
           <h1
-            class="fw-bold text-dark mb-3"
+            class="fw-bold text-dark mb-3 mt-4"
             data-aos="fade-up"
             data-aos-delay="100"
             data-aos-duration="800"
           >
-            Experience Learning That
-            <span class="text-success">Drives Your Career</span>
+            Experience Practical Learning That
+            <span class="text-success">Builds Your Career</span>
           </h1>
 
+          <!-- Section 3: Description -->
           <p
-            class="text-dark nz-description mx-auto"
+            class="text-dark section3-description mx-auto mt-4"
             style="max-width: 700px"
             data-aos="fade-up"
             data-aos-delay="200"
             data-aos-duration="800"
           >
-            We combine industry expertise, practical training, and dedicated
-            support to help you gain skills, confidence, and a successful
-            career.
+            We combine practical training, experienced guidance, projects, and
+            career support to help you gain confidence and become
+            industry-ready.
           </p>
         </div>
 
-        <!-- Main Content Layout -->
+        <!-- Section 3: Main Content Layout -->
         <div class="row align-items-center mt-3 mt-lg-5">
-          <!-- LEFT COLUMN: Blob Image & Badge -->
+          <!-- Section 3: LEFT COLUMN (Blob Image & Badge) -->
           <div
             class="col-12 col-lg-5 text-center mb-5 mb-lg-0 pe-lg-4"
             data-aos="zoom-in"
             data-aos-duration="1000"
           >
-            <div class="nz-image-blob-container mx-auto">
+            <div class="section3-image-blob-container mx-auto">
               <!-- Green Outline -->
-              <div class="nz-blob-stroke"></div>
+              <div class="section3-blob-stroke"></div>
 
               <!-- Floating Abstract Arrows -->
-              <div class="nz-float-arrow-1">
+              <div class="section3-float-arrow-1">
                 <i
                   class="fa-solid fa-location-arrow text-success opacity-50 fs-3"
                 ></i>
               </div>
-              <div class="nz-float-arrow-2">
+              <div class="section3-float-arrow-2">
                 <i
                   class="fa-solid fa-location-arrow text-success opacity-50 fs-4"
                 ></i>
@@ -651,26 +853,26 @@
               <img
                 src="images/s2.png"
                 alt="Training at Nextz"
-                class="nz-main-blob-img"
+                class="section3-main-blob-img"
               />
 
               <!-- Floating Badge -->
-              <div class="nz-stats-badge shadow-lg">
+              <div class="section3-stats-badge shadow-lg">
                 <div
                   class="bg-success text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-1"
                   style="width: 45px; height: 45px"
                 >
                   <i class="fa-solid fa-users fs-5"></i>
                 </div>
-                <h4 class="fw-bold text-success m-0 mt-1 fs-4">1,500+</h4>
-                <p class="text-dark fw-medium m-0 lh-sm nz-badge-text">
-                  Students Trained<br />Successfully
+                <h4 class="fw-bold text-success m-0 mt-1 fs-4">5,000+</h4>
+                <p class="text-dark fw-medium m-0 lh-sm section3-badge-text">
+                  Learners Trained<br />Successfully
                 </p>
               </div>
             </div>
           </div>
 
-          <!-- RIGHT COLUMN: Features Grid -->
+          <!-- Section 3: RIGHT COLUMN (Features Grid) -->
           <div class="col-12 col-lg-7">
             <div class="row g-3 g-lg-4">
               <!-- Feature 1 -->
@@ -679,17 +881,15 @@
                 data-aos="fade-up"
                 data-aos-delay="200"
               >
-                <div class="nz-feat-card bg-white shadow-sm h-100">
-                  <div class="nz-feat-icon flex-shrink-0">
+                <div class="section3-feat-card bg-white shadow-sm h-100">
+                  <div class="section3-feat-icon flex-shrink-0">
                     <i class="fa-solid fa-chalkboard-user"></i>
                   </div>
-                  <div class="nz-feat-content">
-                    <h6 class="fw-bold text-dark mb-1">
-                      1-to-1 Practical Training
-                    </h6>
+                  <div class="section3-feat-content">
+                    <h6 class="fw-bold text-dark mb-1">Practical Training</h6>
                     <p class="mb-0">
-                      Personalized attention for better understanding and
-                      hands-on experience.
+                      Focused guidance for better understanding and hands-on
+                      learning experience.
                     </p>
                   </div>
                 </div>
@@ -701,13 +901,13 @@
                 data-aos="fade-up"
                 data-aos-delay="200"
               >
-                <div class="nz-feat-card bg-white shadow-sm h-100">
-                  <div class="nz-feat-icon flex-shrink-0">
+                <div class="section3-feat-card bg-white shadow-sm h-100">
+                  <div class="section3-feat-icon flex-shrink-0">
                     <i class="fa-solid fa-briefcase"></i>
                   </div>
-                  <div class="nz-feat-content">
+                  <div class="section3-feat-content">
                     <h6 class="fw-bold text-dark mb-1">
-                      100% Placement Assistance
+                      100% Career Assistance
                     </h6>
                     <p class="mb-0">
                       End-to-end placement support to help you get placed in top
@@ -723,13 +923,13 @@
                 data-aos="fade-up"
                 data-aos-delay="200"
               >
-                <div class="nz-feat-card bg-white shadow-sm h-100">
-                  <div class="nz-feat-icon flex-shrink-0">
+                <div class="section3-feat-card bg-white shadow-sm h-100">
+                  <div class="section3-feat-icon flex-shrink-0">
                     <i class="fa-solid fa-code"></i>
                   </div>
-                  <div class="nz-feat-content">
+                  <div class="section3-feat-content">
                     <h6 class="fw-bold text-dark mb-1">
-                      Live Project Experience
+                      Real-Time Project Experience
                     </h6>
                     <p class="mb-0">
                       Work on real-time projects and gain industry-relevant
@@ -745,14 +945,12 @@
                 data-aos="fade-up"
                 data-aos-delay="200"
               >
-                <div class="nz-feat-card bg-white shadow-sm h-100">
-                  <div class="nz-feat-icon flex-shrink-0">
+                <div class="section3-feat-card bg-white shadow-sm h-100">
+                  <div class="section3-feat-icon flex-shrink-0">
                     <i class="fa-solid fa-users-gear"></i>
                   </div>
-                  <div class="nz-feat-content">
-                    <h6 class="fw-bold text-dark mb-1">
-                      Industry Expert Trainers
-                    </h6>
+                  <div class="section3-feat-content">
+                    <h6 class="fw-bold text-dark mb-1">Experienced Trainers</h6>
                     <p class="mb-0">
                       Learn from experienced professionals with real-time
                       industry knowledge.
@@ -767,16 +965,16 @@
                 data-aos="fade-up"
                 data-aos-delay="200"
               >
-                <div class="nz-feat-card bg-white shadow-sm h-100">
-                  <div class="nz-feat-icon flex-shrink-0">
+                <div class="section3-feat-card bg-white shadow-sm h-100">
+                  <div class="section3-feat-icon flex-shrink-0">
                     <i class="fa-regular fa-clock"></i>
                   </div>
-                  <div class="nz-feat-content">
+                  <div class="section3-feat-content">
                     <h6 class="fw-bold text-dark mb-1">
                       Flexible Batch Timings
                     </h6>
                     <p class="mb-0">
-                      Weekend and weekday batches to fit your schedule.
+                      Choose suitable weekday and weekend learning schedules.
                     </p>
                   </div>
                 </div>
@@ -788,11 +986,11 @@
                 data-aos="fade-up"
                 data-aos-delay="200"
               >
-                <div class="nz-feat-card bg-white shadow-sm h-100">
-                  <div class="nz-feat-icon flex-shrink-0">
+                <div class="section3-feat-card bg-white shadow-sm h-100">
+                  <div class="section3-feat-icon flex-shrink-0">
                     <i class="fa-solid fa-comments"></i>
                   </div>
-                  <div class="nz-feat-content">
+                  <div class="section3-feat-content">
                     <h6 class="fw-bold text-dark mb-1">
                       Interview Preparation
                     </h6>
@@ -810,14 +1008,15 @@
                 data-aos="fade-up"
                 data-aos-delay="200"
               >
-                <div class="nz-feat-card bg-white shadow-sm h-100">
-                  <div class="nz-feat-icon flex-shrink-0">
+                <div class="section3-feat-card bg-white shadow-sm h-100">
+                  <div class="section3-feat-icon flex-shrink-0">
                     <i class="fa-solid fa-id-badge"></i>
                   </div>
-                  <div class="nz-feat-content">
-                    <h6 class="fw-bold text-dark mb-1">Internship Support</h6>
+                  <div class="section3-feat-content">
+                    <h6 class="fw-bold text-dark mb-1">Internship Guidance</h6>
                     <p class="mb-0">
-                      Get internship opportunities to gain real-world exposure.
+                      Get guidance to gain practical exposure and workplace
+                      experience.
                     </p>
                   </div>
                 </div>
@@ -829,11 +1028,11 @@
                 data-aos="fade-up"
                 data-aos-delay="200"
               >
-                <div class="nz-feat-card bg-white shadow-sm h-100">
-                  <div class="nz-feat-icon flex-shrink-0">
+                <div class="section3-feat-card bg-white shadow-sm h-100">
+                  <div class="section3-feat-icon flex-shrink-0">
                     <i class="fa-solid fa-award"></i>
                   </div>
-                  <div class="nz-feat-content">
+                  <div class="section3-feat-content">
                     <h6 class="fw-bold text-dark mb-1">
                       Course Completion Certificate
                     </h6>
@@ -848,316 +1047,332 @@
           </div>
         </div>
 
-        <!-- BOTTOM STATS BAR -->
-        <!-- <div class="row mt-3" data-aos="fade-up" data-aos-delay="300">
-          <div class="col-12 col-lg-10 ">
-            <div class="nz-bottom-stats bg-white shadow-lg rounded-4 d-flex  p-3  border">
+        <!-- Section 3: BOTTOM STATS BAR (Currently Commented Out) -->
+        <!-- 
+        <div class="row mt-3" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-12 col-lg-10">
+            <div class="section3-bottom-stats bg-white shadow-lg rounded-4 d-flex p-3 border">
               
-              <div class="nz-stat-item text-center">
-                <div class="nz-stat-icon-wrapper mb-2"><i class="fa-solid fa-users text-success"></i></div>
-                <h5 class="fw-bold text-success mb-0">1,500+</h5>
-                <p class="text-dark fw-medium mb-0 nz-stat-lbl">Students Trained<br class="d-none d-md-block">Successfully</p>
+              <div class="section3-stat-item text-center">
+                <div class="section3-stat-icon-wrapper mb-2"><i class="fa-solid fa-users text-success"></i></div>
+                <h5 class="fw-bold text-success mb-0">5,000+</h5>
+                <p class="text-dark fw-medium mb-0 section3-stat-lbl">Students Trained<br class="d-none d-md-block">Successfully</p>
               </div>
 
-              <div class="nz-stat-divider"></div>
+              <div class="section3-stat-divider"></div>
 
-              <div class="nz-stat-item text-center">
-                <div class="nz-stat-icon-wrapper mb-2"><i class="fa-solid fa-shield-halved text-success"></i></div>
+              <div class="section3-stat-item text-center">
+                <div class="section3-stat-icon-wrapper mb-2"><i class="fa-solid fa-shield-halved text-success"></i></div>
                 <h5 class="fw-bold text-success mb-0">100%</h5>
-                <p class="text-dark fw-medium mb-0 nz-stat-lbl">Placement<br class="d-none d-md-block">Assistance</p>
+                <p class="text-dark fw-medium mb-0 section3-stat-lbl">Placement<br class="d-none d-md-block">Assistance</p>
               </div>
 
-              <div class="nz-stat-divider"></div>
+              <div class="section3-stat-divider"></div>
 
-              <div class="nz-stat-item text-center">
-                <div class="nz-stat-icon-wrapper mb-2"><i class="fa-solid fa-chart-simple text-success"></i></div>
+              <div class="section3-stat-item text-center">
+                <div class="section3-stat-icon-wrapper mb-2"><i class="fa-solid fa-chart-simple text-success"></i></div>
                 <h5 class="fw-bold text-success mb-0">200+</h5>
-                <p class="text-dark fw-medium mb-0 nz-stat-lbl">Recruitment<br class="d-none d-md-block">Partners</p>
+                <p class="text-dark fw-medium mb-0 section3-stat-lbl">Recruitment<br class="d-none d-md-block">Partners</p>
               </div>
 
-              <div class="nz-stat-divider"></div>
+              <div class="section3-stat-divider"></div>
 
-              <div class="nz-stat-item text-center">
-                <div class="nz-stat-icon-wrapper mb-2"><i class="fa-solid fa-building text-success"></i></div>
+              <div class="section3-stat-item text-center">
+                <div class="section3-stat-icon-wrapper mb-2"><i class="fa-solid fa-building text-success"></i></div>
                 <h5 class="fw-bold text-success mb-0">20+</h5>
-                <p class="text-dark fw-medium mb-0 nz-stat-lbl">Industries<br class="d-none d-md-block">We Serve</p>
+                <p class="text-dark fw-medium mb-0 section3-stat-lbl">Training Domains<br class="d-none d-md-block">We Cover</p>
               </div>
 
             </div>
           </div>
-        </div> -->
+        </div> 
+        -->
       </div>
     </section>
 
-    <!-- ============================================== -->
-    <!-- SECTION 4: POPULAR COURSES (PEAK SHAPE) -->
-    <!-- ============================================== -->
-    <section class="pc-container py-5">
+    <!-- ========================================== -->
+    <!-- SECTION 4:       -->
+    <!-- ========================================== -->
+    <section class="section4-pc-container py-5">
       <div class="container">
-        <!-- Section Header -->
+        <!-- Section 4: Header Area -->
         <div
           class="text-center mb-5"
           data-aos="fade-up"
           data-aos-duration="800"
         >
-          <div class="section-subtitle mb-3">
-            <span class="line-dash left"></span>
-            OUR POPULAR COURSES
-            <span class="line-dash right"></span>
+          <!-- Section 4: Subtitle -->
+          <div class="section4-subtitle mb-3">
+            <span class="section4-line-dash left"></span>
+            OUR CAREER COURSES
+            <span class="section4-line-dash right"></span>
           </div>
-          <h1 class="section-title mb-3">
-            Explore Courses That <span>Build Your Future</span>
+
+          <!-- Section 4: Main Title -->
+          <h1 class="section4-title mb-3">
+            Explore Courses That <span>Build Your Career</span>
           </h1>
           <p class="text-dark">
-            Industry-focused training designed to enhance your skills,<br
+            Practical training designed to strengthen your skills,<br
               class="d-none d-md-block"
             />
-            boost your confidence, and accelerate your career growth.
+            improve confidence, and support your career growth.
           </p>
         </div>
 
         <div class="row g-4">
-          <!-- CARD 1: IT Courses -->
+          <!-- ========================================== -->
+          <!-- CARD 1: Software & IT Courses              -->
+          <!-- ========================================== -->
           <div
             class="col-12 col-md-6 col-lg-3"
             data-aos="fade-up"
             data-aos-delay="100"
           >
-            <!-- Desktop View -->
-            <div class="desktop-cards-wrapper d-none d-md-block ms-3">
-              <div class="custom-card">
-                <div class="border-left-line"></div>
-                <div class="border-diagonal-line"></div>
-                <h5 class="fw-bold mt-2">IT Courses</h5>
-                <div class="card-divider"></div>
-                <div class="badge-course mb-3">
-                  <span class="count">20+</span>
-                  <span class="label">Courses</span>
+            <!-- Desktop View for Card 1 -->
+            <div class="section4-desktop-cards-wrapper d-none d-md-block ms-3">
+              <div class="section4-custom-card">
+                <div class="section4-border-left-line"></div>
+                <div class="section4-border-diagonal-line"></div>
+                <h5 class="fw-bold mt-2">Software & IT Courses</h5>
+                <div class="section4-card-divider"></div>
+                <div class="section4-badge-course mb-3">
+                  <span class="section4-count">20+</span>
+                  <span class="section4-label">Courses</span>
                 </div>
                 <p class="small mb-2 flex-grow-1">
                   From basics to advanced programming, build strong IT
                   foundations.
                 </p>
-                <button class="btn btn-custom rounded-lg mt-auto">
+                <button class="btn section4-btn-custom rounded-lg mt-auto">
                   View Courses <i class="fa-solid fa-arrow-right ms-2"></i>
                 </button>
               </div>
-              <!-- Icon Layer -->
-              <div class="hex-icon-wrapper">
-                <div class="hex-inner">
+              <!-- Icon Layer for Card 1 -->
+              <div class="section4-hex-icon-wrapper">
+                <div class="section4-hex-inner">
                   <i class="fa-solid fa-laptop-code"></i>
                 </div>
               </div>
             </div>
 
-            <!-- Mobile View (Updated) -->
-            <div class="mobile-view-wrapper d-md-none">
-              <div class="mobile-custom-card">
-                <div class="mobile-left-shape"></div>
-                <div class="mobile-icon-wrapper">
-                  <div class="hex-inner-mobile">
+            <!-- Mobile View for Card 1 -->
+            <div class="section4-mobile-view-wrapper d-md-none">
+              <div class="section4-mobile-custom-card">
+                <div class="section4-mobile-left-shape"></div>
+                <div class="section4-mobile-icon-wrapper">
+                  <div class="section4-hex-inner-mobile">
                     <i class="fa-solid fa-laptop-code"></i>
                   </div>
                 </div>
-                <div class="mobile-text-area flex-grow-1 py-3 pe-1">
-                  <h6 class="fw-bold mb-1">IT Courses</h6>
-                  <div class="card-divider-mobile mb-2"></div>
+                <div class="section4-mobile-text-area flex-grow-1 py-3 pe-1">
+                  <h6 class="fw-bold mb-1">Software & IT Courses</h6>
+                  <div class="section4-card-divider-mobile mb-2"></div>
                   <p class="mb-0">
                     From basics to advanced programming, build strong IT
                     foundations.
                   </p>
                 </div>
                 <div
-                  class="mobile-right-area pe-3 d-flex align-items-center gap-2 flex-shrink-0"
+                  class="section4-mobile-right-area pe-3 d-flex align-items-center gap-2 flex-shrink-0"
                 >
-                  <div class="badge-course-mobile">
-                    <span class="count">20+</span>
-                    <span class="label">Courses</span>
+                  <div class="section4-badge-course-mobile">
+                    <span class="section4-count">20+</span>
+                    <span class="section4-label">Courses</span>
                   </div>
-                  <i class="fa-solid fa-arrow-right ec-arrow"></i>
+                  <i class="fa-solid fa-arrow-right section4-ec-arrow"></i>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- CARD 2: Mechanical Courses -->
+          <!-- ========================================== -->
+          <!-- CARD 2: Mechanical Courses                 -->
+          <!-- ========================================== -->
           <div
             class="col-12 col-md-6 col-lg-3"
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            <!-- Desktop View -->
-            <div class="desktop-cards-wrapper d-none d-md-block ms-3">
-              <div class="custom-card">
-                <div class="border-left-line"></div>
-                <div class="border-diagonal-line"></div>
+            <!-- Desktop View for Card 2 -->
+            <div class="section4-desktop-cards-wrapper d-none d-md-block ms-3">
+              <div class="section4-custom-card">
+                <div class="section4-border-left-line"></div>
+                <div class="section4-border-diagonal-line"></div>
                 <h5 class="fw-bold mt-2">Mechanical Courses</h5>
-                <div class="card-divider"></div>
-                <div class="badge-course mb-3">
-                  <span class="count">18+</span>
-                  <span class="label">Courses</span>
+                <div class="section4-card-divider"></div>
+                <div class="section4-badge-course mb-3">
+                  <span class="section4-count">18+</span>
+                  <span class="section4-label">Courses</span>
                 </div>
                 <p class="small mb-2 flex-grow-1">
-                  Core mechanical concepts with practical industry applications.
+                  Build practical mechanical skills using industry-oriented
+                  concepts.
                 </p>
-                <button class="btn btn-custom rounded-lg mt-auto">
+                <button class="btn section4-btn-custom rounded-lg mt-auto">
                   View Courses <i class="fa-solid fa-arrow-right ms-2"></i>
                 </button>
               </div>
-              <div class="hex-icon-wrapper">
-                <div class="hex-inner">
+              <div class="section4-hex-icon-wrapper">
+                <div class="section4-hex-inner">
                   <i class="fa-solid fa-gear"></i>
                 </div>
               </div>
             </div>
 
-            <!-- Mobile View (Updated) -->
-            <div class="mobile-view-wrapper d-md-none">
-              <div class="mobile-custom-card">
-                <div class="mobile-left-shape"></div>
-                <div class="mobile-icon-wrapper">
-                  <div class="hex-inner-mobile">
+            <!-- Mobile View for Card 2 -->
+            <div class="section4-mobile-view-wrapper d-md-none">
+              <div class="section4-mobile-custom-card">
+                <div class="section4-mobile-left-shape"></div>
+                <div class="section4-mobile-icon-wrapper">
+                  <div class="section4-hex-inner-mobile">
                     <i class="fa-solid fa-gear"></i>
                   </div>
                 </div>
-                <div class="mobile-text-area flex-grow-1 py-3 pe-1">
+                <div class="section4-mobile-text-area flex-grow-1 py-3 pe-1">
                   <h6 class="fw-bold mb-1">Mechanical Courses</h6>
-                  <div class="card-divider-mobile mb-2"></div>
+                  <div class="section4-card-divider-mobile mb-2"></div>
                   <p class="mb-0">
-                    Core mechanical concepts with practical industry
-                    applications.
+                    Build practical mechanical skills using industry-oriented
+                    concepts.
                   </p>
                 </div>
                 <div
-                  class="mobile-right-area pe-3 d-flex align-items-center gap-2 flex-shrink-0"
+                  class="section4-mobile-right-area pe-3 d-flex align-items-center gap-2 flex-shrink-0"
                 >
-                  <div class="badge-course-mobile">
-                    <span class="count">18+</span>
-                    <span class="label">Courses</span>
+                  <div class="section4-badge-course-mobile">
+                    <span class="section4-count">18+</span>
+                    <span class="section4-label">Courses</span>
                   </div>
-                  <i class="fa-solid fa-arrow-right ec-arrow"></i>
+                  <i class="fa-solid fa-arrow-right section4-ec-arrow"></i>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- CARD 3: Civil Courses -->
+          <!-- ========================================== -->
+          <!-- CARD 3: Civil Engineering Courses          -->
+          <!-- ========================================== -->
           <div
             class="col-12 col-md-6 col-lg-3"
             data-aos="fade-up"
             data-aos-delay="300"
           >
-            <!-- Desktop View -->
-            <div class="desktop-cards-wrapper d-none d-md-block ms-3">
-              <div class="custom-card">
-                <div class="border-left-line"></div>
-                <div class="border-diagonal-line"></div>
-                <h5 class="fw-bold mt-2">Civil Courses</h5>
-                <div class="card-divider"></div>
-                <div class="badge-course mb-3">
-                  <span class="count">15+</span>
-                  <span class="label">Courses</span>
+            <!-- Desktop View for Card 3 -->
+            <div class="section4-desktop-cards-wrapper d-none d-md-block ms-3">
+              <div class="section4-custom-card">
+                <div class="section4-border-left-line"></div>
+                <div class="section4-border-diagonal-line"></div>
+                <h5 class="fw-bold mt-2">Civil Engineering Courses</h5>
+                <div class="section4-card-divider"></div>
+                <div class="section4-badge-course mb-3">
+                  <span class="section4-count">15+</span>
+                  <span class="section4-label">Courses</span>
                 </div>
                 <p class="small mb-2 flex-grow-1">
                   Learn civil engineering skills with live projects and
                   practicals.
                 </p>
-                <button class="btn btn-custom rounded-lg mt-auto">
+                <button class="btn section4-btn-custom rounded-lg mt-auto">
                   View Courses <i class="fa-solid fa-arrow-right ms-2"></i>
                 </button>
               </div>
-              <div class="hex-icon-wrapper">
-                <div class="hex-inner">
+              <div class="section4-hex-icon-wrapper">
+                <div class="section4-hex-inner">
                   <i class="fa-regular fa-building"></i>
                 </div>
               </div>
             </div>
 
-            <!-- Mobile View (Updated) -->
-            <div class="mobile-view-wrapper d-md-none">
-              <div class="mobile-custom-card">
-                <div class="mobile-left-shape"></div>
-                <div class="mobile-icon-wrapper">
-                  <div class="hex-inner-mobile">
+            <!-- Mobile View for Card 3 -->
+            <div class="section4-mobile-view-wrapper d-md-none">
+              <div class="section4-mobile-custom-card">
+                <div class="section4-mobile-left-shape"></div>
+                <div class="section4-mobile-icon-wrapper">
+                  <div class="section4-hex-inner-mobile">
                     <i class="fa-regular fa-building"></i>
                   </div>
                 </div>
-                <div class="mobile-text-area flex-grow-1 py-3 pe-1">
-                  <h6 class="fw-bold mb-1">Civil Courses</h6>
-                  <div class="card-divider-mobile mb-2"></div>
+                <div class="section4-mobile-text-area flex-grow-1 py-3 pe-1">
+                  <h6 class="fw-bold mb-1">Civil Engineering Courses</h6>
+                  <div class="section4-card-divider-mobile mb-2"></div>
                   <p class="mb-0">
-                    Learn civil engineering skills with live projects and
-                    practicals.
+                    Develop practical civil engineering skills through projects
+                    and training.
                   </p>
                 </div>
                 <div
-                  class="mobile-right-area pe-3 d-flex align-items-center gap-2 flex-shrink-0"
+                  class="section4-mobile-right-area pe-3 d-flex align-items-center gap-2 flex-shrink-0"
                 >
-                  <div class="badge-course-mobile">
-                    <span class="count">15+</span>
-                    <span class="label">Courses</span>
+                  <div class="section4-badge-course-mobile">
+                    <span class="section4-count">15+</span>
+                    <span class="section4-label">Courses</span>
                   </div>
-                  <i class="fa-solid fa-arrow-right ec-arrow"></i>
+                  <i class="fa-solid fa-arrow-right section4-ec-arrow"></i>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- CARD 4: Accounts Courses -->
+          <!-- ========================================== -->
+          <!-- CARD 4: Accounts & Finance Courses         -->
+          <!-- ========================================== -->
           <div
             class="col-12 col-md-6 col-lg-3"
             data-aos="fade-up"
             data-aos-delay="400"
           >
-            <!-- Desktop View -->
-            <div class="desktop-cards-wrapper d-none d-md-block ms-3">
-              <div class="custom-card">
-                <div class="border-left-line"></div>
-                <div class="border-diagonal-line"></div>
-                <h5 class="fw-bold mt-2">Accounts Courses</h5>
-                <div class="card-divider"></div>
-                <div class="badge-course mb-3">
-                  <span class="count">10+</span>
-                  <span class="label">Courses</span>
+            <!-- Desktop View for Card 4 -->
+            <div class="section4-desktop-cards-wrapper d-none d-md-block ms-3">
+              <div class="section4-custom-card">
+                <div class="section4-border-left-line"></div>
+                <div class="section4-border-diagonal-line"></div>
+                <h5 class="fw-bold mt-2">Accounts & Finance Courses</h5>
+                <div class="section4-card-divider"></div>
+                <div class="section4-badge-course mb-3">
+                  <span class="section4-count">10+</span>
+                  <span class="section4-label">Courses</span>
                 </div>
                 <p class="small mb-2 flex-grow-1">
-                  Master accounting, Tally, GST and financial management.
+                  Learn accounting, Tally, GST, Excel, and practical finance
+                  skills.
                 </p>
-                <button class="btn btn-custom rounded-lg mt-auto">
+                <button class="btn section4-btn-custom rounded-lg mt-auto">
                   View Courses <i class="fa-solid fa-arrow-right ms-2"></i>
                 </button>
               </div>
-              <div class="hex-icon-wrapper">
-                <div class="hex-inner">
+              <div class="section4-hex-icon-wrapper">
+                <div class="section4-hex-inner">
                   <i class="fa-solid fa-calculator"></i>
                 </div>
               </div>
             </div>
 
-            <!-- Mobile View (Updated) -->
-            <div class="mobile-view-wrapper d-md-none">
-              <div class="mobile-custom-card">
-                <div class="mobile-left-shape"></div>
-                <div class="mobile-icon-wrapper">
-                  <div class="hex-inner-mobile">
+            <!-- Mobile View for Card 4 -->
+            <div class="section4-mobile-view-wrapper d-md-none">
+              <div class="section4-mobile-custom-card">
+                <div class="section4-mobile-left-shape"></div>
+                <div class="section4-mobile-icon-wrapper">
+                  <div class="section4-hex-inner-mobile">
                     <i class="fa-solid fa-calculator"></i>
                   </div>
                 </div>
-                <div class="mobile-text-area flex-grow-1 py-3 pe-1">
-                  <h6 class="fw-bold mb-1">Accounts Courses</h6>
-                  <div class="card-divider-mobile mb-2"></div>
+                <div class="section4-mobile-text-area flex-grow-1 py-3 pe-1">
+                  <h6 class="fw-bold mb-1">Accounts & Finance Courses</h6>
+                  <div class="section4-card-divider-mobile mb-2"></div>
                   <p class="mb-0">
-                    Master accounting, Tally, GST and financial management.
+                    Learn accounting, Tally, GST, Excel, and practical finance
+                    skills.
                   </p>
                 </div>
                 <div
-                  class="mobile-right-area pe-3 d-flex align-items-center gap-2 flex-shrink-0"
+                  class="section4-mobile-right-area pe-3 d-flex align-items-center gap-2 flex-shrink-0"
                 >
-                  <div class="badge-course-mobile">
-                    <span class="count">10+</span>
-                    <span class="label">Courses</span>
+                  <div class="section4-badge-course-mobile">
+                    <span class="section4-count">10+</span>
+                    <span class="section4-label">Courses</span>
                   </div>
-                  <i class="fa-solid fa-arrow-right ec-arrow"></i>
+                  <i class="fa-solid fa-arrow-right section4-ec-arrow"></i>
                 </div>
               </div>
             </div>
@@ -1166,15 +1381,15 @@
         <!-- End of Card Row -->
 
         <!-- =========================================
-             CTA BOTTOM BANNER 
+             SECTION 4: CTA BOTTOM BANNER 
              ========================================= -->
         <div
-          class="cta-bottom-banner mt-lg-5 shadow-lg"
+          class="section4-cta-bottom-banner mt-lg-5 shadow-lg"
           data-aos="fade-up"
           data-aos-delay="500"
         >
           <div class="row align-items-center">
-            <!-- 1. Left Image & Text Section -->
+            <!-- CTA Left Image & Text Section -->
             <div class="col-12 col-xl-5 mb-4 mb-xl-0">
               <div class="d-flex flex-row align-items-center text-start gap-3">
                 <img
@@ -1190,83 +1405,84 @@
                   >
                     Not sure which course<br />is right for you?
                   </h5>
-                  <div class="cta-divider mb-2"></div>
+                  <div class="section4-cta-divider mb-2"></div>
                   <p class="mb-0" style="font-size: 11px; line-height: 1.4">
-                    Get free career guidance from our experts and find the
-                    perfect course for your career goals.
+                    Get career guidance from our experts and choose the right
+                    learning path for your goals.
                   </p>
                 </div>
               </div>
             </div>
 
-            <!-- 2. Icon Features Section -->
+            <!-- CTA Icon Features Section -->
             <div class="col-12 col-md-7 col-xl-4 mb-4 mb-md-0 mt-2 mt-md-0">
               <div
                 class="d-flex justify-content-between justify-content-md-center align-items-center gap-2 gap-sm-4 h-100 px-1 px-md-0"
               >
+                <!-- Feature 1 -->
                 <div class="text-center flex-fill">
-                  <div class="feature-icon-circle mx-auto mb-2">
+                  <div class="section4-feature-icon-circle mx-auto mb-2">
                     <i class="fa-solid fa-user-tie"></i>
                   </div>
                   <span
                     class="fw-bold d-block text-dark"
                     style="font-size: 10px"
-                    >Expert<br />Counseling</span
+                    >Expert<br />Guidance</span
                   >
                 </div>
 
                 <!-- Vertical line -->
-                <div class="vertical-divider"></div>
+                <div class="section4-vertical-divider"></div>
 
+                <!-- Feature 2 -->
                 <div class="text-center flex-fill">
-                  <div class="feature-icon-circle mx-auto mb-2">
+                  <div class="section4-feature-icon-circle mx-auto mb-2">
                     <i class="fa-solid fa-bullseye"></i>
                   </div>
                   <span
                     class="fw-bold d-block text-dark"
                     style="font-size: 10px"
-                    >Career<br />Guidance</span
+                    >Career<br />Planning</span
                   >
                 </div>
 
                 <!-- Vertical line -->
-                <div class="vertical-divider"></div>
+                <div class="section4-vertical-divider"></div>
 
+                <!-- Feature 3 -->
                 <div class="text-center flex-fill">
-                  <div class="feature-icon-circle mx-auto mb-2">
+                  <div class="section4-feature-icon-circle mx-auto mb-2">
                     <i class="fa-solid fa-file-contract"></i>
                   </div>
                   <span
                     class="fw-bold d-block text-dark"
                     style="font-size: 10px"
-                    >100% Placement<br />Assistance</span
+                    >Career<br />Support</span
                   >
                 </div>
               </div>
             </div>
 
-            <!-- 3. Button Section -->
+            <!-- CTA Button Section -->
             <div
               class="col-12 col-md-5 col-xl-3 text-center text-xl-end mt-2 mt-xl-0"
             >
               <button
-                class="btn btn-custom rounded-lg w-100"
+                class="btn section4-btn-custom rounded-lg w-100"
                 style="padding: 12px 0; font-size: 15px"
               >
-                Talk to Our Expert <i class="fa-solid fa-arrow-right ms-2"></i>
+                Talk to Our Career Expert
+                <i class="fa-solid fa-arrow-right ms-2"></i>
               </button>
             </div>
           </div>
         </div>
         <!-- =========================================
-             END OF CTA BOTTOM BANNER 
+             SECTION 4: END OF CTA BOTTOM BANNER 
              ========================================= -->
       </div>
     </section>
 
-    <!-- ============================================== -->
-    <!-- SECTION 5:-->
-    <!-- ============================================== -->
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
