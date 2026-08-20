@@ -1,1 +1,738 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mastering FullStack Magic | Nextz Technologies</title>
 
+    <!-- Google Fonts: Poppins -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link href="/course_pages/fullstack_development.css" rel="stylesheet" />
+
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navs">
+      <div class="container-fluid mx-lg-5">
+        <!-- Logo -->
+        <a class="navbar-brand navs-logo" href="index.html">
+          <span class="logo-icon">
+            <i class="bi bi-code-slash"></i>
+          </span>
+          <span class="logo-text"> Nextz <span>Technologies</span> </span>
+        </a>
+
+        <!-- Mobile Toggle -->
+        <button
+          class="navbar-toggler navs-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#mainNavbar"
+          aria-controls="mainNavbar"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Menu -->
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto align-items-lg-center">
+            <!-- Home -->
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html"> Home </a>
+            </li>
+
+            <!-- Training Courses -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Training Courses
+              </a>
+
+              <ul class="dropdown-menu navs-dropdown">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="/course_pages/fullstack_development"
+                  >
+                    <i class="bi bi-code-slash"></i>
+                    Full Stack Development
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <i class="bi bi-cloud"></i>
+                    AWS
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <i class="bi bi-bar-chart"></i>
+                    Data Analytics
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <i class="bi bi-robot"></i>
+                    AI & ML
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <i class="bi bi-calculator"></i>
+                    Tally & Prime
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <i class="bi bi-building"></i>
+                    Civil Engineering Courses
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <i class="bi bi-pencil-square"></i>
+                    AutoCAD
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <i class="bi bi-megaphone"></i>
+                    Digital Marketing
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#">
+                    <i class="bi bi-bug"></i>
+                    Testing
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Certifications -->
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/certificate"> Certifications </a>
+            </li>
+
+            <!-- Placements -->
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/placements"> Placements </a>
+            </li>
+
+            <!-- Gallery -->
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/gallery.html"> Gallery </a>
+            </li>
+
+            <!-- Careers -->
+            <li class="nav-item">
+              <a class="nav-link" href="/pages/careers"> Careers </a>
+            </li>
+
+            <!-- Reviews -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Reviews
+              </a>
+
+              <ul class="dropdown-menu navs-dropdown review-dropdown">
+                <li>
+                  <a class="dropdown-item" href="#" target="_blank">
+                    <i class="bi bi-whatsapp"></i>
+                    WhatsApp
+                  </a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#" target="_blank">
+                    <i class="bi bi-google"></i>
+                    Google
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Top Section Header -->
+    <div class="section-header" data-aos="fade-down">
+      <h4>TOP TRENDING COURSES</h4>
+      <h2>
+        Mastering FullStack Magic With Nextz Technologies Software Training
+        Institute
+      </h2>
+      <p>
+        Embark on a transformative journey into the world of
+        <strong
+          >FullStack development with our Java, Python, MERN, and .NET
+          courses</strong
+        >
+        at Nextz Technologies. Our comprehensive training equips you with the
+        skills to
+        <strong>master both front-end and back-end technologies</strong>,
+        empowering you to build dynamic web applications.
+      </p>
+    </div>
+
+    <!-- 1. Java FullStack -->
+    <section class="feature-block bg-white">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 feature-content" data-aos="fade-right">
+            <h3>Java FullStack Development</h3>
+            <p class="text-muted small">
+              Unleash your Full-Stack Java potential with Nextz Technologies:
+            </p>
+            <ul class="list-unstyled">
+              <li>
+                <i
+                  class="fa-solid fa-square text-danger me-2"
+                  style="font-size: 6px; vertical-align: middle"
+                ></i>
+                <strong>Master both sides of the web:</strong> Learn the
+                front-end and back-end using powerful Java & Spring Boot.
+              </li>
+              <li>
+                <i
+                  class="fa-solid fa-square text-danger me-2"
+                  style="font-size: 6px; vertical-align: middle"
+                ></i>
+                <strong>No coding experience? No problem:</strong> Starts from
+                basics, building your skills step-by-step.
+              </li>
+              <li>
+                <i
+                  class="fa-solid fa-square text-danger me-2"
+                  style="font-size: 6px; vertical-align: middle"
+                ></i>
+                <strong>Industry-expert instructors:</strong> Practical insights
+                from seasoned enterprise developers.
+              </li>
+              <li>
+                <i
+                  class="fa-solid fa-square text-danger me-2"
+                  style="font-size: 6px; vertical-align: middle"
+                ></i>
+                <strong>Build a killer portfolio:</strong> Showcase hands-on
+                projects to impress employers.
+              </li>
+            </ul>
+            <a
+              href="https://wa.me/919876543210?text=Hi,%20I%20am%20interested%20in%20Java%20FullStack."
+              class="screenshot-enroll-btn"
+              >Enroll Now</a
+            >
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <img
+              src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?auto=format&fit=crop&w=800&q=80"
+              alt="Java FullStack"
+              class="feature-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Python FullStack -->
+    <section class="feature-block bg-light">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 order-lg-1 order-2" data-aos="fade-right">
+            <img
+              src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=800&q=80"
+              alt="Python FullStack"
+              class="feature-img"
+            />
+          </div>
+          <div
+            class="col-lg-6 feature-content order-lg-2 order-1"
+            data-aos="fade-left"
+          >
+            <h3>Python FullStack Development</h3>
+            <p class="text-muted small">
+              Unleash Your Full-Stack Potential with Python & Django:
+            </p>
+            <ul class="list-unstyled">
+              <li>
+                <i
+                  class="fa-solid fa-square text-danger me-2"
+                  style="font-size: 6px; vertical-align: middle"
+                ></i>
+                <strong>Master the Python Ecosystem:</strong> Delve deep into
+                frameworks like Django and React.
+              </li>
+              <li>
+                <i
+                  class="fa-solid fa-square text-danger me-2"
+                  style="font-size: 6px; vertical-align: middle"
+                ></i>
+                <strong>Craft Real-World Solutions:</strong> Gain practical
+                experience through project-based learning.
+              </li>
+              <li>
+                <i
+                  class="fa-solid fa-square text-danger me-2"
+                  style="font-size: 6px; vertical-align: middle"
+                ></i>
+                <strong>Industry-Veteran Mentorship:</strong> Learn directly
+                from seasoned developers.
+              </li>
+              <li>
+                <i
+                  class="fa-solid fa-square text-danger me-2"
+                  style="font-size: 6px; vertical-align: middle"
+                ></i>
+                <strong>Launch Your Tech Career:</strong> Benefit from dedicated
+                career support and placement assistance.
+              </li>
+            </ul>
+            <a
+              href="https://wa.me/919876543210?text=Hi,%20I%20am%20interested%20in%20Python%20FullStack."
+              class="screenshot-enroll-btn"
+              >Enroll Now</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. MERN Stack -->
+    <section class="feature-block bg-white">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 feature-content" data-aos="fade-right">
+            <h3>MERN Stack Development</h3>
+            <p class="text-muted small">Master Modern JavaScript End-to-End:</p>
+            <ul class="list-unstyled">
+              <li>
+                <i
+                  class="fa-solid fa-square text-danger me-2"
+                  style="font-size: 6px; vertical-align: middle"
+                ></i>
+                <strong>MongoDB & Express.js:</strong> Build secure backend
+                databases and APIs using Node.js.
+              </li>
+              <li>
+                <i
+                  class="fa-solid fa-square text-danger me-2"
+                  style="font-size: 6px; vertical-align: middle"
+                ></i>
+                <strong>React.js Interfaces:</strong> Create high-performance
+                single-page applications.
+              </li>
+              <li>
+                <i
+                  class="fa-solid fa-square text-danger me-2"
+                  style="font-size: 6px; vertical-align: middle"
+                ></i>
+                <strong>Full-Stack Integration:</strong> Connect frontend state
+                management smoothly.
+              </li>
+              <li>
+                <i
+                  class="fa-solid fa-square text-danger me-2"
+                  style="font-size: 6px; vertical-align: middle"
+                ></i>
+                <strong>Live Project Deployment:</strong> Deploy complete MERN
+                apps onto cloud hosting.
+              </li>
+            </ul>
+            <a
+              href="https://wa.me/919876543210?text=Hi,%20I%20am%20interested%20in%20MERN%20Stack."
+              class="screenshot-enroll-btn"
+              >Enroll Now</a
+            >
+          </div>
+          <div class="col-lg-6" data-aos="fade-left">
+            <img
+              src="https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=800&q=80"
+              alt="MERN Stack"
+              class="feature-img"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. .NET FullStack -->
+    <section class="feature-block bg-light">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 order-lg-1 order-2" data-aos="fade-right">
+            <img
+              src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80"
+              alt=".NET FullStack"
+              class="feature-img"
+            />
+          </div>
+          <div
+            class="col-lg-6 feature-content order-lg-2 order-1"
+            data-aos="fade-left"
+          >
+            <h3>.NET FullStack Development</h3>
+            <p class="text-muted small">
+              Build Enterprise Solutions with C# and ASP.NET Core:
+            </p>
+            <ul class="list-unstyled">
+              <li>
+                <i
+                  class="fa-solid fa-square text-danger me-2"
+                  style="font-size: 6px; vertical-align: middle"
+                ></i>
+                <strong>C# & ASP.NET Core:</strong> Master Microsoft's powerful
+                web services framework.
+              </li>
+              <li>
+                <i
+                  class="fa-solid fa-square text-danger me-2"
+                  style="font-size: 6px; vertical-align: middle"
+                ></i>
+                <strong>Entity Framework & SQL:</strong> Design robust
+                relational databases.
+              </li>
+              <li>
+                <i
+                  class="fa-solid fa-square text-danger me-2"
+                  style="font-size: 6px; vertical-align: middle"
+                ></i>
+                <strong>Blazor & Angular Frontends:</strong> Build modern
+                reactive user interfaces.
+              </li>
+              <li>
+                <i
+                  class="fa-solid fa-square text-danger me-2"
+                  style="font-size: 6px; vertical-align: middle"
+                ></i>
+                <strong>Corporate Readiness:</strong> Gain corporate coding
+                standards requested by MNCs.
+              </li>
+            </ul>
+            <a
+              href="https://wa.me/919876543210?text=Hi,%20I%20am%20interested%20in%20.NET%20FullStack."
+              class="screenshot-enroll-btn"
+              >Enroll Now</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CREDENTIALS SECTION WITH DARK GRADIENT BACKGROUND -->
+    <section class="credentials-section">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h2 class="fw-bold text-white">
+            Earn Valuable Credentials & Recognition
+          </h2>
+          <p class="text-light opacity-75">
+            Get certified to showcase your professional skills to top employers.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="cert-card-dark">
+              <h5 class="fw-bold text-success mb-3">
+                <i class="fa-solid fa-award me-2"></i> Course Completion
+                Certificate
+              </h5>
+              <p class="text-light opacity-75 small mb-0">
+                Official certification provided upon finishing all modules and
+                project evaluations successfully.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="cert-card-dark">
+              <h5 class="fw-bold text-success mb-3">
+                <i class="fa-solid fa-briefcase me-2"></i> Internship
+                Certificate
+              </h5>
+              <p class="text-light opacity-75 small mb-0">
+                6 months real-world corporate project experience certification
+                to boost your resume.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="cert-card-dark">
+              <h5 class="fw-bold text-success mb-3">
+                <i class="fa-solid fa-shield-halved me-2"></i> ID Verification &
+                Badge
+              </h5>
+              <p class="text-light opacity-75 small mb-0">
+                Unique QR-verified digital badge for your LinkedIn profile and
+                professional portfolio.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Course Curriculum Accordion -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Comprehensive Course Curriculum</h2>
+          <p class="text-muted">
+            Step-by-step structured learning modules designed for tech careers.
+          </p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="accordion shadow-sm" id="curriculumAccordion">
+              <div class="accordion-item border-0 border-bottom">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button "
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#c1"
+                  >
+                    Module 01 – Frontend Foundations (HTML, CSS, JS, Bootstrap)
+                  </button>
+                </h2>
+                <div
+                  id="c1"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#curriculumAccordion"
+                >
+                  <div class="accordion-body text-muted">
+                    HTML5, Advanced CSS3, Flexbox & Grid, Responsive Design, and
+                    ES6+ JavaScript.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border-0 border-bottom">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed "
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#c2"
+                  >
+                    Module 02 – Frontend Frameworks (React / Angular)
+                  </button>
+                </h2>
+                <div
+                  id="c2"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#curriculumAccordion"
+                >
+                  <div class="accordion-body text-muted">
+                    Single Page Applications, Components, Hooks, State
+                    Management, and Routing.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border-0 border-bottom">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed "
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#c3"
+                  >
+                    Module 03 – Backend & Database Integration
+                  </button>
+                </h2>
+                <div
+                  id="c3"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#curriculumAccordion"
+                >
+                  <div class="accordion-body text-muted">
+                    Server-side logic via Python/Java/Node/.NET, REST APIs,
+                    MySQL, and MongoDB.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border-0">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed "
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#c4"
+                  >
+                    Module 04 – Live Projects & Cloud Deployment
+                  </button>
+                </h2>
+                <div
+                  id="c4"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#curriculumAccordion"
+                >
+                  <div class="accordion-body text-muted">
+                    Git Version Control, GitHub Workflows, debugging, testing,
+                    and production server deployment.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-5 bg-white">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Why Choose Nextz Technologies?</h2>
+          <p class="text-muted">
+            We provide everything you need to break into the IT industry
+            successfully.
+          </p>
+        </div>
+        <div class="row g-4 text-center">
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="why-box">
+              <i class="fa-solid fa-laptop-code fs-1 text-success mb-3"></i>
+              <h5 class="fw-bold">100% Practical Training</h5>
+              <p class="text-muted small mb-0">
+                Learn by writing production-grade code on live industry
+                challenges.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="why-box">
+              <i class="fa-solid fa-user-tie fs-1 text-success mb-3"></i>
+              <h5 class="fw-bold">Expert Mentors</h5>
+              <p class="text-muted small mb-0">
+                Get trained directly by senior software architects with 10+
+                years experience.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="why-box">
+              <i class="fa-solid fa-briefcase fs-1 text-success mb-3"></i>
+              <h5 class="fw-bold">Placement Assistance</h5>
+              <p class="text-muted small mb-0">
+                Dedicated mock interviews, resume enhancement, and direct
+                placement drives.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Global CTA Banner -->
+    <section class="global-cta">
+      <div class="container" data-aos="zoom-in">
+        <h2 class="fw-bold mb-3 text-white">
+          Ready to Build Your Future in Full Stack Development?
+        </h2>
+        <p class="opacity-75 mb-4 text-white">
+          Join our top-trending courses and start your journey today with 100%
+          placement support.
+        </p>
+        <a
+          href="https://wa.me/919876543210?text=Hi,%20I%20want%20to%20enroll%20in%20Full%20Stack%20Courses."
+          class="btn btn-light fw-bold px-5  text-success shadow"
+        >
+          <i class="fa-brands fa-whatsapp me-2"></i> Enroll via WhatsApp
+        </a>
+      </div>
+    </section>
+
+    <!-- Custom Footer -->
+    <footer>
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <h5>
+              <i class="fa-solid fa-code me-2 text-success"></i>Nextz
+              Technologies
+            </h5>
+            <p>
+              Empowering minds with quality training and practical skills to
+              build successful careers in the IT industry.
+            </p>
+            <div class="mt-3">
+              <a class="social" href="#"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+              <a class="social" href="#"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a class="social" href="#"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-6 col-lg-4">
+            <h6>Quick Links</h6>
+            <ul>
+              <li><a href="#">Training Courses</a></li>
+              <li><a href="careers.html">Careers</a></li>
+              <li><a href="placements.html">Placements</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-4">
+            <h6>Contact Us</h6>
+            <p>
+              <i class="fa-solid fa-phone me-2 text-success"></i>+91 98765 43210
+            </p>
+            <p>
+              <i class="fa-solid fa-envelope me-2 text-success"></i
+              >info@nextztechnologies.com
+            </p>
+            <p>
+              <i class="fa-solid fa-location-dot me-2 text-success"></i>Salem,
+              Tamil Nadu, India
+            </p>
+          </div>
+        </div>
+        <div class="bottom">
+          <span
+            >© 2026 Nextz Technologies. All Rights Reserved. Designed for
+            Excellence.</span
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap & AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 800, once: true });
+    </script>
+  </body>
+</html>

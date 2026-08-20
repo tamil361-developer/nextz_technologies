@@ -1,0 +1,1789 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Training Courses | Nextz Technologies</title>
+    <meta
+      name="description"
+      content="Explore industry-relevant IT training courses, Python Full Stack, Data Science, AI & ML, Power BI, and Tableau with placement support at Nextz Technologies."
+    />
+
+    <!-- Google Fonts: Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap 5 CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/course_pages/all_courses.css" />
+  </head>
+  <body>
+    <!-- =========================================
+         1. STICKY NAVBAR
+    ========================================= -->
+    <nav class="navbar navbar-expand-lg navbar-custom sticky-top">
+      <div class="container-fluid mx-lg-5">
+        <a class="navbar-brand" href="#">
+          <div class="brand-icon"><i class="fa-solid fa-code"></i></div>
+          Nextz <span>Technologies</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <i class="fa-solid fa-bars-staggered"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 text-center">
+            <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Training Courses</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Certifications</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Careers</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Placements</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+          </ul>
+          <div class="text-center mt-3 mt-lg-0">
+            <a href="#courses-section" class="btn-custom btn-primary-theme"
+              >Enroll Now</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- =========================================
+         2. HERO SECTION
+    ========================================= -->
+    <section class="hero-section overflow-hidden">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6" data-aos="fade-right">
+            <div class="hero-badge">
+              <i class="fa-solid fa-graduation-cap me-2"></i> NEXTZ TECHNOLOGIES
+            </div>
+            <h1 class="hero-heading">
+              Build Skills.<br />Build Your
+              <span class="highlight-text">Career.</span>
+            </h1>
+            <p class="hero-desc">
+              Learn industry-relevant technologies through practical training,
+              real-world projects and expert guidance designed to help you
+              become career-ready.
+            </p>
+            <div class="d-flex gap-3 flex-wrap">
+              <a href="#courses-section" class="btn-custom btn-primary-theme"
+                >Explore Courses</a
+              >
+              <a href="#cta" class="btn-custom btn-outline-theme"
+                >Talk to an Expert</a
+              >
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+            <div class="hero-img-container text-center">
+              <img
+                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1000&q=80"
+                alt="Students learning coding and data analytics"
+                class="hero-main-img"
+              />
+              <div class="floating-card floating-1 shadow-lg">
+                <i class="fa-solid fa-users-rectangle"></i>
+                <div><strong>500+ Students Trained</strong></div>
+              </div>
+              <div class="floating-card floating-2 shadow-lg">
+                <i class="fa-solid fa-award"></i>
+                <div><strong>Industry-Relevant Skills</strong></div>
+              </div>
+              <div class="floating-card floating-3 shadow-lg">
+                <i class="fa-solid fa-rocket"></i>
+                <div><strong>100+ Projects</strong></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="deco-circle deco-1"></div>
+      <div class="deco-circle deco-2"></div>
+    </section>
+
+    <!-- =========================================
+         3. COURSE CATEGORIES & 4. FEATURED COURSES
+    ========================================= -->
+    <section class="section-padding bg-soft" id="courses-section">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <span class="badge-subtle">LEARNING PATHS</span>
+          <h2 class="section-title">Explore Our Training Programs</h2>
+          <p class="section-subtitle mx-auto">
+            Choose the right learning path and develop practical skills for
+            today's technology-driven careers.
+          </p>
+
+          <!-- Category Filters -->
+          <div class="filter-btn-group mt-4">
+            <button class="filter-btn active" data-filter="all">
+              All Courses
+            </button>
+            <button class="filter-btn" data-filter="Development">
+              Development
+            </button>
+            <button class="filter-btn" data-filter="Data Science">
+              Data Science
+            </button>
+            <button class="filter-btn" data-filter="AI & ML">AI & ML</button>
+            <button class="filter-btn" data-filter="Data Analytics">
+              Data Analytics
+            </button>
+            <button class="filter-btn" data-filter="Database">Database</button>
+            <button class="filter-btn" data-filter="Business Intelligence">
+              Business Intelligence
+            </button>
+          </div>
+        </div>
+
+        <!-- Course Card Grid -->
+        <div class="row g-4" id="course-grid">
+          <!-- Course 1 -->
+          <div
+            class="col-lg-4 col-md-6 course-item"
+            data-category="Development"
+            data-aos="zoom-in"
+            data-aos-delay="0"
+          >
+            <div class="course-card h-100">
+              <div class="course-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?auto=format&fit=crop&w=600&q=80"
+                  alt="Python Full Stack"
+                />
+                <span class="course-category-badge">Development</span>
+              </div>
+              <div class="course-body">
+                <h4 class="course-title">Python Full Stack Development</h4>
+                <p class="course-desc">
+                  Master Python, Django, REST API, React, JavaScript, HTML, CSS
+                  and MySQL to build modern full-stack applications.
+                </p>
+                <div class="tag-container">
+                  <span class="tech-tag">Python</span
+                  ><span class="tech-tag">Django</span
+                  ><span class="tech-tag">React</span
+                  ><span class="tech-tag">REST API</span
+                  ><span class="tech-tag">MySQL</span>
+                </div>
+                <div class="course-meta">
+                  <span><i class="fa-regular fa-clock me-1"></i> 6 Months</span>
+                  <span
+                    ><i class="fa-solid fa-layer-group me-1"></i> Beginner to
+                    Advanced</span
+                  >
+                </div>
+                <div class="course-actions">
+                  <button
+                    class="btn-custom btn-outline-theme flex-grow-1 view-details-btn"
+                    data-title="Python Full Stack Development"
+                    data-overview="A comprehensive program designed to take you from beginner to job-ready full stack engineer with hands-on web development experience."
+                    data-learn="Build responsive UIs with React, robust backends with Django, secure REST APIs, and manage complex database operations."
+                    data-tech="Python, Django, React, REST API, MySQL, HTML, CSS, JavaScript"
+                    data-duration="6 Months"
+                    data-mode="Online / Offline"
+                    data-eligibility="Graduates / Freshers / Career Switchers"
+                    data-cert="Industry Recognized Certificate"
+                    data-career="Python Developer, Full Stack Engineer, Web Developer"
+                  >
+                    View Details
+                  </button>
+                  <button
+                    class="btn-custom btn-primary-theme flex-grow-1 enroll-btn"
+                  >
+                    Enroll Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course 2 -->
+          <div
+            class="col-lg-4 col-md-6 course-item"
+            data-category="Data Science"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <div class="course-card h-100">
+              <div class="course-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80"
+                  alt="Data Science"
+                />
+                <span class="course-category-badge">Data Science</span>
+              </div>
+              <div class="course-body">
+                <h4 class="course-title">Data Science</h4>
+                <p class="course-desc">
+                  Extract valuable insights from complex data sets using
+                  advanced statistical analysis, algorithms, and machine
+                  learning models.
+                </p>
+                <div class="tag-container">
+                  <span class="tech-tag">Python</span
+                  ><span class="tech-tag">NumPy</span
+                  ><span class="tech-tag">Pandas</span
+                  ><span class="tech-tag">Matplotlib</span
+                  ><span class="tech-tag">Statistics</span
+                  ><span class="tech-tag">Machine Learning</span>
+                </div>
+                <div class="course-meta">
+                  <span><i class="fa-regular fa-clock me-1"></i> 6 Months</span>
+                  <span
+                    ><i class="fa-solid fa-layer-group me-1"></i>
+                    Intermediate</span
+                  >
+                </div>
+                <div class="course-actions">
+                  <button
+                    class="btn-custom btn-outline-theme flex-grow-1 view-details-btn"
+                    data-title="Data Science"
+                    data-overview="Gain mastery over data preprocessing, exploratory data analysis, statistical modeling, and predictive analytics."
+                    data-learn="Data wrangling with Pandas, building predictive models, data visualization, and applying ML algorithms."
+                    data-tech="Python, NumPy, Pandas, Matplotlib, Scikit-Learn, Statistics"
+                    data-duration="6 Months"
+                    data-mode="Online / Offline"
+                    data-eligibility="Engineering / Science Graduates / Analysts"
+                    data-cert="Data Science Professional Certificate"
+                    data-career="Data Scientist, Data Analyst, ML Specialist"
+                  >
+                    View Details
+                  </button>
+                  <button
+                    class="btn-custom btn-primary-theme flex-grow-1 enroll-btn"
+                  >
+                    Enroll Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course 3 -->
+          <div
+            class="col-lg-4 col-md-6 course-item"
+            data-category="AI & ML"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <div class="course-card h-100">
+              <div class="course-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1677442136019-21780efad99a?auto=format&fit=crop&w=600&q=80"
+                  alt="AI & Machine Learning"
+                />
+                <span class="course-category-badge">AI & ML</span>
+              </div>
+              <div class="course-body">
+                <h4 class="course-title">AI & Machine Learning</h4>
+                <p class="course-desc">
+                  Build intelligent systems, deep learning networks, and natural
+                  language processing applications capable of complex decisions.
+                </p>
+                <div class="tag-container">
+                  <span class="tech-tag">Python</span
+                  ><span class="tech-tag">Machine Learning</span
+                  ><span class="tech-tag">Deep Learning</span
+                  ><span class="tech-tag">NLP</span
+                  ><span class="tech-tag">Computer Vision</span>
+                </div>
+                <div class="course-meta">
+                  <span><i class="fa-regular fa-clock me-1"></i> 6 Months</span>
+                  <span
+                    ><i class="fa-solid fa-layer-group me-1"></i> Advanced</span
+                  >
+                </div>
+                <div class="course-actions">
+                  <button
+                    class="btn-custom btn-outline-theme flex-grow-1 view-details-btn"
+                    data-title="AI & Machine Learning"
+                    data-overview="Dive deep into artificial intelligence and neural networks to create cutting-edge autonomous applications."
+                    data-learn="Supervised & unsupervised learning, CNNs, RNNs, NLP pipelines, and TensorFlow/PyTorch frameworks."
+                    data-tech="Python, TensorFlow, PyTorch, OpenCV, NLP, Deep Learning"
+                    data-duration="6 Months"
+                    data-mode="Online / Offline"
+                    data-eligibility="Tech Professionals / Graduates with Programming Background"
+                    data-cert="AI & ML Expert Certification"
+                    data-career="AI Engineer, ML Engineer, Research Scientist"
+                  >
+                    View Details
+                  </button>
+                  <button
+                    class="btn-custom btn-primary-theme flex-grow-1 enroll-btn"
+                  >
+                    Enroll Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course 4 -->
+          <div
+            class="col-lg-4 col-md-6 course-item"
+            data-category="Data Analytics"
+            data-aos="zoom-in"
+            data-aos-delay="0"
+          >
+            <div class="course-card h-100">
+              <div class="course-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80"
+                  alt="Data Analytics"
+                />
+                <span class="course-category-badge">Data Analytics</span>
+              </div>
+              <div class="course-body">
+                <h4 class="course-title">Data Analytics</h4>
+                <p class="course-desc">
+                  Transform raw data into meaningful business insights using
+                  Excel, Advanced SQL, Python, Power BI, and Tableau dashboards.
+                </p>
+                <div class="tag-container">
+                  <span class="tech-tag">Excel</span
+                  ><span class="tech-tag">SQL</span
+                  ><span class="tech-tag">Python</span
+                  ><span class="tech-tag">Power BI</span
+                  ><span class="tech-tag">Tableau</span>
+                </div>
+                <div class="course-meta">
+                  <span><i class="fa-regular fa-clock me-1"></i> 4 Months</span>
+                  <span
+                    ><i class="fa-solid fa-layer-group me-1"></i> Beginner
+                    Friendly</span
+                  >
+                </div>
+                <div class="course-actions">
+                  <button
+                    class="btn-custom btn-outline-theme flex-grow-1 view-details-btn"
+                    data-title="Data Analytics"
+                    data-overview="Learn how to collect, clean, analyze, and visualize data to drive critical corporate decision-making."
+                    data-learn="Advanced Excel formulas, SQL querying, building interactive Power BI & Tableau dashboards."
+                    data-tech="Excel, SQL, Python, Power BI, Tableau"
+                    data-duration="4 Months"
+                    data-mode="Online / Offline"
+                    data-eligibility="Any Graduate / Working Professionals"
+                    data-cert="Data Analytics Professional Certificate"
+                    data-career="Data Analyst, Business Analyst, BI Specialist"
+                  >
+                    View Details
+                  </button>
+                  <button
+                    class="btn-custom btn-primary-theme flex-grow-1 enroll-btn"
+                  >
+                    Enroll Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course 5 -->
+          <div
+            class="col-lg-4 col-md-6 course-item"
+            data-category="Business Intelligence"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <div class="course-card h-100">
+              <div class="course-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=600&q=80"
+                  alt="Power BI"
+                />
+                <span class="course-category-badge">Business Intelligence</span>
+              </div>
+              <div class="course-body">
+                <h4 class="course-title">Power BI</h4>
+                <p class="course-desc">
+                  Master Power Query, DAX functions, advanced data modeling, and
+                  publish interactive reports on the Power BI Service.
+                </p>
+                <div class="tag-container">
+                  <span class="tech-tag">Power Query</span
+                  ><span class="tech-tag">DAX</span
+                  ><span class="tech-tag">Data Modeling</span
+                  ><span class="tech-tag">Power BI Service</span>
+                </div>
+                <div class="course-meta">
+                  <span><i class="fa-regular fa-clock me-1"></i> 3 Months</span>
+                  <span
+                    ><i class="fa-solid fa-layer-group me-1"></i> Beginner to
+                    Intermediate</span
+                  >
+                </div>
+                <div class="course-actions">
+                  <button
+                    class="btn-custom btn-outline-theme flex-grow-1 view-details-btn"
+                    data-title="Power BI"
+                    data-overview="Become an expert in Microsoft Power BI ecosystem for robust business reporting and enterprise analytics."
+                    data-learn="Data transformation, writing complex DAX measures, star schema modeling, and workspace collaboration."
+                    data-tech="Power Query, DAX, Data Modeling, Power BI Service"
+                    data-duration="3 Months"
+                    data-mode="Online / Offline"
+                    data-eligibility="Freshers / Analysts / Accountants"
+                    data-cert="Power BI Expert Certification"
+                    data-career="Power BI Developer, BI Analyst, Reporting Specialist"
+                  >
+                    View Details
+                  </button>
+                  <button
+                    class="btn-custom btn-primary-theme flex-grow-1 enroll-btn"
+                  >
+                    Enroll Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course 6 -->
+          <div
+            class="col-lg-4 col-md-6 course-item"
+            data-category="Business Intelligence"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <div class="course-card h-100">
+              <div class="course-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?auto=format&fit=crop&w=600&q=80"
+                  alt="Tableau"
+                />
+                <span class="course-category-badge">Business Intelligence</span>
+              </div>
+              <div class="course-body">
+                <h4 class="course-title">Tableau</h4>
+                <p class="course-desc">
+                  Learn Tableau Desktop, advanced visual analytics, LOD
+                  expressions, parameters, and build executive dashboards.
+                </p>
+                <div class="tag-container">
+                  <span class="tech-tag">Tableau Desktop</span
+                  ><span class="tech-tag">Data Viz</span
+                  ><span class="tech-tag">LOD</span
+                  ><span class="tech-tag">Parameters</span
+                  ><span class="tech-tag">Dashboards</span>
+                </div>
+                <div class="course-meta">
+                  <span><i class="fa-regular fa-clock me-1"></i> 3 Months</span>
+                  <span
+                    ><i class="fa-solid fa-layer-group me-1"></i> Beginner
+                    Friendly</span
+                  >
+                </div>
+                <div class="course-actions">
+                  <button
+                    class="btn-custom btn-outline-theme flex-grow-1 view-details-btn"
+                    data-title="Tableau"
+                    data-overview="Master data visualization principles and Tableau Desktop to tell compelling stories with business data."
+                    data-learn="Connecting multiple data sources, calculated fields, LOD expressions, interactive maps, and dashboard design."
+                    data-tech="Tableau Desktop, Data Visualization, LOD, Parameters, Dashboards"
+                    data-duration="3 Months"
+                    data-mode="Online / Offline"
+                    data-eligibility="Any Graduate / Professionals"
+                    data-cert="Tableau Desktop Specialist Prep"
+                    data-career="Tableau Developer, Data Visualization Expert, BI Analyst"
+                  >
+                    View Details
+                  </button>
+                  <button
+                    class="btn-custom btn-primary-theme flex-grow-1 enroll-btn"
+                  >
+                    Enroll Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course 7 -->
+          <div
+            class="col-lg-4 col-md-6 course-item"
+            data-category="Database"
+            data-aos="zoom-in"
+            data-aos-delay="0"
+          >
+            <div class="course-card h-100">
+              <div class="course-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?auto=format&fit=crop&w=600&q=80"
+                  alt="Advanced SQL"
+                />
+                <span class="course-category-badge">Database</span>
+              </div>
+              <div class="course-body">
+                <h4 class="course-title">Advanced SQL</h4>
+                <p class="course-desc">
+                  Master MySQL, complex joins, subqueries, CTEs, window
+                  functions, and database optimization techniques.
+                </p>
+                <div class="tag-container">
+                  <span class="tech-tag">MySQL</span
+                  ><span class="tech-tag">Joins</span
+                  ><span class="tech-tag">Subqueries</span
+                  ><span class="tech-tag">CTEs</span
+                  ><span class="tech-tag">Window Functions</span
+                  ><span class="tech-tag">Stored Procedures</span>
+                </div>
+                <div class="course-meta">
+                  <span><i class="fa-regular fa-clock me-1"></i> 2 Months</span>
+                  <span
+                    ><i class="fa-solid fa-layer-group me-1"></i>
+                    Intermediate</span
+                  >
+                </div>
+                <div class="course-actions">
+                  <button
+                    class="btn-custom btn-outline-theme flex-grow-1 view-details-btn"
+                    data-title="Advanced SQL"
+                    data-overview="Become an expert database query writer capable of handling complex enterprise data architectures."
+                    data-learn="Performance tuning, indexing, window functions, CTEs, views, stored procedures, and triggers."
+                    data-tech="MySQL, Joins, Subqueries, CTEs, Window Functions, Stored Procedures"
+                    data-duration="2 Months"
+                    data-mode="Online / Offline"
+                    data-eligibility="Students / Developers / Analysts"
+                    data-cert="Advanced SQL Certification"
+                    data-career="SQL Developer, Database Administrator, Data Engineer"
+                  >
+                    View Details
+                  </button>
+                  <button
+                    class="btn-custom btn-primary-theme flex-grow-1 enroll-btn"
+                  >
+                    Enroll Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Course 8 -->
+          <div
+            class="col-lg-4 col-md-6 course-item"
+            data-category="Development"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <div class="course-card h-100">
+              <div class="course-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1526379095098-d400fd0bf935?auto=format&fit=crop&w=600&q=80"
+                  alt="Python Programming"
+                />
+                <span class="course-category-badge">Development</span>
+              </div>
+              <div class="course-body">
+                <h4 class="course-title">Python Programming</h4>
+                <p class="course-desc">
+                  Build a rock-solid foundation in Python programming, covering
+                  OOP, functions, data structures, and essential libraries.
+                </p>
+                <div class="tag-container">
+                  <span class="tech-tag">Python</span
+                  ><span class="tech-tag">OOP</span
+                  ><span class="tech-tag">Functions</span
+                  ><span class="tech-tag">Data Structures</span
+                  ><span class="tech-tag">File Handling</span
+                  ><span class="tech-tag">Libraries</span>
+                </div>
+                <div class="course-meta">
+                  <span><i class="fa-regular fa-clock me-1"></i> 2 Months</span>
+                  <span
+                    ><i class="fa-solid fa-layer-group me-1"></i> Beginner
+                    Friendly</span
+                  >
+                </div>
+                <div class="course-actions">
+                  <button
+                    class="btn-custom btn-outline-theme flex-grow-1 view-details-btn"
+                    data-title="Python Programming"
+                    data-overview="The ultimate beginner-friendly course to start your programming journey with the world's most popular language."
+                    data-learn="Syntax, control flow, object-oriented programming principles, error handling, and file manipulation."
+                    data-tech="Python, OOP, Functions, Data Structures, File Handling, Libraries"
+                    data-duration="2 Months"
+                    data-mode="Online / Offline"
+                    data-eligibility="Absolute Beginners / Students"
+                    data-cert="Python Programming Certificate"
+                    data-career="Python Junior Developer, Software Trainee"
+                  >
+                    View Details
+                  </button>
+                  <button
+                    class="btn-custom btn-primary-theme flex-grow-1 enroll-btn"
+                  >
+                    Enroll Now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         6. WHY CHOOSE OUR COURSES
+    ========================================= -->
+    <section class="section-padding bg-white">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <span class="badge-subtle">WHY NEXTZ</span>
+          <h2 class="section-title">Why Learn With Nextz Technologies?</h2>
+          <p class="section-subtitle mx-auto">
+            We combine academic excellence with industry rigor to make you
+            unstoppable.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="0">
+            <div class="feature-card h-100">
+              <div class="feat-icon">
+                <i class="fa-solid fa-book-bookmark"></i>
+              </div>
+              <h5>Industry-Relevant Curriculum</h5>
+              <p>
+                Learn technologies currently used in real-world corporate
+                projects and products.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="feature-card h-100">
+              <div class="feat-icon">
+                <i class="fa-solid fa-laptop-code"></i>
+              </div>
+              <h5>Practical Project Training</h5>
+              <p>
+                Build real-world projects from scratch instead of only learning
+                dry theory.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="feature-card h-100">
+              <div class="feat-icon">
+                <i class="fa-solid fa-chalkboard-user"></i>
+              </div>
+              <h5>Expert Trainers</h5>
+              <p>
+                Learn directly from experienced technical professionals with
+                active industry exposure.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="feature-card h-100">
+              <div class="feat-icon"><i class="fa-solid fa-bullseye"></i></div>
+              <h5>Career-Focused Learning</h5>
+              <p>
+                Develop comprehensive skills strictly aligned with hiring
+                requirements of top tech firms.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="feature-card h-100">
+              <div class="feat-icon">
+                <i class="fa-solid fa-certificate"></i>
+              </div>
+              <h5>Recognized Certification</h5>
+              <p>
+                Receive course completion certification authenticated with
+                unique verification IDs.
+              </p>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-6"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div class="feature-card h-100">
+              <div class="feat-icon"><i class="fa-solid fa-briefcase"></i></div>
+              <h5>Placement Support</h5>
+              <p>
+                Get dedicated resume building, mock interviews, and direct
+                interview scheduling.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         7. LEARNING PROCESS
+    ========================================= -->
+    <section class="section-padding bg-soft">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <span class="badge-subtle">ROADMAP</span>
+          <h2 class="section-title">Your Learning Journey</h2>
+          <p class="section-subtitle mx-auto">
+            A structured, step-by-step methodology taking you from novice to
+            professional.
+          </p>
+        </div>
+        <div class="row g-4 process-row">
+          <div
+            class="col-lg-2 col-md-4 col-sm-6 text-center"
+            data-aos="fade-up"
+            data-aos-delay="0"
+          >
+            <div class="process-card">
+              <div class="process-num">01</div>
+              <h6>Choose Your Course</h6>
+              <p class="small text-muted">Select the ideal tech track.</p>
+            </div>
+          </div>
+          <div
+            class="col-lg-2 col-md-4 col-sm-6 text-center"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="process-card">
+              <div class="process-num">02</div>
+              <h6>Learn Fundamentals</h6>
+              <p class="small text-muted">Master core concepts.</p>
+            </div>
+          </div>
+          <div
+            class="col-lg-2 col-md-4 col-sm-6 text-center"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="process-card">
+              <div class="process-num">03</div>
+              <h6>Build Projects</h6>
+              <p class="small text-muted">Create real applications.</p>
+            </div>
+          </div>
+          <div
+            class="col-lg-2 col-md-4 col-sm-6 text-center"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="process-card">
+              <div class="process-num">04</div>
+              <h6>Get Mentored</h6>
+              <p class="small text-muted">Clear doubts with experts.</p>
+            </div>
+          </div>
+          <div
+            class="col-lg-2 col-md-4 col-sm-6 text-center"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="process-card">
+              <div class="process-num">05</div>
+              <h6>Get Certified</h6>
+              <p class="small text-muted">Earn verified credentials.</p>
+            </div>
+          </div>
+          <div
+            class="col-lg-2 col-md-4 col-sm-6 text-center"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div class="process-card">
+              <div class="process-num">06</div>
+              <h6>Career Ready</h6>
+              <p class="small text-muted">Placements & interviews.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         8. COURSE BENEFITS
+    ========================================= -->
+    <section class="section-padding bg-white">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <span class="badge-subtle">PERKS</span>
+          <h2 class="section-title">What You'll Get</h2>
+          <p class="section-subtitle mx-auto">
+            Everything you need to succeed during and after your training.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div
+            class="col-lg-3 col-md-4 col-sm-6"
+            data-aos="zoom-in"
+            data-aos-delay="0"
+          >
+            <div class="benefit-box">
+              <i class="fa-solid fa-circle-check text-success me-2"></i> Live
+              Training
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-4 col-sm-6"
+            data-aos="zoom-in"
+            data-aos-delay="50"
+          >
+            <div class="benefit-box">
+              <i class="fa-solid fa-circle-check text-success me-2"></i>
+              Practical Assignments
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-4 col-sm-6"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+          >
+            <div class="benefit-box">
+              <i class="fa-solid fa-circle-check text-success me-2"></i>
+              Real-World Projects
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-4 col-sm-6"
+            data-aos="zoom-in"
+            data-aos-delay="150"
+          >
+            <div class="benefit-box">
+              <i class="fa-solid fa-circle-check text-success me-2"></i> Study
+              Materials
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-4 col-sm-6"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          >
+            <div class="benefit-box">
+              <i class="fa-solid fa-circle-check text-success me-2"></i> Doubt
+              Clearing Sessions
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-4 col-sm-6"
+            data-aos="zoom-in"
+            data-aos-delay="250"
+          >
+            <div class="benefit-box">
+              <i class="fa-solid fa-circle-check text-success me-2"></i> Mock
+              Interviews
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-4 col-sm-6"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+          >
+            <div class="benefit-box">
+              <i class="fa-solid fa-circle-check text-success me-2"></i>
+              Certification
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-4 col-sm-6"
+            data-aos="zoom-in"
+            data-aos-delay="350"
+          >
+            <div class="benefit-box">
+              <i class="fa-solid fa-circle-check text-success me-2"></i>
+              Placement Assistance
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         10. CAREER OPPORTUNITIES
+    ========================================= -->
+    <section class="section-padding bg-soft">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <span class="badge-subtle">FUTURE ROLES</span>
+          <h2 class="section-title">Turn Your Skills Into A Career</h2>
+          <p class="section-subtitle mx-auto">
+            Explore the diverse high-paying job roles you can target after
+            course completion.
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-4 col-sm-6" data-aos="fade-up">
+            <div class="career-card">
+              <i class="fa-solid fa-code text-success mb-3 fs-3"></i>
+              <h5>Python Developer</h5>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-4 col-sm-6"
+            data-aos="fade-up"
+            data-aos-delay="50"
+          >
+            <div class="career-card">
+              <i class="fa-solid fa-layer-group text-success mb-3 fs-3"></i>
+              <h5>Full Stack Developer</h5>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-4 col-sm-6"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="career-card">
+              <i class="fa-solid fa-chart-pie text-success mb-3 fs-3"></i>
+              <h5>Data Analyst</h5>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-4 col-sm-6"
+            data-aos="fade-up"
+            data-aos-delay="150"
+          >
+            <div class="career-card">
+              <i class="fa-solid fa-brain text-success mb-3 fs-3"></i>
+              <h5>Data Scientist</h5>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-4 col-sm-6"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div class="career-card">
+              <i class="fa-solid fa-robot text-success mb-3 fs-3"></i>
+              <h5>Machine Learning Engineer</h5>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-4 col-sm-6"
+            data-aos="fade-up"
+            data-aos-delay="250"
+          >
+            <div class="career-card">
+              <i class="fa-solid fa-microchip text-success mb-3 fs-3"></i>
+              <h5>AI Engineer</h5>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-4 col-sm-6"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div class="career-card">
+              <i class="fa-solid fa-chart-column text-success mb-3 fs-3"></i>
+              <h5>Power BI Developer</h5>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-4 col-sm-6"
+            data-aos="fade-up"
+            data-aos-delay="350"
+          >
+            <div class="career-card">
+              <i class="fa-solid fa-briefcase text-success mb-3 fs-3"></i>
+              <h5>Business Analyst</h5>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-4 col-sm-6"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div class="career-card">
+              <i class="fa-solid fa-database text-success mb-3 fs-3"></i>
+              <h5>SQL Developer</h5>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-4 col-sm-6"
+            data-aos="fade-up"
+            data-aos-delay="450"
+          >
+            <div class="career-card">
+              <i class="fa-solid fa-chart-line text-success mb-3 fs-3"></i>
+              <h5>Tableau Developer</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         11. STUDENT SUCCESS / STATISTICS
+    ========================================= -->
+    <section class="stats-strip">
+      <div class="container">
+        <div class="row text-center g-4">
+          <div class="col-md-3 col-6" data-aos="zoom-in">
+            <h2 class="stat-number">
+              <span class="counter-num" data-target="500">0</span>+
+            </h2>
+            <p class="stat-text">Students Trained</p>
+          </div>
+          <div class="col-md-3 col-6" data-aos="zoom-in" data-aos-delay="100">
+            <h2 class="stat-number">
+              <span class="counter-num" data-target="50">0</span>+
+            </h2>
+            <p class="stat-text">Expert Sessions</p>
+          </div>
+          <div class="col-md-3 col-6" data-aos="zoom-in" data-aos-delay="200">
+            <h2 class="stat-number">
+              <span class="counter-num" data-target="100">0</span>+
+            </h2>
+            <p class="stat-text">Real-World Projects</p>
+          </div>
+          <div class="col-md-3 col-6" data-aos="zoom-in" data-aos-delay="300">
+            <h2 class="stat-number">
+              <span class="counter-num" data-target="95">0</span>%
+            </h2>
+            <p class="stat-text">Student Satisfaction</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         12. TESTIMONIALS
+    ========================================= -->
+    <section class="section-padding bg-white">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <span class="badge-subtle">TESTIMONIALS</span>
+          <h2 class="section-title">Success Stories From Our Alumni</h2>
+          <p class="section-subtitle mx-auto">
+            Hear what our graduates have to say about their journey with Nextz
+            Technologies.
+          </p>
+        </div>
+
+        <div
+          id="testimonialCarousel"
+          class="carousel slide pb-5"
+          data-bs-ride="carousel"
+          data-aos="fade-up"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="testimonial-card text-center p-4">
+                    <div class="text-warning mb-3">
+                      <i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-text mb-4">
+                      "Nextz Technologies helped me understand Python and Django
+                      through practical projects. The training was very clear
+                      and career-focused."
+                    </p>
+                    <img
+                      src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80"
+                      alt="Priya Sharma"
+                      class="rounded-circle mb-2"
+                      width="70"
+                      height="70"
+                    />
+                    <h5 class="fw-bold mb-0">Priya Sharma</h5>
+                    <small class="text-muted">Python Full Stack Graduate</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="testimonial-card text-center p-4">
+                    <div class="text-warning mb-3">
+                      <i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-text mb-4">
+                      "The data science mentors are exceptional. Working on live
+                      datasets gave me the confidence to crack interviews and
+                      land a data analyst role."
+                    </p>
+                    <img
+                      src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80"
+                      alt="Rahul Verma"
+                      class="rounded-circle mb-2"
+                      width="70"
+                      height="70"
+                    />
+                    <h5 class="fw-bold mb-0">Rahul Verma</h5>
+                    <small class="text-muted">Data Science Graduate</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="testimonial-card text-center p-4">
+                    <div class="text-warning mb-3">
+                      <i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i
+                      ><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p class="testimonial-text mb-4">
+                      "Practical project training is the real strength here. I
+                      learned Power BI and Tableau with real business cases.
+                      Highly recommended!"
+                    </p>
+                    <img
+                      src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80"
+                      alt="Anita Raj"
+                      class="rounded-circle mb-2"
+                      width="70"
+                      height="70"
+                    />
+                    <h5 class="fw-bold mb-0">Anita Raj</h5>
+                    <small class="text-muted">Data Analytics Graduate</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="prev"
+          >
+            <span
+              class="carousel-control-prev-icon bg-success rounded-circle p-3"
+              aria-hidden="true"
+            ></span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#testimonialCarousel"
+            data-bs-slide="next"
+          >
+            <span
+              class="carousel-control-next-icon bg-success rounded-circle p-3"
+              aria-hidden="true"
+            ></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         13. FAQ SECTION
+    ========================================= -->
+    <section class="section-padding bg-soft">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <span class="badge-subtle">SUPPORT</span>
+          <h2 class="section-title">Frequently Asked Questions</h2>
+          <p class="section-subtitle mx-auto">
+            Got questions? We have answers to help you get started with
+            confidence.
+          </p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8" data-aos="fade-up">
+            <div class="accordion shadow-sm" id="faqAccordion">
+              <div class="accordion-item border-0 border-bottom mb-2">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button fw-bold"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq1"
+                  >
+                    Which course is suitable for beginners?
+                  </button>
+                </h2>
+                <div
+                  id="faq1"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body text-muted">
+                    Python Programming and Data Analytics are exceptionally
+                    friendly for absolute beginners with no prior coding
+                    experience.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border-0 border-bottom mb-2">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed fw-bold"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq2"
+                  >
+                    Do you provide practical training?
+                  </button>
+                </h2>
+                <div
+                  id="faq2"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body text-muted">
+                    Yes! Our curriculum is 100% practical, featuring live
+                    coding, assignments, and real-world project builds.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border-0 border-bottom mb-2">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed fw-bold"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq3"
+                  >
+                    Are real projects included?
+                  </button>
+                </h2>
+                <div
+                  id="faq3"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body text-muted">
+                    Every course includes multiple industry-grade projects that
+                    you can showcase directly in your resume and portfolio.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border-0 border-bottom mb-2">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed fw-bold"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq4"
+                  >
+                    Will I receive certification?
+                  </button>
+                </h2>
+                <div
+                  id="faq4"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body text-muted">
+                    Yes, upon successful completion and project submission, you
+                    receive an industry-recognized certificate with unique
+                    online verification ID.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border-0 border-bottom mb-2">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed fw-bold"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq5"
+                  >
+                    Is placement assistance available?
+                  </button>
+                </h2>
+                <div
+                  id="faq5"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body text-muted">
+                    Yes, we provide rigorous resume building, mock technical
+                    interviews, and direct interview scheduling with partner
+                    companies.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border-0 border-bottom mb-2">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed fw-bold"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq6"
+                  >
+                    Do you provide online training?
+                  </button>
+                </h2>
+                <div
+                  id="faq6"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body text-muted">
+                    We offer both flexible online live interactive sessions and
+                    offline classroom training at our institute.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border-0 border-bottom mb-2">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed fw-bold"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq7"
+                  >
+                    What is the course duration?
+                  </button>
+                </h2>
+                <div
+                  id="faq7"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body text-muted">
+                    Durations range from 2 to 6 months depending on the depth
+                    and complexity of the chosen technology track.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border-0 border-bottom mb-2">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed fw-bold"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq8"
+                  >
+                    Can I switch courses?
+                  </button>
+                </h2>
+                <div
+                  id="faq8"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body text-muted">
+                    Yes, course switching is permissible within the initial 2
+                    weeks of joining after consulting with your academic
+                    counselor.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border-0 border-bottom mb-2">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed fw-bold"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq9"
+                  >
+                    Do you provide study materials?
+                  </button>
+                </h2>
+                <div
+                  id="faq9"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body text-muted">
+                    Students get lifetime access to comprehensive presentation
+                    slides, code repositories, recorded session notes, and
+                    e-books.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item border-0">
+                <h2 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed fw-bold"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#faq10"
+                  >
+                    How can I enroll?
+                  </button>
+                </h2>
+                <div
+                  id="faq10"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#faqAccordion"
+                >
+                  <div class="accordion-body text-muted">
+                    You can click the "Enroll Now" button on any course card or
+                    contact our admissions team directly via phone or WhatsApp.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         14. FINAL CTA
+    ========================================= -->
+    <section id="cta" class="cta-section">
+      <div class="container cta-container" data-aos="zoom-in">
+        <h2 class="cta-heading">Start Your Learning Journey Today</h2>
+        <p class="cta-desc">
+          Choose the right course, build practical skills and take the next step
+          toward your technology career.
+        </p>
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+          <a href="#courses-section" class="btn-custom btn-light-theme shadow"
+            >Explore Courses</a
+          >
+          <a href="tel:+919876543210" class="btn-custom btn-outline-light-theme"
+            >Contact Us</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================
+         15. PROFESSIONAL FOOTER
+    ========================================= -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row g-4 g-lg-5">
+          <div class="col-lg-4 col-md-6 pe-lg-4">
+            <div class="footer-brand mb-3">
+              <i class="fa-solid fa-code text-success"></i> Nextz Technologies
+            </div>
+            <p class="footer-text">
+              A premium technology training institute dedicated to building the
+              next generation of IT professionals through practical,
+              project-based learning.
+            </p>
+            <div class="social-icons mt-4">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-6">
+            <h5 class="footer-heading">Quick Links</h5>
+            <ul class="footer-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="#courses-section">Courses</a></li>
+              <li><a href="#">Certifications</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Placements</a></li>
+              <li><a href="#">Gallery</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="footer-heading">Popular Courses</h5>
+            <ul class="footer-links">
+              <li><a href="#courses-section">Python Full Stack</a></li>
+              <li><a href="#courses-section">Data Science</a></li>
+              <li><a href="#courses-section">AI & ML</a></li>
+              <li><a href="#courses-section">Data Analytics</a></li>
+              <li><a href="#courses-section">Power BI</a></li>
+              <li><a href="#courses-section">Tableau</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <h5 class="footer-heading">Contact</h5>
+            <ul class="footer-links contact-info">
+              <li><i class="fa-solid fa-phone"></i> +91 98765 43210</li>
+              <li><i class="fa-solid fa-envelope"></i> info@nextztech.com</li>
+              <li>
+                <i class="fa-solid fa-location-dot"></i> Tech Park, IT Corridor,
+                City
+              </li>
+              <li><i class="fa-solid fa-clock"></i> Mon-Sat: 9 AM - 6 PM</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div>&copy; 2026 Nextz Technologies. All Rights Reserved.</div>
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a> <a href="#">Terms & Conditions</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- =========================================
+         9. COURSE DETAILS PREVIEW MODAL
+    ========================================= -->
+    <div class="modal fade" id="courseModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content border-0 rounded-4 shadow-lg">
+          <div class="modal-header bg-success text-white rounded-top-4">
+            <h4 class="modal-title fw-bold" id="modalCourseTitle">
+              Course Title
+            </h4>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body p-4">
+            <div class="mb-3">
+              <h6 class="text-success fw-bold text-uppercase fs-6">Overview</h6>
+              <p id="modalOverview" class="text-muted">
+                Overview description here.
+              </p>
+            </div>
+            <div class="mb-3">
+              <h6 class="text-success fw-bold text-uppercase fs-6">
+                What You Will Learn
+              </h6>
+              <p id="modalLearn" class="text-muted">Learning outcomes here.</p>
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-6 mb-2">
+                <h6 class="text-success fw-bold text-uppercase fs-6">
+                  Technologies Covered
+                </h6>
+                <span id="modalTech" class="badge bg-light text-dark p-2 border"
+                  >Tech stack</span
+                >
+              </div>
+              <div class="col-md-6 mb-2">
+                <h6 class="text-success fw-bold text-uppercase fs-6">
+                  Duration & Mode
+                </h6>
+                <p id="modalDurationMode" class="text-muted mb-0">
+                  6 Months | Online/Offline
+                </p>
+              </div>
+            </div>
+            <div class="row mb-3">
+              <div class="col-md-6 mb-2">
+                <h6 class="text-success fw-bold text-uppercase fs-6">
+                  Eligibility
+                </h6>
+                <p id="modalEligibility" class="text-muted mb-0">
+                  Graduates / Freshers
+                </p>
+              </div>
+              <div class="col-md-6 mb-2">
+                <h6 class="text-success fw-bold text-uppercase fs-6">
+                  Certification
+                </h6>
+                <p id="modalCert" class="text-muted mb-0">
+                  Verified Certificate
+                </p>
+              </div>
+            </div>
+            <div class="mb-3">
+              <h6 class="text-success fw-bold text-uppercase fs-6">
+                Career Opportunities
+              </h6>
+              <p id="modalCareer" class="text-muted">Developer, Analyst</p>
+            </div>
+          </div>
+          <div class="modal-footer bg-light rounded-bottom-4">
+            <button
+              type="button"
+              class="btn btn-secondary rounded-pill px-4"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button
+              type="button"
+              class="btn btn-success rounded-pill px-4 enroll-btn"
+              data-bs-dismiss="modal"
+            >
+              Enroll Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // 1. Initialize AOS (Animate On Scroll)
+        AOS.init({
+          duration: 800,
+          once: true,
+          offset: 50,
+          easing: "ease-out-cubic",
+        });
+
+        // 2. Dynamic Course Filtering Logic
+        const filterBtns = document.querySelectorAll(".filter-btn");
+        const courseItems = document.querySelectorAll(".course-item");
+
+        filterBtns.forEach((btn) => {
+          btn.addEventListener("click", (e) => {
+            e.preventDefault();
+
+            filterBtns.forEach((b) => b.classList.remove("active"));
+            btn.classList.add("active");
+
+            const filterValue = btn.getAttribute("data-filter");
+
+            courseItems.forEach((item) => {
+              if (
+                filterValue === "all" ||
+                item.getAttribute("data-category") === filterValue
+              ) {
+                item.style.display = "block";
+                item.style.animation = "fadeIn 0.5s ease-in-out forwards";
+              } else {
+                item.style.display = "none";
+              }
+            });
+
+            setTimeout(() => {
+              AOS.refresh();
+            }, 300);
+          });
+        });
+
+        // 3. Dynamic Course Details Modal Population
+        const viewDetailBtns = document.querySelectorAll(".view-details-btn");
+        const modalTitle = document.getElementById("modalCourseTitle");
+        const modalOverview = document.getElementById("modalOverview");
+        const modalLearn = document.getElementById("modalLearn");
+        const modalTech = document.getElementById("modalTech");
+        const modalDurationMode = document.getElementById("modalDurationMode");
+        const modalEligibility = document.getElementById("modalEligibility");
+        const modalCert = document.getElementById("modalCert");
+        const modalCareer = document.getElementById("modalCareer");
+
+        viewDetailBtns.forEach((btn) => {
+          btn.addEventListener("click", function () {
+            modalTitle.textContent = this.getAttribute("data-title");
+            modalOverview.textContent = this.getAttribute("data-overview");
+            modalLearn.textContent = this.getAttribute("data-learn");
+            modalTech.textContent = this.getAttribute("data-tech");
+            modalDurationMode.textContent = `${this.getAttribute("data-duration")} | ${this.getAttribute("data-mode")}`;
+            modalEligibility.textContent =
+              this.getAttribute("data-eligibility");
+            modalCert.textContent = this.getAttribute("data-cert");
+            modalCareer.textContent = this.getAttribute("data-career");
+
+            var courseModal = new bootstrap.Modal(
+              document.getElementById("courseModal"),
+            );
+            courseModal.show();
+          });
+        });
+
+        // 4. Animated Number Counters for Statistics
+        const counters = document.querySelectorAll(".counter-num");
+        const speed = 200;
+
+        const animateCounters = () => {
+          counters.forEach((counter) => {
+            const updateCount = () => {
+              const target = +counter.getAttribute("data-target");
+              const count = +counter.innerText;
+              const inc = target / speed;
+
+              if (count < target) {
+                counter.innerText = Math.ceil(count + inc);
+                setTimeout(updateCount, 15);
+              } else {
+                counter.innerText = target;
+              }
+            };
+            updateCount();
+          });
+        };
+
+        const statsSection = document.querySelector(".stats-strip");
+        if (statsSection) {
+          const observer = new IntersectionObserver(
+            (entries, observer) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  animateCounters();
+                  observer.disconnect();
+                }
+              });
+            },
+            { threshold: 0.5 },
+          );
+          observer.observe(statsSection);
+        }
+      });
+
+      // Add keyframe for smooth filter animation
+      const style = document.createElement("style");
+      style.innerHTML = `
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+`;
+      document.head.appendChild(style);
+    </script>
+  </body>
+</html>

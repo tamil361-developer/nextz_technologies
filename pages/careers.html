@@ -197,14 +197,6 @@
                 </li>
               </ul>
             </li>
-
-            <!-- Contact -->
-            <!-- <li class="nav-item ms-lg-2">
-              <a class="nav-link contact-btn" href="contact.html">
-                <i class="bi bi-telephone-fill"></i>
-                Contact
-              </a>
-            </li> -->
           </ul>
         </div>
       </div>
@@ -671,19 +663,16 @@
           const f = btn.dataset.filter;
 
           document.querySelectorAll(".job-item").forEach((x) => {
-            // Remove animation class to force re-animation
             x.classList.remove("aos-animate");
 
             if (f === "all" || x.dataset.cat === f) {
               x.style.display = "";
-              // Re-add animation class slightly delayed
               setTimeout(() => x.classList.add("aos-animate"), 50);
             } else {
               x.style.display = "none";
             }
           });
 
-          // Refresh AOS layout positioning
           setTimeout(() => AOS.refresh(), 100);
         }),
       );
