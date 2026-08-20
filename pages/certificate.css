@@ -1,6 +1,3 @@
-
-
-
 /* =========================================
          CSS VARIABLES (Light & Selective Dark Theme)
       ========================================= */
@@ -32,15 +29,7 @@
   --white: #ffffff;
   --shadow-sm: 0 8px 25px rgba(25, 55, 20, 0.07);
   --shadow-md: 0 18px 50px rgba(25, 55, 20, 0.11);
-
-  /* Navbar specific */
-  --nav-primary: #256d04;
-  --nav-primary-dark: #278000;
-  --nav-primary-light: #eaffdf;
-  --nav-text-dark: black;
-  --nav-border: #e8e8e8;
 }
-
 /* =========================================
          GLOBAL STYLES
       ========================================= */
@@ -135,9 +124,34 @@ section {
 /* =========================================
          NAVBAR STYLES
       ========================================= */
+
+/* X-Axis Overflow Prevention */
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden !important;
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #334155;
+}
+
+/* =========================================
+   NAVBAR
+========================================= */
 .navs {
-  background: rgba(255, 255, 255, 0.96);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+  background: rgba(255, 255, 255, 0.98);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   min-height: 78px;
   position: sticky;
   top: 0;
@@ -145,47 +159,49 @@ section {
   backdrop-filter: blur(12px);
   transition: all 0.3s ease;
 }
+
 .navs-logo {
   display: flex;
   align-items: center;
   gap: 10px;
+  text-decoration: none;
   font-size: 20px;
   font-weight: 800;
-  color: var(--nav-text-dark);
-  text-decoration: none;
+  color: var(--text-dark);
   white-space: nowrap;
 }
-.navs-logo:hover {
-  color: var(--nav-text-dark);
-}
+
 .logo-icon {
   width: 42px;
   height: 42px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--nav-primary);
+  background: #035d06;
   color: white;
   border-radius: 12px;
   font-size: 21px;
-  box-shadow: 0 6px 18px rgba(56, 176, 0, 0.25);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
+
 .logo-text span {
-  color: var(--nav-primary);
+  color: #024504;
 }
 
 .navs .nav-link {
   position: relative;
-  color: #333 !important;
+  color: #334155 !important;
   font-size: 14px;
   font-weight: 600;
   padding: 10px 19px !important;
   transition: all 0.3s ease;
 }
+
 .navs .nav-link:hover,
 .navs .nav-link.active {
-  color: var(--nav-primary) !important;
+  color: #0f172a !important;
 }
+
 .navs .nav-link::after {
   content: "";
   position: absolute;
@@ -193,27 +209,32 @@ section {
   right: 11px;
   bottom: 3px;
   height: 2px;
-  background: var(--nav-primary);
+  background: #0f172a;
   border-radius: 20px;
   transform: scaleX(0);
   transform-origin: center;
   transition: transform 0.3s ease;
 }
+
 .navs .nav-link:hover::after,
 .navs .nav-link.active::after {
   transform: scaleX(1);
 }
 
+/* =========================================
+   DROPDOWN (Forced White Background Everywhere)
+========================================= */
 .navs-dropdown {
   min-width: 255px;
   padding: 8px;
   margin-top: 12px !important;
-  border: 1px solid var(--nav-border);
+  border: 1px solid var(--border);
   border-radius: 14px;
-  background: #ffffff;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+  background: #ffffff !important;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
   animation: dropdownShow 0.25s ease;
 }
+
 @keyframes dropdownShow {
   from {
     opacity: 0;
@@ -224,6 +245,7 @@ section {
     transform: translateY(0);
   }
 }
+
 .navs-dropdown .dropdown-item {
   display: flex;
   align-items: center;
@@ -232,34 +254,47 @@ section {
   border-radius: 9px;
   font-size: 13px;
   font-weight: 500;
-  color: #333;
+  color: #334155;
+  background: #ffffff !important;
   transition: all 0.25s ease;
 }
+
 .navs-dropdown .dropdown-item i {
   width: 20px;
   font-size: 16px;
-  color: var(--nav-primary);
+  color: #475569;
 }
+
 .navs-dropdown .dropdown-item:hover {
-  background: var(--nav-primary-light);
-  color: var(--nav-primary-dark);
+  background: #f1f5f9 !important;
+  color: #0f172a;
   transform: translateX(3px);
 }
 
+.navs-dropdown .dropdown-item:hover i {
+  color: #0f172a;
+}
+
+/* MOBILE TOGGLER */
 .navs-toggler {
   border: none;
   width: 45px;
   height: 42px;
   border-radius: 10px;
-  background: var(--nav-primary-light);
+  background: #f1f5f9;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
 .navs-toggler:focus {
   box-shadow: none;
 }
 
+.navs-toggler .navbar-toggler-icon {
+  width: 22px;
+  height: 22px;
+}
 /* =========================================
          PAGE COMPONENTS
       ========================================= */
