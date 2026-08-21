@@ -139,7 +139,7 @@
 
             <!-- Certifications -->
             <li class="nav-item">
-              <a class="nav-link" href="/pages/certificate"> Certifications </a>
+              <a class="nav-link active" href="/pages/certificate"> Certifications </a>
             </li>
 
             <!-- Placements -->
@@ -193,7 +193,6 @@
     <section id="hero" class="bg-light-green">
       <div class="container-fluid px-lg-5">
         <div class="row align-items-center">
-          <!-- Text side: Zoom in with 800ms duration -->
           <div
             class="col-lg-6 mb-5 mb-lg-0"
             data-aos="zoom-in"
@@ -224,12 +223,10 @@
             </div>
           </div>
 
-          <!-- Image side: Zoom in with 1000ms duration and a 300ms delay -->
           <div
             class="col-lg-6 text-center"
             data-aos="zoom-in"
             data-aos-duration="800"
-            
           >
             <img
               src="/images/certificate/certificate.png"
@@ -256,7 +253,6 @@
           </p>
         </div>
         <div class="row g-4">
-          <!-- Card 1 -->
           <div
             class="col-md-6 col-lg-4"
             data-aos="fade-up"
@@ -272,7 +268,6 @@
               </p>
             </div>
           </div>
-          <!-- Card 2 -->
           <div
             class="col-md-6 col-lg-4"
             data-aos="fade-up"
@@ -290,7 +285,6 @@
               </p>
             </div>
           </div>
-          <!-- Card 3 -->
           <div
             class="col-md-6 col-lg-4"
             data-aos="fade-up"
@@ -308,7 +302,6 @@
               </p>
             </div>
           </div>
-          <!-- Card 4 -->
           <div
             class="col-md-6 col-lg-4"
             data-aos="fade-up"
@@ -324,7 +317,6 @@
               </p>
             </div>
           </div>
-          <!-- Card 5 -->
           <div
             class="col-md-6 col-lg-4"
             data-aos="fade-up"
@@ -340,7 +332,6 @@
               </p>
             </div>
           </div>
-          <!-- Card 6 -->
           <div
             class="col-md-6 col-lg-4"
             data-aos="fade-up"
@@ -680,7 +671,7 @@
       id="verification"
       class="bg-dark text-white text-center py-5"
       style="
-        background-image: url(&quot;https://www.transparenttextures.com/patterns/cubes.png&quot;);
+        background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
       "
     >
       <div class="container py-5">
@@ -1444,14 +1435,13 @@
 
     <!-- Custom JavaScript -->
     <script>
-      // Initialize AOS with professional settings
       AOS.init({
         duration: 800,
         once: true,
         offset: 100,
       });
 
-      // --- 2. Smooth Scrolling for Anchor Links ---
+      // Smooth Scrolling for Anchor Links with Offset & Menu Close
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         anchor.addEventListener("click", function (e) {
           e.preventDefault();
@@ -1459,26 +1449,29 @@
           if (target) {
             const navbarToggler = document.querySelector(".navbar-toggler");
             const navbarCollapse = document.querySelector(".navbar-collapse");
-            if (navbarCollapse.classList.contains("show")) {
+            if (navbarCollapse && navbarCollapse.classList.contains("show")) {
               navbarToggler.click();
             }
 
+            const headerOffset = 70;
+            const elementPosition = target.getBoundingClientRect().top;
+            const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
             window.scrollTo({
-              top: target.offsetTop - 70,
-              behavior: "smooth",
+              top: offsetPosition,
+              behavior: "smooth"
             });
           }
         });
       });
 
-      // --- 3. Certificate Verification Simulator ---
+      // Certificate Verification Simulator
       function verifyCertificate() {
         const inputVal = document.getElementById("certIdInput").value.trim();
         const alertBox = document.getElementById("verifyAlert");
         const successCard = document.getElementById("verificationSuccess");
         const displayId = document.getElementById("displayCertId");
 
-        // Reset States
         alertBox.classList.add("d-none");
         successCard.classList.add("d-none");
         alertBox.className = "alert d-none text-start mb-0";

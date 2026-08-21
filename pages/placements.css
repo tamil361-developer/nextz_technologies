@@ -1,18 +1,36 @@
 /* root */
 :root {
-    --primary: #1f5805;
-    --primary-dark: #278000;
-    --primary-light: #eaffdf;
-    --text-dark: black;
-    --text-muted: #555555;
-    --white: #ffffff;
-    --border: #e8e8e8;
+  --primary: #1f5805;
+  --primary-dark: #278000;
+  --primary-light: #eaffdf;
+  --text-dark: black;
+  --text-muted: #555555;
+  --white: #ffffff;
+  --border: #e8e8e8;
 }
 
 /* =========================================
    NAVBAR
 ========================================= */
+/* =========================================
+   GALLERY ACTIVE STATE STYLING (NAVBAR)
+========================================= */
+.navs .nav-link.nav-activate {
+  color: var(--primary) !important;
+}
 
+.navs .nav-link.nav-activate::after {
+  transform: scaleX(1) !important;
+}
+
+/* Mobile View Active Highlight */
+@media (max-width: 991px) {
+  .navs .nav-link.nav-activate {
+    background: var(--primary-light);
+    color: var(--primary) !important;
+    border-radius: 9px;
+  }
+}
 .navs {
   background: rgba(255, 255, 255, 0.96);
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);

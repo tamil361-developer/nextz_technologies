@@ -51,6 +51,24 @@ p,
 /* =========================================
          NAVBAR STYLES
       ========================================= */
+
+/* Careers Active State Styling */
+.navs .nav-link.nav-activate {
+  color: var(--primary) !important;
+}
+
+.navs .nav-link.nav-activate::after {
+  transform: scaleX(1) !important;
+}
+
+/* Mobile View-விற்கான ஸ்டைல் */
+@media (max-width: 991px) {
+  .navs .nav-link.nav-activate {
+    background: var(--primary-light);
+    color: var(--primary) !important;
+    border-radius: 9px;
+  }
+}
 .navs {
   background: rgba(255, 255, 255, 0.96);
   border-bottom: 1px solid rgba(0, 0, 0, 0.06);
@@ -188,7 +206,7 @@ p,
       ========================================= */
 .hero {
   padding: 100px 0 85px;
-  background: linear-gradient(135deg,rgb(1, 43, 44), #03605a 100%);
+  background: linear-gradient(135deg, rgb(1, 43, 44), #03605a 100%);
   position: relative;
   color: #ffffff;
 }
@@ -196,7 +214,10 @@ p,
   content: "";
   position: absolute;
   inset: 0;
-  background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 1px);
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.15) 1px,
+    transparent 1px
+  );
   background-size: 22px 22px;
   opacity: 0.4;
 }

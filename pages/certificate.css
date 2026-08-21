@@ -1,26 +1,20 @@
 /* =========================================
-         CSS VARIABLES (Light & Selective Dark Theme)
+         CSS VARIABLES
       ========================================= */
 :root {
   --primary: #104806;
   --primary-dark: #266516;
   --primary-light: #dcfce7;
-
   --g: #10b981;
   --gd: #059669;
   --gl: #edf8ef;
-
-  --dark-bg: #0f172a; /* Deep Slate for dark sections */
+  --dark-bg: #0f172a;
   --dark-card: #1e293b;
-
-  --dark: #1e293b; /* Main text color */
+  --dark: #1e293b;
   --muted: #64748b;
   --line: #e2e8f0;
-
   --bg-white: #ffffff;
   --bg-soft: #f8fafc;
-
-  /* Theme vars from original CSS */
   --primary-deep: #0d3b06;
   --secondary-light: #f7faf6;
   --text-dark: #172016;
@@ -32,15 +26,14 @@
 }
 
 /* =========================================
-         GLOBAL STYLES & SAFE OVERFLOW FIX
+         GLOBAL STYLES & OVERFLOW FIX
       ========================================= */
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
 html {
-  scroll-behavior: smooth;
-  overflow-x: hidden;
+  scroll-behavior: smooth !important;
 }
 
 body {
@@ -48,31 +41,24 @@ body {
   padding: 0;
   font-family: "Poppins", sans-serif;
   color: var(--text-dark);
-  overflow-x: hidden;
   background: #fff;
   line-height: 1.5;
+  overflow-x: hidden; /* X-Axis ல இடது-வலது ஓடுவதைத் தடுக்க */
 }
 
 a {
   text-decoration: none;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   color: var(--text-dark);
 }
-p,
-.email {
+p, .email {
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
 section {
   padding: 90px 0;
   scroll-margin-top: 78px;
-  overflow: hidden;
 }
 
 .text-primary-theme {
@@ -142,12 +128,9 @@ section {
   gap: 10px;
   font-size: 20px;
   font-weight: 800;
-  color: var(--nav-text-dark);
+  color: var(--text-dark);
   text-decoration: none;
   white-space: nowrap;
-}
-.navs-logo:hover {
-  color: var(--nav-text-dark);
 }
 .logo-icon {
   width: 42px;
@@ -155,14 +138,14 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--nav-primary);
+  background: var(--primary);
   color: white;
   border-radius: 12px;
   font-size: 21px;
   box-shadow: 0 6px 18px rgba(56, 176, 0, 0.25);
 }
 .logo-text span {
-  color: var(--nav-primary);
+  color: var(--primary);
 }
 
 .navs .nav-link {
@@ -175,7 +158,7 @@ section {
 }
 .navs .nav-link:hover,
 .navs .nav-link.active {
-  color: var(--nav-primary) !important;
+  color: var(--primary) !important;
 }
 .navs .nav-link::after {
   content: "";
@@ -184,7 +167,7 @@ section {
   right: 11px;
   bottom: 3px;
   height: 2px;
-  background: var(--nav-primary);
+  background: var(--primary);
   border-radius: 20px;
   transform: scaleX(0);
   transform-origin: center;
@@ -199,7 +182,7 @@ section {
   min-width: 255px;
   padding: 8px;
   margin-top: 12px !important;
-  border: 1px solid var(--nav-border);
+  border: 1px solid var(--border);
   border-radius: 14px;
   background: #ffffff;
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
@@ -229,11 +212,11 @@ section {
 .navs-dropdown .dropdown-item i {
   width: 20px;
   font-size: 16px;
-  color: var(--nav-primary);
+  color: var(--primary);
 }
 .navs-dropdown .dropdown-item:hover {
-  background: var(--nav-primary-light);
-  color: var(--nav-primary-dark);
+  background: var(--primary-light);
+  color: var(--primary-dark);
   transform: translateX(3px);
 }
 
@@ -242,7 +225,7 @@ section {
   width: 45px;
   height: 42px;
   border-radius: 10px;
-  background: var(--nav-primary-light);
+  background: var(--primary-light);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -298,10 +281,7 @@ h2 {
   border: 1px solid var(--border) !important;
   border-radius: 20px !important;
   box-shadow: var(--shadow-sm);
-  transition:
-    transform 0.35s ease,
-    box-shadow 0.35s ease,
-    border-color 0.35s ease;
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
   overflow: hidden;
   font-size: 15px;
 }
@@ -335,14 +315,10 @@ h2 {
 }
 
 /* =========================================
-         HOW OUR CERTIFICATION WORKS - DARK THEME APPLIED
+         PROCESS TIMELINE
       ========================================= */
 #process-timeline {
-  background: linear-gradient(
-    135deg,
-    var(--dark-bg) 0%,
-    #064e3b 100%
-  ) !important;
+  background: linear-gradient(135deg, var(--dark-bg) 0%, #064e3b 100%) !important;
   color: #ffffff !important;
   padding: 100px 0;
 }
@@ -478,7 +454,6 @@ footer a:hover {
   #hero h1 {
     letter-spacing: -1.2px;
   }
-
   .navs {
     min-height: 70px;
   }
@@ -486,7 +461,7 @@ footer a:hover {
     margin-top: 15px;
     padding: 12px;
     background: #ffffff;
-    border: 1px solid var(--nav-border);
+    border: 1px solid var(--border);
     border-radius: 16px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
   }
@@ -496,7 +471,7 @@ footer a:hover {
     font-size: 14px;
   }
   .navs .nav-link:hover {
-    background: var(--nav-primary-light);
+    background: var(--primary-light);
   }
   .navs .nav-link::after {
     display: none;
@@ -515,6 +490,9 @@ footer a:hover {
 @media (max-width: 767.98px) {
   section {
     padding: 58px 0;
+  }
+  .container {
+    width: min(100% - 30px, 720px);
   }
   #hero {
     padding: 62px 0 56px;
@@ -537,16 +515,6 @@ footer a:hover {
     max-height: 300px;
     margin-top: 10px;
   }
-  .badge {
-    font-size: 0.72rem;
-  }
-  h2 {
-    margin-bottom: 12px;
-  }
-  .mb-5 {
-    margin-bottom: 2rem !important;
-  }
-
   .timeline-wrapper {
     padding-top: 0;
   }
@@ -564,9 +532,6 @@ footer a:hover {
     padding: 0 0 30px 84px;
     min-height: 100px;
   }
-  .timeline-step:last-child {
-    padding-bottom: 0;
-  }
   .timeline-icon {
     position: absolute;
     left: 0;
@@ -576,24 +541,12 @@ footer a:hover {
     margin: 0;
     background: #fff;
   }
-  .timeline-step h5,
-  .timeline-step p {
-    margin-left: 0;
-  }
-
-  .cert-preview-img {
-    border-width: 5px;
-    border-radius: 13px;
-  }
   .verify-box {
     padding: 16px;
   }
   .verify-box .input-group {
     display: flex;
     flex-wrap: wrap;
-  }
-  .verify-box .input-group-text {
-    width: 52px;
   }
   .verify-box .verify-input {
     flex: 1;
@@ -604,88 +557,10 @@ footer a:hover {
     margin-top: 10px;
     border-radius: 10px !important;
   }
-  .display-4 {
-    font-size: 2rem;
-  }
-  #project-based {
-    padding: 70px 0 !important;
-  }
-  #project-based .row {
-    row-gap: 28px !important;
-  }
-  .row.row-cols-2 {
-    --bs-gutter-x: 0.7rem;
-    --bs-gutter-y: 0.7rem;
-  }
-  .row.row-cols-2 .p-3 {
-    padding: 13px !important;
-  }
-  .row.row-cols-2 i {
-    font-size: 1.45rem !important;
-  }
-  .row.row-cols-2 p {
-    font-size: 0.72rem !important;
-  }
-  .accordion-button {
-    padding: 17px 16px;
-    font-size: 0.9rem;
-  }
-  .accordion-body {
-    padding: 15px 16px 18px;
-    font-size: 0.84rem;
-  }
   footer {
     text-align: center;
   }
   footer .d-flex {
     justify-content: center;
-  }
-  footer .row > div {
-    margin-bottom: 8px;
-  }
-}
-
-@media (max-width: 575.98px) {
-  .navs-logo {
-    font-size: 17px;
-  }
-  .logo-icon {
-    width: 38px;
-    height: 38px;
-    font-size: 18px;
-  }
-  .navs {
-    padding: 8px 0;
-  }
-  section {
-    padding: 50px 0;
-  }
-  #hero {
-    padding: 54px 0 48px;
-  }
-  #hero .btn {
-    width: 100%;
-  }
-  #hero .d-flex {
-    gap: 10px !important;
-  }
-  .card {
-    padding: 20px !important;
-  }
-  .cert-preview-img {
-    width: 100%;
-  }
-  #verification .container {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-  }
-  #verification .mt-5 {
-    margin-top: 2rem !important;
-  }
-  #final-cta h2 {
-    font-size: 2rem;
-  }
-  #final-cta .btn {
-    width: 100%;
   }
 }
