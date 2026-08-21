@@ -1652,6 +1652,9 @@ body {
    SECTION 4: MOBILE CARD STYLES
  ========================================= */
 @media (max-width: 767.98px) {
+
+
+  
   .section4-desktop-cards-wrapper {
     display: none !important;
   }
