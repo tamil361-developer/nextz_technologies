@@ -919,7 +919,7 @@ body {
 /* Footer */
 footer {
   background-color: #0f172a;
-  color: #94a3b8;
+  color: #fafcfe;
   padding: 60px 0 20px 0;
 }
 footer h5 {
@@ -932,7 +932,7 @@ footer ul li {
   margin-bottom: 10px;
 }
 footer ul li a {
-  color: #94a3b8;
+  color: #fbfcfe;
   text-decoration: none;
   transition: var(--transition);
 }
